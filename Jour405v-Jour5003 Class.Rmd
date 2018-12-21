@@ -1,6 +1,4 @@
 ---
-title: "Jour 405v-Jour 5003 Data Analysis"
-author: "Wells"
 date: "12/21/2018"
 output: 
   github_document:
@@ -24,12 +22,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 > @rwells1961  
 
+![](Images/UARK logo NEW.png)
+
+
 **Course Goal:** Students will learn the latest data journalism techniques that drive modern newsrooms and public relations / advertising offices. The class will extract and analyze Twitter data with the goal of producing an interactive multimedia presentation.
 
 **Course Description:** This course will teach students how to code in programs such as R and SQL and how these powerful tools are used in modern news reporting. Quality reporting in newsrooms requires a solid foundation of data analysis. The data skills taught in this class are in high demand in newsrooms and corporations.
->
 
-![You will learn to love this program](Images/RStudio-Logo-Blue-Gradient.png)
+
+<img src="Images/RStudio-Logo-Blue-Gradient.png" width="200" height="50" />
 
 >
 
@@ -60,6 +61,14 @@ https://docs.google.com/presentation/d/1zICxR7qDM3RQ2Nxi5CqHlM3H8I7qoVkNtqcNcnbb
 > [**Download this file and open it in R Studio**: "CNTL" + click for a New Tab](Introduction-to-R-Oct-29-2018-1c3su5h.r){target="_blank"}
 
 --R interface explained. 
+  
+  There are four main windows:  
+
+  + Script writing, R Markdown, Table Viewer: Upper Left  
+  + Environment - data loaded in R: Upper Right  
+  + Console - write commands in R: Lower Left  
+  + File Manager and Html table viewer: Bottom Right
+  
 https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l90s/edit#slide=id.g1bc441664e_0_10
 
 --Show basic R skills.
@@ -106,10 +115,17 @@ https://smach.github.io/R4JournalismBook/packages.html
 
 **Agenda:**
 --Use R instead of Excel  
-
+    Excellent Tutorial Spelling out Excel and Comparable Commands in R  
+https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/  
+    https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l90s/edit#slide=id.g1bc441664e_0_59  
+    
 --R Markdown
+
 --Loading and basic file management
 
+--Export data 
+  Write Export output this file to a CSV or Excel  write.csv or write.excel
+  write.csv(AR2016_SMALL,"AR2016_SMALL.csv")
 
 **Reading:**
 
@@ -117,6 +133,8 @@ https://smach.github.io/R4JournalismBook/packages.html
 
 --Andrew Ba Tran
 
+--All Cheat Sheets
+https://www.rstudio.com/resources/cheatsheets/
 
 
 ## Week #3: R: Scripts, Workbooks, Markdown. GitHub
@@ -163,13 +181,32 @@ https://guides.github.com/
 **Agenda**
 --Rendering html as an output in GitHub  
 https://rmarkdown.rstudio.com/lesson-9.html
+https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
 
+R Markdown Formatting  
+
+Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
+  (Note: Remove the period before "img")
+
+Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored.  
+
+
+
+**Terminology**  
+--Render  
+--Html  
+--Markdown  
+
+**Resources*  
 
 
 **Reading:**  
 Machlis Chs. 9 & 10   
 Albert Cairo, "The Functional Art," Principles of Data Visualization.   
 
+
+**Exercises**  
+--Create R Markdown document, export to PDF, HTML  
 
 
 ## Download R and RStudio
