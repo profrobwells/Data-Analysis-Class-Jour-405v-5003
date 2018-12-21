@@ -1,6 +1,3 @@
-Jour 405v-Jour 5003 Data Analysis
-================
-Wells
 12/21/2018
 
 Inside Twitter: Data Analysis for Journalists
@@ -19,11 +16,13 @@ Jour 405v, Jour 5003, Spring 2019
 
 > @rwells1961
 
+![](Images/UARK%20logo%20NEW.png)
+
 **Course Goal:** Students will learn the latest data journalism techniques that drive modern newsrooms and public relations / advertising offices. The class will extract and analyze Twitter data with the goal of producing an interactive multimedia presentation.
 
-**Course Description:** This course will teach students how to code in programs such as R and SQL and how these powerful tools are used in modern news reporting. Quality reporting in newsrooms requires a solid foundation of data analysis. The data skills taught in this class are in high demand in newsrooms and corporations. &gt;
+**Course Description:** This course will teach students how to code in programs such as R and SQL and how these powerful tools are used in modern news reporting. Quality reporting in newsrooms requires a solid foundation of data analysis. The data skills taught in this class are in high demand in newsrooms and corporations.
 
-![You will learn to love this program](Images/RStudio-Logo-Blue-Gradient.png)
+<img src="Images/RStudio-Logo-Blue-Gradient.png" width="200" height="50" />
 
 **Required Text:** Machlis, Sharon. Practical R for Mass Communications and Journalism. Chapman & Hall/CRC The R Series. 2018. ISBN 9781138726918 <https://www.amazon.com/gp/search?keywords=9781138726918>
 
@@ -44,7 +43,16 @@ Week \#1: Introduction and R Basics
 
 --Load tutorial &gt; <a href="Introduction-to-R-Oct-29-2018-1c3su5h.r" target="_blank"><strong>Download this file and open it in R Studio</strong>: &quot;CNTL&quot; + click for a New Tab</a>
 
---R interface explained. <https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l90s/edit#slide=id.g1bc441664e_0_10>
+--R interface explained.
+
+There are four main windows:
+
+-   Script writing, R Markdown, Table Viewer: Upper Left
+-   Environment - data loaded in R: Upper Right
+-   Console - write commands in R: Lower Left
+-   File Manager and Html table viewer: Bottom Right
+
+<https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l90s/edit#slide=id.g1bc441664e_0_10>
 
 --Show basic R skills.
 
@@ -76,14 +84,23 @@ Week \#2: Use R instead of Excel. R Markdown. Loading and basic file management
 -------------------------------------------------------------------------------
 
 **Agenda:** --Use R instead of Excel
+Excellent Tutorial Spelling out Excel and Comparable Commands in R
+<https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/>
+<https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l90s/edit#slide=id.g1bc441664e_0_59>
 
---R Markdown --Loading and basic file management
+--R Markdown
+
+--Loading and basic file management
+
+--Export data Write Export output this file to a CSV or Excel write.csv or write.excel write.csv(AR2016\_SMALL,"AR2016\_SMALL.csv")
 
 **Reading:**
 
 --Machlis. Chapter 3 & 4.
 
 --Andrew Ba Tran
+
+--All Cheat Sheets <https://www.rstudio.com/resources/cheatsheets/>
 
 Week \#3: R: Scripts, Workbooks, Markdown. GitHub
 -------------------------------------------------
@@ -125,11 +142,27 @@ Week \#5: Using R to build basic graphs and charts
 --------------------------------------------------
 
 **Agenda** --Rendering html as an output in GitHub
-<https://rmarkdown.rstudio.com/lesson-9.html>
+<https://rmarkdown.rstudio.com/lesson-9.html> <https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf>
+
+R Markdown Formatting
+
+Sizing images: &lt;.img src="drawing.jpg" alt="drawing" width="200"/&gt; (Note: Remove the period before "img")
+
+Line breaks: Use HTML tags. Adding <br> will give a single line break -- option for when two-space indentation is ignored.
+
+**Terminology**
+--Render
+--Html
+--Markdown
+
+\*\*Resources\*
 
 **Reading:**
 Machlis Chs. 9 & 10
 Albert Cairo, "The Functional Art," Principles of Data Visualization.
+
+**Exercises**
+--Create R Markdown document, export to PDF, HTML
 
 Download R and RStudio
 ----------------------
