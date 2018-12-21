@@ -2,7 +2,10 @@
 title: "Jour 405v-Jour 5003 Data Analysis"
 author: "Wells"
 date: "12/21/2018"
-output: html_document
+output: 
+  github_document:
+  df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -155,6 +158,17 @@ https://guides.github.com/introduction/flow/
 https://guides.github.com/
 
 
+## Week #5: Using R to build basic graphs and charts
+
+**Agenda**
+--Rendering html as an output in GitHub  
+https://rmarkdown.rstudio.com/lesson-9.html
+
+
+
+**Reading:**  
+Machlis Chs. 9 & 10   
+Albert Cairo, "The Functional Art," Principles of Data Visualization.   
 
 
 
