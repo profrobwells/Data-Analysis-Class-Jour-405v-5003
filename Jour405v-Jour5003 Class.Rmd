@@ -14,6 +14,10 @@ knitr::opts_chunk$set(echo = TRUE)
 #Inside Twitter: Data Analysis for Journalists
 ##Jour 405v, Jour 5003, Spring 2019
 
+
+<img src="Images/RStudio-Logo-Blue-Gradient.png" width="300" height="100" />
+
+
 ###Rob Wells, Ph.D. 
 ####University of Arkansas
 ####School of Journalism and Strategic Media  
@@ -29,8 +33,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Course Description:** This course will teach students how to code in programs such as R and SQL and how these powerful tools are used in modern news reporting. Quality reporting in newsrooms requires a solid foundation of data analysis. The data skills taught in this class are in high demand in newsrooms and corporations.
 
-
-<img src="Images/RStudio-Logo-Blue-Gradient.png" width="200" height="50" />
 
 >
 
@@ -126,6 +128,10 @@ https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r
 --Export data 
   Write Export output this file to a CSV or Excel  write.csv or write.excel
   write.csv(AR2016_SMALL,"AR2016_SMALL.csv")
+  
+--Conventions in coding   
+--R interface  
+--Tidyverse   
 
 **Reading:**
 
@@ -176,6 +182,17 @@ https://guides.github.com/introduction/flow/
 https://guides.github.com/
 
 
+
+## Week #4: Using R to build basic graphs and charts  
+
+
+**Reading**  
+Machlis Chs. 7 & 8.    
+Materials from Andrew Ba Tran, Washington Post
+
+
+
+
 ## Week #5: Using R to build basic graphs and charts
 
 **Agenda**
@@ -187,8 +204,12 @@ R Markdown Formatting
 
 Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
   (Note: Remove the period before "img")
+https://rpubs.com/RatherBit/90926
+
 
 Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored.  
+
+
 
 
 
