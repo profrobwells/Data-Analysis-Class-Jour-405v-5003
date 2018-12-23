@@ -1,4 +1,4 @@
-12/21/2018
+12/23/2018
 
 Inside Twitter: Data Analysis for Journalists
 =============================================
@@ -57,6 +57,8 @@ There are four main windows:
 --Show basic R skills.
 
 --Loading software. Tidyverse
+
+<img src="Images/Popular R libraries.png" width="500" height="250" />
 
 --Workflow.
 
