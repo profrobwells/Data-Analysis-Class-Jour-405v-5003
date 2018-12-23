@@ -57,6 +57,7 @@ There are four main windows:
 --Show basic R skills.
 
 --Loading software. Tidyverse
+Rio
 
 <img src="Images/Popular R libraries.png" width="500" height="250" />
 
@@ -66,6 +67,9 @@ There are four main windows:
 
 --Practice with Twitter dataset.
 
+--Data Types and R
+Machlis: 2.4.2 Data types you’re likely to use often ![](Images/Slide%20Data%20Structures%20in%20R.jpeg)
+
 **Reading:**
 
 --Machlis. Chapter 1 & 2.
@@ -74,7 +78,7 @@ There are four main windows:
 
 \*\*<Notes:**> --Data Wrangling-Text Mining in Twitter. --See entire scraping sequence. Extract from Twitter. --Basic descriptive statistics --Chart --Export Static --Story
 
-**Resources:** RStudio IDE Easy Tricks You Might’ve Missed <https://rviews.rstudio.com/2016/11/11/easy-tricks-you-mightve-missed/>
+**Resources:** RStudio Navigation Tricks You Might’ve Missed <https://rviews.rstudio.com/2016/11/11/easy-tricks-you-mightve-missed/>
 
 How Do I? <https://smach.github.io/R4JournalismBook/HowDoI.html>
 
@@ -92,6 +96,8 @@ Basic data work- head to <http://bit.ly/excel_and_r>
 
 --Export data Write Export output this file to a CSV or Excel write.csv or write.excel write.csv(AR2016\_SMALL,"AR2016\_SMALL.csv")
 
+--More on Data Types and R
+
 **Notes** --Loading and basic file management
 
     Bringing in data
@@ -100,7 +106,9 @@ Basic data work- head to <http://bit.ly/excel_and_r>
     Cleaning the data
     Reshaping the format
     Manipulating the data
-    Exporting 
+    Exporting  
+
+![](Images/ImportingDataTip.jpg)
 
 Loading data RSQlite - read data from a database xlsx - read in Excel spreadsheets
 
@@ -118,7 +126,7 @@ Math --Summary Statistics
 
 mean(x) Calculate the mean, or average, for variable x. median(x) Calculate the median. max(x) Find the maximum value. min(x) Find the minimum value. sum(x) Add all the values together. n() Count the number of records. Here there isn’t a variable in the brackets of the function, because the number of records applies to all variables. n\_distinct(x) Count the number of unique values in variable x. percent\_change &lt;- function(first\_number, second\_number) { pc &lt;- (second\_number-first\_number)/first\_number\*100 return(pc) }
 
-percent\_change(100,150) \#\# \[1\] 50 This is what’s happening in the code above: \* percent\_change is the name of the function, and assigned to it is the function function() \* Two variables are necessary to be passed to this function, first\_number and second\_number \* A new object pc is created using some math calculating percent change from the two variables passed to it \* the function return() assigns the result of the math to percent\_change from the first line Build enough functions and you can save them as your own package.
+percent\_change(100,150) \[1\] 50 This is what’s happening in the code above: \* percent\_change is the name of the function, and assigned to it is the function function() \* Two variables are necessary to be passed to this function, first\_number and second\_number \* A new object pc is created using some math calculating percent change from the two variables passed to it \* the function return() assigns the result of the math to percent\_change from the first line Build enough functions and you can save them as your own package.
 
 Data Management mutate Create new column(s) in the data, or change existing column(s). rename Rename column(s).
 bind\_rows Merge two data frames into one, combining data from columns with the same name.
@@ -136,7 +144,7 @@ Week \#3: R: Twitter Data. Data Types. Scripts,
 
 **Agenda** --Twitter Metadata
 
---Filters, Grouping, Sorting --Data Types and R
+--Filters, Grouping, Sorting
 
 --Test - Basic R functions
 

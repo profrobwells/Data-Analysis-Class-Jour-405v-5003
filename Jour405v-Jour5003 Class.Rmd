@@ -3,7 +3,9 @@ date: "12/23/2018"
 output: 
   github_document:
   df_print: paged
-  pdf_document: default
+  pdf_document: 
+      toc: true
+      toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
