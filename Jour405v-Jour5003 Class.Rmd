@@ -1,5 +1,5 @@
 ---
-date: "12/21/2018"
+date: "12/23/2018"
 output: 
   github_document:
   df_print: paged
@@ -76,13 +76,21 @@ https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l
 --Show basic R skills.
 
 --Loading software. 
-    Tidyverse
+   Tidyverse  
+   Rio
+   
+<img src="Images/Popular R libraries.png" width="500" height="250" />
+   
 
 --Workflow. 
 
 --Conventions in coding. 
 
 --Practice with Twitter dataset. 
+
+--Data Types and R   
+  Machlis: 2.4.2 Data types you’re likely to use often
+![](Images/Slide Data Structures in R.jpeg)
 
 **Reading:**  
 
@@ -101,7 +109,7 @@ https://www.computerworld.com/article/2497143/business-intelligence/business-int
 --Story
 
 **Resources:**
-RStudio IDE Easy Tricks You Might’ve Missed
+RStudio Navigation Tricks You Might’ve Missed
 https://rviews.rstudio.com/2016/11/11/easy-tricks-you-mightve-missed/
 
 How Do I?
@@ -126,6 +134,9 @@ https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r
   Write Export output this file to a CSV or Excel  write.csv or write.excel
   write.csv(AR2016_SMALL,"AR2016_SMALL.csv")  
   
+--More on Data Types and R   
+  
+  
 **Notes**
 --Loading and basic file management
 
@@ -135,7 +146,9 @@ https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r
     Cleaning the data
     Reshaping the format
     Manipulating the data
-    Exporting 
+    Exporting  
+![](Images/ImportingDataTip.jpg)     
+
 
 Loading data
   RSQlite - read data from a database
@@ -173,7 +186,7 @@ n_distinct(x) Count the number of unique values in variable x.
 }
 
 percent_change(100,150)
-## [1] 50
+[1] 50
 This is what’s happening in the code above:
 * percent_change is the name of the function, and assigned to it is the function function()
 * Two variables are necessary to be passed to this function, first_number and second_number
@@ -205,8 +218,9 @@ https://www.rstudio.com/resources/cheatsheets/
 --Twitter Metadata  
 
 --Filters, Grouping, Sorting
---Data Types and R   
 
+
+  
 --Test - Basic R functions
  
 --Tidyverse 
