@@ -52,7 +52,13 @@ https://www.amazon.com/gp/search?keywords=9781138726918
 
 > [**Course Schedule**: "CNTL" + click for a New Tab](https://docs.google.com/spreadsheets/d/1onfY79xjhQVetnFbNvw1z3zLGrSQ1xkAoo0qoCRElGM/edit#gid=681742372){target="_blank"}
 
-## Week #1: Introduction and R Basics
+
+##Upon completion of this course, you will celebrate like this:   
+<img src="Images/nerd meme.jpg" width="300" height="100" />
+
+**End of Intro**
+--------------------------------------------------------------------
+#Week #1:Introduction and R Basics
 
 **Agenda:**
 --Email to students.
@@ -62,6 +68,8 @@ https://docs.google.com/presentation/d/1zICxR7qDM3RQ2Nxi5CqHlM3H8I7qoVkNtqcNcnbb
 
 --Load tutorial
 > [**Download this file and open it in R Studio**: "CNTL" + click for a New Tab](Introduction-to-R-Oct-29-2018-1c3su5h.r){target="_blank"}
+
+Introduction-to-R-January-2019.R
 
 --R interface explained. 
   
@@ -84,14 +92,22 @@ https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l
    
 
 --Workflow. 
+  Basic File Exploration 12-25-18.R
 
 --Conventions in coding. 
 
 --Practice with Twitter dataset. 
 
+--nrow ncol
+
+--rename columns. create columns
+
 --Data Types and R   
   Machlis: 2.4.2 Data types you’re likely to use often
 ![](Images/Slide Data Structures in R.jpeg)
+
+--converting character strings into numeric
+  see Downloading Data 12-24-18.R
 
 **Reading:**  
 
@@ -122,8 +138,9 @@ https://smach.github.io/R4JournalismBook/functions.html
 Packages
 https://smach.github.io/R4JournalismBook/packages.html
 
-
-## Week #2: Use R instead of Excel. Loading and basic file management
+**End of Week 1**
+--------------------------------------------------------------------
+#Week #2: Basic Data Viz. Use R instead of Excel. Loading and basic file management
 
 **Agenda:**
 --Use R instead of Excel: Andrew Ba Tran  
@@ -131,12 +148,20 @@ https://smach.github.io/R4JournalismBook/packages.html
 https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/  
     Basic data work- head to http://bit.ly/excel_and_r 
 
+--Basic data visualization
+Basic Data Visualization 12-26-18.R
+Basic-Chart-January-2018.R
+
 --Export data 
   Write Export output this file to a CSV or Excel  write.csv or write.excel
   write.csv(AR2016_SMALL,"AR2016_SMALL.csv")  
   
 --More on Data Types and R   
-  
+Downloading Data 12-24-18.R
+
+**Exercise**
+Median Income For City.R
+Basic crime rate in R exercise.txt
   
 **Notes**
 --Loading and basic file management
@@ -212,15 +237,18 @@ Cohen, "Numbers in the Newsroom," common mistakes.
 --All Cheat Sheets
 https://www.rstudio.com/resources/cheatsheets/
 
-
-## Week #3: R: Twitter Data. Data Types. Scripts, 
+**End of Week 2**
+--------------------------------------------------------------------
+#Week #3: R Twitter Data. Data Types. Scripts
 
 **Agenda**
 --Twitter Metadata  
 
 --Filters, Grouping, Sorting
 
-
+--Add a column with a math conversion  
+Example: Total column shows winter snowfall in inches. To add a column showing totals in Meters, you can use this format:  
+.snowdata$Meters <- snowdata$Total * 0.0254
   
 --Test - Basic R functions
  
@@ -232,7 +260,7 @@ http://learn.r-journalism.com/en/publishing/workflow/r-projects/
 **Notes**  
 --DPLYR
 Five basic verbs • filter() • select() • arrange() • mutate() • summarize() plus group_by()
-![](Images/Logical_operators.png)
+![](Images/Logical_operators.png)   
 
 --Pipes
 pipe %>%
@@ -254,13 +282,11 @@ Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Econo
 
 Materials from Andrew Ba Tran, Washington Post
 
-
 **Resources:**
 
 **Exercises**
-
-
-## Week #4: Using R to build basic graphs and charts  
+-------------------------------------------------------------------- 
+#Week #4: Using R to build basic graphs and charts  
 
 **Agenda**   
 --GGplot  
@@ -285,10 +311,10 @@ Machlis Chs. 7 & 8.
 Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and How You Can Avoid Them,” American Press Institute, 2016
 Materials from Andrew Ba Tran, Washington Post
 
+**End of Week 5**
 
-
-
-## Week #5: Using R to build basic graphs and charts
+-------------------------------------------------------------------- 
+#Week #5: Using R to build basic graphs and charts  
 
 **Agenda**
 --Assignment #1 due: Static Graphic
@@ -302,6 +328,9 @@ Materials from Andrew Ba Tran, Washington Post
 **Resources*  
 Grammar of Graphics
 http://vita.had.co.nz/papers/layered-grammar.html
+
+--Graphing GGplot 12-28.R
+  Exercises from Machlis Ch. 9. Facets
 
 
 **Notes**
@@ -319,8 +348,11 @@ Albert Cairo, "The Functional Art," Principles of Data Visualization.
 
 **Exercises**  
 --Create R Markdown document, export to PDF, HTML  
+--Class Exercise - Graphing and Grouping Data Viz Exercise 2 From Ch 9
 
-## Week #6: GitHub 
+**End of Week 5**
+-------------------------------------------------------------------- 
+#Week #6: GitHub 
 
 **Agenda**
 --Create a GitHub account.
@@ -377,10 +409,9 @@ Machlis Chs. 11 & 12
   *Team 2 forks the code. Makes XXX changes.  
   *Pull & Commit  
 
-Workbooks, Markdown. 
-
-
-## Week #7: Twitter 
+**Workbooks, Markdown**
+--------------------------------------------------------------------
+#Week #7: Twitter
 
 **Agenda**
 
@@ -417,8 +448,9 @@ Twitter meta data
 **Exercises**
 
 
+-------------------------------------------------------------------- 
 
-## Week #8: R Markdown 
+#Week #8: R Markdown 
 
 **Agenda**
 --R Markdown, Desktop Publishing
@@ -444,7 +476,7 @@ https://rpubs.com/RatherBit/90926
 --Markdown  
 
 **Notes**
-## R Markdown
+R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -454,7 +486,7 @@ When you click the **Knit** button a document will be generated that includes bo
 summary(cars)
 ```
 
-## Including Plots
+Including Plots
 
 You can also embed plots, for example:
 
@@ -475,7 +507,9 @@ Machlis Chs. 15 & 16
 
 Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored. 
 
-## Week #9: Text Mining 
+-------------------------------------------------------------------- 
+
+#Week #9: Text Mining 
 
 **Agenda**
 --Basic text mining techniques  
@@ -488,12 +522,17 @@ Machlis Chs. 17 & 18
 **Resources:**
 
 **Exercises**
---
+-------------------------------------------------------------------- 
 
-## SPRING BREAK -- MAKE GOOD LIFE CHOICES
+#SPRING BREAK -- MAKE GOOD LIFE CHOICES
+
+**. **
+-------------------------------------------------------------------- 
 
 
-## Week #10: Mapping in R
+#Week #10: Mapping in R
+
+![You will make this in the class](Images/AR_Counties_Map.html)
 
 **Agenda**
 --Produce a basic interactive map in R, post on WordPress
@@ -511,11 +550,17 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 https://www.youtube.com/watch?v=TSGaueL4Ggk
 
 **Exercises**
+--Maps in R 12-28-18.R
 
-## Week #11: Mapping in R 
+
+-------------------------------------------------------------------- 
+
+#Week #11: Mapping in R 
 
 **Agenda**
 --Produce a basic interactive map in R, post on WordPress
+
+![You will make this in the class](Images/AR_Employment_Map.html)
 
 **Reading** 
 Bad data visualizations. Data Translation. 
@@ -526,14 +571,20 @@ The Journalist as Programmer: A Case Study of The New York Times Interactive New
 
 **Exercises**
 
+-------------------------------------------------------------------- 
 
-## Week #12: Web Scraping in R
+#Week #12: Web Scraping in R
 
 **Agenda**
 --Web Scraping in R  
 --Application Programming Interface - API  
 Twitter historical API
 https://developer.twitter.com/en/docs/tutorials/choosing-historical-api
+
+--See 4.8 in Machlis:
+‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
+
+
 
 --Assignment #3. Interactive Map
 
@@ -550,8 +601,9 @@ Nicholas Diakopolous, “Algorithmic Accountability,” Digital Journalism, 2014
 **Exercises**
 --MA Students, Census API assignment
 
+-------------------------------------------------------------------- 
 
-## Week #13:  Web Scraping in R
+#Week #13:  Web Scraping in R
 
 **Agenda**
 -- Web Scraping in R
@@ -564,8 +616,9 @@ http://varianceexplained.org/r/trump-tweets/
 https://futuretodayinstitute.wetransfer.com/downloads/0e84e883e140bafe9a3436a6464032be20171003123607/ecda17
 **Resources:**
 **Exercises**
+-------------------------------------------------------------------- 
 
-## Week #14: Sentiment Analysis
+#Week #14: Sentiment Analysis
 
 **Agenda**
 --Sentiment Analysis
@@ -580,8 +633,11 @@ http://saifmohammad.com/index.html
 
 **Exercises**
 
+-------------------------------------------------------------------- 
 
-## Week #15: 
+#Week #15: 
+
+-------------------------------------------------------------------- 
 
 **Agenda**
 **Reading** 
@@ -605,4 +661,6 @@ http://www.machlis.com/R4Journalists/download-r-and-rstudio.html
 
 
 
-
+ rmarkdown::render("/Users/robwells/Dropbox/Classes/Data Analysis Spring 2019 Jour 405v Jour 5003/R Markup-Data Analysis Class/Data-Analysis-Class-Jour-405v-5003/Jour405v-Jour5003 Class.Rmd",
+    output_format="html_document", output_file = "/Users/robwells/Dropbox/Classes/Data Analysis Spring 2019 Jour 405v Jour 5003/R Markup-Data Analysis Class/Data-Analysis-Class-Jour-405v-5003/Jour405v-Jour5003 Class.html" )
+    
