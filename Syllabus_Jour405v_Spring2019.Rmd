@@ -7,7 +7,7 @@ output: html_document
 ###Jour 405v, Sec. 7, Spring 2019
 ###School of Journalism and Strategic Media 
 ###University of Arkansas
-Class Time and Location: Monday-Wednesday,  9:40 a.m.-10:55 a.m., Kimpel 145
+Class Time and Location: Monday-Wednesday,  9:40 a.m.-10:55 a.m., Kimpel 146
 
 Instructor: 	Rob Wells, Ph.D.  
 Office: Kimpel 128  
