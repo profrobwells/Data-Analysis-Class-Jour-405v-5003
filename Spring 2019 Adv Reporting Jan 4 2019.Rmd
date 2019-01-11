@@ -106,7 +106,8 @@ https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l
     
     Tab - Autocomplete
     Control (or Command) + UP arrow - last lines run
-    Control (or Command) + Enter - Runs current or selected lines of code     in the top left box of RStudio
+    Control (or Command) + Enter - Runs current or selected lines of code 
+    in the top left box of RStudio
     Shift + Control (or Command) +P - Reruns previous region code
 
 --Practice with Twitter dataset. 
@@ -166,7 +167,7 @@ https://smach.github.io/R4JournalismBook/functions.html
 
 Packages
 https://smach.github.io/R4JournalismBook/packages.html
-**--**  
+**-xyz-**  
 
 
 
