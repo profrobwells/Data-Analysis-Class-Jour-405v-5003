@@ -1,7 +1,7 @@
 ---
 title: "Spring 2019 Advanced Reporting"
 author: "Rob Wells"
-date: "1/4/2019"
+date: "1/11/2019"
 output:  
   html_document:
       toc: true
@@ -289,7 +289,7 @@ https://www.rstudio.com/resources/cheatsheets/
 
 --**Quiz on Basic R functions**
 
---Describe Assignment #1: Static Graphic 
+--Describe Assignment #1: Managing Data / Static Graphic 
 
 --Twitter Metadata  
 
@@ -352,7 +352,7 @@ For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tr
 **Agenda** 
 --2/4/2019 - Week 4 
 
---**Assignment #1 due Feb. 6: Static Graphic**
+--**Assignment #1 due Feb. 6: Managing Data / Static Graphic**
 
 --GGplot  
 --Conventions in coding     
