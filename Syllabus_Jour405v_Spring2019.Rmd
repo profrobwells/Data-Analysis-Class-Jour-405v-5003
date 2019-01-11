@@ -135,7 +135,7 @@ Please see the course outline: https://profrobwells.github.io/Data-Analysis-Clas
 An assignment uploaded late (after 11:59 p.m. on the designated day, according to Blackboard) will be reduced by one grade, and will be reduced a full grade for every subsequent day.
 Students with excused absences should contact me immediately about making up missed assignments. The final assignment represents the final examination; there is no separate final examination.
 
-###1: Static Graphic - Managing Data in R.   Due Feb 13
+###1: Static Graphic - Managing Data in R.   Due Feb 6
 Students will use R Studio to gather, analyze and visualize FBI Uniform Crime data for Arkansas. 
   Import and clean data from the web
   Convert string data to numeric data
@@ -143,11 +143,11 @@ Students will use R Studio to gather, analyze and visualize FBI Uniform Crime da
   Visualize findings using ggplot
 
 
-###2. Visualization of Twitter data.  Due March 13.
+###2. Visualization of Twitter data.  Due Feb 27.
 Students will produce publication-ready graphics from Twitter data. Results will be posted on GitHub. Data dictionary required
 
 
-###3: Interactive Map. Due April 10
+###3: Interactive Map. Due March 27
 Students will use R Studio to build interactive maps of data in Arkansas. Data dictionary required
 
 

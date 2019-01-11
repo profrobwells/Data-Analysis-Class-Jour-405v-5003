@@ -289,6 +289,8 @@ https://www.rstudio.com/resources/cheatsheets/
 
 --**Quiz on Basic R functions**
 
+--Describe Assignment #1: Static Graphic 
+
 --Twitter Metadata  
 
 --Filters, Grouping, Sorting
@@ -348,9 +350,11 @@ For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tr
 #Week #4: Using R to build basic graphs and charts  
 
 **Agenda** 
---2/4/2019 - Week 4  
+--2/4/2019 - Week 4 
+
+--**Assignment #1 due Feb. 6: Static Graphic**
+
 --GGplot  
---Describe Assignment #1: Static Graphic  
 --Conventions in coding     
 --R Markdown  
 --Work with sample Twitter data  
@@ -391,8 +395,6 @@ charts_with_ggplot by Andrew Ba Tran, Washington Post
 
 **Agenda**
 --2/11/2019 - Week 5
-
---**Assignment #1 due: Static Graphic**
 
 --Themes for data viz library(ggthemes) 
 
@@ -509,7 +511,7 @@ Installing Git for a Mac - Andrew Ba Tran
 **Agenda**
 --2/25/2019 - Week 7  
 
---**Quiz on GitHub** 
+--**Due: Assignment #2. Visualization of Twitter data**
 
 --Analyzing Tweets from public officials.
 Dataset TK 
@@ -543,6 +545,8 @@ Twitter meta data
 
 **Agenda**
 --3/4/2019 - Week 8  
+
+--**Quiz on GitHub** 
 
 --R Markdown, Desktop Publishing
   --Andrew Ba Tran - Week 5 Publishing
@@ -610,7 +614,8 @@ Line breaks: Use HTML tags. Adding <br> will give a single line break --     opt
 **Agenda**
 --3/11/2019 - Week 9  
 
---**Due: Assignment #2. Visualization of Twitter data**
+--**Extra Grad Assignment** - Scraping Twitter. Due March 13.
+
 --Basic text mining techniques  
 --Lubridate  
 
@@ -651,6 +656,8 @@ Data Wrangling-Text Mining in Twitter.R
 
 **Agenda**
 --3/25/2019 - Week 10  
+
+--**Assignment #3. Interactive Map**
 
 --Produce a basic interactive map in R, post on WordPress
 
@@ -709,7 +716,6 @@ The Journalist as Programmer: A Case Study of The New York Times Interactive New
 **Agenda**
 --4/8/2019 - Week 12  
 
---**Assignment #3. Interactive Map**
 
 --Web Scraping in R  
 --Application Programming Interface - API  
@@ -735,7 +741,7 @@ https://medium.com/@LewisMenelaws/a-beginners-guide-to-web-apis-and-how-they-wil
 **Resources:**
 
 **Exercises**
---MA Students, Census API assignment
+--MA Students, Census API exercise
 **--**  
 
 
@@ -825,9 +831,3 @@ Second, install RStudio, an excellent user interface that helps you manage and c
 
 More information:
 http://www.machlis.com/R4Journalists/download-r-and-rstudio.html
-
-
-
- rmarkdown::render("/Users/robwells/Dropbox/Classes/Data Analysis Spring 2019 Jour 405v Jour 5003/R Markup-Data Analysis Class/Data-Analysis-Class-Jour-405v-5003/Jour405v-Jour5003 Class.Rmd",
-    output_format="html_document", output_file = "/Users/robwells/Dropbox/Classes/Data Analysis Spring 2019 Jour 405v Jour 5003/R Markup-Data Analysis Class/Data-Analysis-Class-Jour-405v-5003/Jour405v-Jour5003 Class.html" )
-    
