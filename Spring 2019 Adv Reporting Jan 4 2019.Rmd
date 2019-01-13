@@ -1,7 +1,7 @@
 ---
 title: "Spring 2019 Advanced Reporting"
 author: "Rob Wells"
-date: "1/11/2019"
+date: "1/13/2019"
 output:  
   html_document:
       toc: true
@@ -68,9 +68,18 @@ https://www.amazon.com/gp/search?keywords=9781138726918
 **Agenda:**
 --1/14/2019 - Week 1  
 
---Email to students.
+--Email to students
 
---Intro R and R Studio. Open program.
+--Discuss syllabus
+
+--Intro R and R Studio. Open program.  
+
+Machlis website:  
+http://www.machlis.com/R4Journalists/index.html  
+
+--Review demos in Ch. 3
+
+--Review another R tutorial
 https://docs.google.com/presentation/d/1zICxR7qDM3RQ2Nxi5CqHlM3H8I7qoVkNtqcNcnbbDCw/edit#slide=id.p
 
 --Load tutorial
@@ -167,7 +176,7 @@ https://smach.github.io/R4JournalismBook/functions.html
 
 Packages
 https://smach.github.io/R4JournalismBook/packages.html
-**-xyz-**  
+**--**  
 
 
 
@@ -272,6 +281,9 @@ https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-obje
 
 --Cohen, "Numbers in the Newsroom," Common Mistakes.    
 
+--String data manipulation
+https://dereksonderegger.github.io/570L/13-string-manipulation.html
+
 **Resources**  
 
 --All Cheat Sheets
@@ -292,39 +304,36 @@ https://www.rstudio.com/resources/cheatsheets/
 
 --Describe Assignment #1: Managing Data / Static Graphic 
 
---Twitter Metadata  
-
 --Filters, Grouping, Sorting
-
 --Add a column with a math conversion  
-Example: Total column shows winter snowfall in inches. To add a column showing totals in Meters, you can use this format:  
-.snowdata$Meters <- snowdata$Total * 0.0254
-
+--Lubridate
 --Tidyverse 
-
 --Setting up an R Workflow
-http://learn.r-journalism.com/en/publishing/workflow/r-projects/
-
+--Twitter Metadata  
 --Work with sample Twitter data
 
---Lubridate
-  Lubridate intro dealing-with-dates.R
 
 **Notes**  
 --DPLYR
 Five basic verbs • filter() • select() • arrange() • mutate() • summarize() plus group_by()
 ![](Images/Logical_operators.png)   
 
+--Setting up an R Workflow
+http://learn.r-journalism.com/en/publishing/workflow/r-projects/
+
+--Set up column for math calculations
+  Example: Total column shows winter snowfall in inches. To add a column    showing totals in Meters, you can use this format:   
+  .snowdata$Meters <- snowdata$Total * 0.0254
+  
 --Pipes - a Much-Used Command to Link Filters, Functions
 
     pipe %>%
     CMD +  Shift + M
 
---Presentation from Bob Rudis on Writing Readable Code with Pipes, delivered at the rstudio::conf 2017.
-  https://www.rstudio.com/resources/videos/writing-readable-code-with-pipes/
+--Presentation from Bob Rudis on Writing Readable Code with Pipes,           delivered at the rstudio::conf 2017.
+   https://www.rstudio.com/resources/videos/writing-readable-code-with-pipes/
   Pipes as a way of chaining commands.
   object %>% operation() —> result
-
 
 
 **Reading** 
@@ -487,6 +496,10 @@ https://guides.github.com/introduction/flow/
 --GitHub Guides  
 https://guides.github.com/
 
+--Another GitHub guide  
+https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
+
+
 
 **Reading:**  
 Machlis Chs. 11 & 12   
@@ -512,7 +525,7 @@ Installing Git for a Mac - Andrew Ba Tran
 **Agenda**
 --2/25/2019 - Week 7  
 
---**Due: Assignment #2. Visualization of Twitter data**
+--**Due Feb 27: Assignment #2. Visualization of Twitter data**
 
 --Analyzing Tweets from public officials.
 Dataset TK 
@@ -658,7 +671,7 @@ Data Wrangling-Text Mining in Twitter.R
 **Agenda**
 --3/25/2019 - Week 10  
 
---**Assignment #3. Interactive Map**
+--**Due March 27: Assignment #3. Interactive Map**
 
 --Produce a basic interactive map in R, post on WordPress
 
@@ -735,6 +748,9 @@ Nicholas Diakopolous, “Algorithmic Accountability,” Digital Journalism, 2014
 
 APIs - basics
 https://medium.com/@LewisMenelaws/a-beginners-guide-to-web-apis-and-how-they-will-help-you-23923a0da450
+
+A gentle introduction to APIs for data journalists
+https://trendct.org/2016/12/29/fetching-airport-delays-with-python-a-gentle-guide-to-apis-for-journalists/
 
 **MA Students**
 --Sign up for a Census API key: https://api.census.gov/data/key_signup.html
