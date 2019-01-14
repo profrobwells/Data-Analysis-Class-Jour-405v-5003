@@ -1,7 +1,7 @@
 ---
 title: "Spring 2019 Advanced Reporting"
 author: "Rob Wells"
-date: "1/13/2019"
+date: "1/14/2019"
 output:  
   html_document:
       toc: true
@@ -46,13 +46,21 @@ https://www.amazon.com/gp/search?keywords=9781138726918
 > [Link to several free chapters: "CNTL" + click for a New Tab](http://www.machlis.com/R4Journalists/){target="_blank"}
 
 
-> [**Syllabus - Jour 405v:**: "CNTL" + click for a New Tab](https://docs.google.com/document/d/1O4o5V_GomJPa6ojLeE48y9LhKhmbzTsWu9jskcZKkbY/edit){target="_blank"}
+> [**Syllabus - Jour 405v:**: "CNTL" + click for a New Tab](http://bit.do/Jour405v_syllabus){target="_blank"}
 
 
 
-> [**Syllabus - Jour 5003**: "CNTL" + click for a New Tab](https://docs.google.com/document/d/19khrHXSqHIFfRwLRlI_mD3cVNv2gHqj9Ze1GDs22Bis/edit){target="_blank"}
+> [**Syllabus - Jour 5003**: "CNTL" + click for a New Tab](http://bit.do/Jour5003_syllabus){target="_blank"}   
 
-> [**Course Schedule**: "CNTL" + click for a New Tab](https://docs.google.com/spreadsheets/d/1onfY79xjhQVetnFbNvw1z3zLGrSQ1xkAoo0qoCRElGM/edit#gid=681742372){target="_blank"}
+
+> [**Course Schedule**: "CNTL" + click for a New Tab](https://docs.google.com/spreadsheets/d/1onfY79xjhQVetnFbNvw1z3zLGrSQ1xkAoo0qoCRElGM/edit#gid=681742372){target="_blank"}   
+
+
+
+
+> [**Course Website**: "CNTL" + click for a New Tab](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003){target="_blank"}   
+
+
 
 
 ##Upon completion of this course, you will celebrate like this:   
@@ -63,6 +71,7 @@ https://www.amazon.com/gp/search?keywords=9781138726918
 
 
 --------------------------------------------------------------------
+
 #Week #1:Introduction and R Basics
 
 **Agenda:**
