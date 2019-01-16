@@ -80,15 +80,6 @@ https://www.amazon.com/gp/search?keywords=9781138726918
 Machlis website:  
 http://www.machlis.com/R4Journalists/index.html  
 
---Review demos in Ch. 3
-
---Review another R tutorial
-https://docs.google.com/presentation/d/1zICxR7qDM3RQ2Nxi5CqHlM3H8I7qoVkNtqcNcnbbDCw/edit#slide=id.p
-
---Load tutorial
-> [**Download this file and open it in R Studio**: "CNTL" + click for a New Tab](Intro_to_R_Spring_2019_Jan8.R){target="_blank"}
-
-Introduction-to-R-January-2019.R
 
 --R interface explained: Four main windows
 
@@ -106,23 +97,7 @@ https://docs.google.com/presentation/d/1O0eFLypJLP-PAC63Ghq2QURAnhFo6Dxc7nGt4y_l
    Tidyverse  
    Rio
    
-<img src="Images/Popular R libraries.png" width="500" height="250" />
-   
-
---Workflow. 
-  Basic File Exploration 12-25-18.R
-
 --Conventions in coding.
-
---Keyboard Shortcuts
-    
-    Tab - Autocomplete
-    Control (or Command) + UP arrow - last lines run
-    Control (or Command) + Enter - Runs current or selected lines of code 
-    in the top left box of RStudio
-    Shift + Control (or Command) +P - Reruns previous region code
-
---Practice with Twitter dataset. 
 
 --How many rows?
 nrow(yourdataset)
@@ -135,19 +110,95 @@ head(yourdataset)
 
 --rename columns. create columns
 
+   
+##Wednesday, Jan. 16  
+
+--Misc  
+
+      Class intros  
+      Book - Amazon  
+      Installation issues on laptops?  
+      Twitter feeds: @rstudiotips
+      
+
+      
+
+--Run demos from Ch. 3  
+
+
+--Show Collins results  
+
+
+--Twitter analysis of Trump Tweets http://varianceexplained.org/r/trump-tweets/   
+
+
+--Ch 1 & 2 of Machlis: Key Points   
+
+    Reproducible research 
+    Repetitive tasks in modern newsrooms.  Employment reports, crime stats, budgets
+    Variables - an R object
+    Assignment operator <-
+    Case sensitive
+    Vector: A vector can only have one type of data - all integers, all strings
+    Dataframe - like a spreadsheet
+    Save files - Don’t save workspace: because all of your variables will be stored and re-loaded the next time you launch RStudio. It’s too     easy to forget about previously stored variables that can interfere with later work,
+
+    
+--Software packages: tidyverse, rio, pacman
+
+<img src="Images/Popular R libraries.png" width="500" height="250" />
+
+
+
+--Software: How to get details and help
+
+    help(package="dplyr")
+    browseVignettes("NameOfPackage”)
+    help("NameOfFunction”)
+    ??median
+
 --Data Types and R   
-  Machlis: 2.4.2 Data types you’re likely to use often
+
+Machlis: 2.4.2 Data types you’re likely to use often
+  
 ![](Images/Slide Data Structures in R.jpeg)
 
---Converting character strings into numeric
---Change column to number format (first you have to strip out the $)  
---The $ is a special character  
--- earnings$TOTAL.EARNINGS <- gsub("\\$", "", earnings$TOTAL.EARNINGS) 
 
---Function to change the format to numeric  
--- earnings$TOTAL.EARNINGS <- as.numeric(earnings$TOTAL.EARNINGS) 
 
-  see Downloading Data 12-24-18.R
+
+--EXERCISES: Excel vs R  
+--Load tutorial: Introduction-to-R-January-2019.R
+> [**Download this file and open it in R Studio**: "CNTL" + click for a New Tab](Intro_to_R_Spring_2019_Jan8.R){target="_blank"}  
+ 
+
+--Keyboard Shortcuts
+    
+    Tab - Autocomplete
+    Control (or Command) + UP arrow - last lines run
+    Control (or Command) + Enter - Runs current or selected lines of code 
+    in the top left box of RStudio
+    Shift + Control (or Command) +P - Reruns previous region code
+    
+    
+    
+--In Class Exercise:  
+
+    1. Percentage change from 2010-2017.
+    2. Produce a table with 5 counties with most growth. 
+    3. Produce table with 5 counties with greatest population loss
+    4. Graph the top 5 and bottom 5
+    5. Filter just Benton County’s population for 2015
+    6. And if you finish that, bring up AOC.csv. How many rows? How many columns?
+    7. AOC.csv filter the text field for “Pelosi” or “Trump” or “New Deal"
+    For Monday: Import Income data from US Census
+
+
+
+**Notes:**
+--Basic descriptive statistics
+—Review ComputerWorld’s Beginner’s Guide To R
+--Stack Overflow at stackoverflow.com
+
 
 **Reading:**  
 
@@ -159,13 +210,11 @@ https://www.computerworld.com/article/2497143/business-intelligence/business-int
 --Twitter analysis of Trump Tweets
 http://varianceexplained.org/r/trump-tweets/
 
-**Notes:**
---Data Wrangling-Text Mining in Twitter. 
---See entire scraping sequence. Extract from Twitter.
---Basic descriptive statistics
---Chart
---Export Static
---Story
+--Review another R tutorial
+https://docs.google.com/presentation/d/1zICxR7qDM3RQ2Nxi5CqHlM3H8I7qoVkNtqcNcnbbDCw/edit#slide=id.p
+
+  
+
 
 **Resources:**
 RStudio Navigation Tricks You Might’ve Missed
@@ -211,6 +260,18 @@ https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r
 **Exercise**
 Median Income For City.R
 Basic crime rate in R exercise.txt
+Downloading Data 12-24-18.R
+
+
+--Converting character strings into numeric
+--Change column to number format (first you have to strip out the $)  
+--The $ is a special character  
+-- earnings$TOTAL.EARNINGS <- gsub("\\$", "", earnings$TOTAL.EARNINGS) 
+
+--Function to change the format to numeric  
+-- earnings$TOTAL.EARNINGS <- as.numeric(earnings$TOTAL.EARNINGS) 
+
+
   
 **Notes**
 --Loading and basic file management
@@ -274,6 +335,11 @@ Visualizing data
   htmlwidgets - web visualization interactives
   plotly - exporting charts online
 
+--Data Wrangling-Text Mining in Twitter. 
+--See entire scraping sequence. Extract from Twitter.
+--Chart
+--Export Static  
+
 
 **Reading:**
 
@@ -288,6 +354,7 @@ https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-obje
 https://dereksonderegger.github.io/570L/13-string-manipulation.html
 
 **Resources**  
+
 
 --All Cheat Sheets
 https://www.rstudio.com/resources/cheatsheets/

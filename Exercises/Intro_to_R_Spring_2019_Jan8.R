@@ -42,6 +42,7 @@ install.packages("tidyverse")
 install.packages("readxl")
 install.packages("dplyr")
 install.packages("janitor")
+install.packages("here")
 
 ### Load Libraries  
 
@@ -51,6 +52,7 @@ library (readxl)
 library (dplyr)
 library(rio)
 library(janitor)
+library(here)
 
 
 #Get census data
@@ -134,6 +136,17 @@ TopGrowth <- ArkCensus%>%select(county, Pct2017)%>%filter(Pct2017 > 0.0074)
 #Find all places with below average crime
 
 MajorLosers <- ArkCensus%>%select(county, Pct2017)%>%filter(Pct2017 < -0.0093)
+
+#Filter
+Filter
+Washington1 <- subset(ArkCensus, County=="Washington County, Arkansas")  
+
+Using Wildcards
+WashingtonCo <- subset(ArkCensus, grepl("^Washington", County))
+
+
+#Write.csv
+write.csv(Washington1, "Washington1.csv")
 
 
 #-------------------------------------------------------------------#
