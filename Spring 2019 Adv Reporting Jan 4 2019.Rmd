@@ -222,7 +222,7 @@ https://smach.github.io/R4JournalismBook/packages.html
 
 
 
-#Week #2: Basic Data Viz. Use R instead of Excel. Loading and basic file management  
+#Week #2: File management  
 
 **Agenda:**
 --1/21/2019 - Week 2  
@@ -284,9 +284,9 @@ https://smach.github.io/R4JournalismBook/packages.html
 
 **Exercise**
 
---Loading Data from U.S. Census
+--Loading Data from U.S. Census & Student Loans
 --Load tutorial: Downloading Data 12-24-18.R
-> [**Download this file and open it in R Studio**](XXXXXX){target="_blank"} 
+> [**Download this file and open it in R Studio**](https://bit.ly/2HpApQ7){target="_blank"} 
 
 
 --Loading and basic file management
