@@ -1,7 +1,7 @@
 ---
 title: "Spring 2019 Advanced Reporting"
 author: "Rob Wells"
-date: "1/14/2019"
+date: "1/22/2019"
 output:  
   html_document:
       toc: true
@@ -110,7 +110,7 @@ head(yourdataset)
 
 --rename columns. create columns
 
-   
+--------------------------------------------------------------------   
 ##Wednesday, Jan. 16  
 
 --Misc  
@@ -121,8 +121,7 @@ head(yourdataset)
       Twitter feeds: @rstudiotips
       
 
-      
-
+ 
 --Run demos from Ch. 3  
 
 
@@ -168,8 +167,9 @@ Machlis: 2.4.2 Data types you’re likely to use often
 
 --EXERCISES: Excel vs R  
 --Load tutorial: Introduction-to-R-January-2019.R
-> [**Download this file and open it in R Studio**: "CNTL" + click for a New Tab](Intro_to_R_Spring_2019_Jan8.R){target="_blank"}  
- 
+> [**Download this file and open it in R Studio**](https://bit.ly/2MjSSfJ){target="_blank"}  
+
+--Left click on the page, remove .txt extension, save as all files 
 
 --Keyboard Shortcuts
     
@@ -179,21 +179,6 @@ Machlis: 2.4.2 Data types you’re likely to use often
     in the top left box of RStudio
     Shift + Control (or Command) +P - Reruns previous region code
     
-    
-    
---In Class Exercise:  
-
-    1. Percentage change from 2010-2017.
-    2. Produce a table with 5 counties with most growth. 
-    3. Produce table with 5 counties with greatest population loss
-    4. Graph the top 5 and bottom 5
-    5. Filter just Benton County’s population for 2015
-    6. And if you finish that, bring up AOC.csv. How many rows? How many columns?
-    7. AOC.csv filter the text field for “Pelosi” or “Trump” or “New Deal"
-    For Monday: Import Income data from US Census
-
-
-
 **Notes:**
 --Basic descriptive statistics
 —Review ComputerWorld’s Beginner’s Guide To R
@@ -215,7 +200,6 @@ https://docs.google.com/presentation/d/1zICxR7qDM3RQ2Nxi5CqHlM3H8I7qoVkNtqcNcnbb
 
   
 
-
 **Resources:**
 RStudio Navigation Tricks You Might’ve Missed
 https://rviews.rstudio.com/2016/11/11/easy-tricks-you-mightve-missed/
@@ -234,46 +218,77 @@ https://smach.github.io/R4JournalismBook/packages.html
 
 --------------------------------------------------------------------
 
+
+
+
+
 #Week #2: Basic Data Viz. Use R instead of Excel. Loading and basic file management  
 
 **Agenda:**
 --1/21/2019 - Week 2  
 
---Use R instead of Excel: Andrew Ba Tran  
-    Excellent Tutorial Spelling out Excel and Comparable Commands in R  
-https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/  
-    Basic data work- head to http://bit.ly/excel_and_r 
 
---Export data 
-  Write Export output this file to a CSV or Excel  write.csv or write.excel
-  write.csv(AR2016_SMALL,"AR2016_SMALL.csv")  
-  
---More on Data Types and R   
-  Downloading Data 12-24-18.R
 
---Basic data visualization
-  Basic Data Visualization 12-26-18.R
-  Basic-Chart-January-2018.R
-  
---Work with sample Twitter data
+
+
+##Wednesday, Jan. 23 
+
+--Next week Quiz on Basic R functions described so far in exercises. 
+
+--Readings / Coursework for MA Students
+> [**Sign up for this free class from Nick Diakopolous**](https://twitter.com/utknightcenter/status/1085657878361305100){target="_blank"}   
+
+    --Workload TBD - I will assign select videos and readings from this class. 
 
 **Exercise**
-Median Income For City.R
-Basic crime rate in R exercise.txt
-Downloading Data 12-24-18.R
+
+--Load tutorial: Introduction-to-R-January-2019.R
+> [**Download this file and open it in R Studio**](https://bit.ly/2MjSSfJ){target="_blank"}  
+
+--Based on this tutorial, perform this exercise:  
+
+    1. Percentage change from 2010-2017.
+    2. Produce a table with 5 counties with most growth. 
+    3. Produce table with 5 counties with greatest population loss
+    4. Graph the top 5 and bottom 5
+    5. Filter just Benton County’s population for 2015
+    6. And if you finish that, bring up AOC.csv. How many rows? How many columns?
+    7. AOC.csv filter the text field for “Pelosi” or “Trump” or “New Deal"
 
 
---Converting character strings into numeric
---Change column to number format (first you have to strip out the $)  
---The $ is a special character  
--- earnings$TOTAL.EARNINGS <- gsub("\\$", "", earnings$TOTAL.EARNINGS) 
+--**The course GitHub Page**
+> [**Here it is**](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003){target="_blank"}  
 
---Function to change the format to numeric  
--- earnings$TOTAL.EARNINGS <- as.numeric(earnings$TOTAL.EARNINGS) 
+--See Data folder  
+
+    Click AOC.csv   
+    "View raw"   
+    Cntl + click (or right click) - Save As - AOC.csv   
 
 
-  
-**Notes**
+
+--**Ch 3 & 4 of Machlis: Key Points**
+
+    Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
+    Median Income for a City
+    Loading packages
+    
+    Ch 4 Importing Data
+    How read.table() works for importing data:      
+    Loading data
+    Manipulating data: dplyr -  stringr
+    Data Management: mutate rename bind_rows 
+    
+
+**Exercise**
+
+--Loading Data from U.S. Census
+--Load tutorial: Downloading Data 12-24-18.R
+> [**Download this file and open it in R Studio**](XXXXXX){target="_blank"} 
+
+
 --Loading and basic file management
 
     Bringing in data
@@ -284,24 +299,7 @@ Downloading Data 12-24-18.R
     Manipulating the data
     Exporting  
 
---How read.table() works for importing data:      
-<img src="Images/ImportingDataTip.jpg", width="300" height="100" />
-
-
-Loading data
-  RSQlite - read data from a database
-  xlsx - read in Excel spreadsheets
-
-Manipulating data
-  dplyr - fast data work
-  stringr - work with strings
-
-Data Management
-  mutate Create new column(s) in the data, or change existing column(s).
-  rename Rename column(s).  
-  bind_rows Merge two data frames into one, combining data from columns with the same name.
-
-Math 
+--Math 
 --Summary Statistics
 
   summary(Crime)
@@ -330,17 +328,11 @@ Math
   * the function return() assigns the result of the math to percent_change from the first line
   Build enough functions and you can save them as your own package.
 
-Visualizing data
-  ggplot2 - charts and maps
-  htmlwidgets - web visualization interactives
-  plotly - exporting charts online
-
---Data Wrangling-Text Mining in Twitter. 
---See entire scraping sequence. Extract from Twitter.
---Chart
---Export Static  
-
-
+--Export data 
+  Write Export output this file to a CSV or Excel  write.csv or write.excel
+  write.csv(AR2016_SMALL,"AR2016_SMALL.csv") 
+  
+  
 **Reading:**
 
 --Machlis. Chapter 3 & 4.  
@@ -348,12 +340,21 @@ Visualizing data
 --Study Twitter meta data  
 https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object.html
 
+--Look at this example: Ocasio.csv  (in data folder of course page)
+
 --Cohen, "Numbers in the Newsroom," Common Mistakes.    
 
 --String data manipulation
 https://dereksonderegger.github.io/570L/13-string-manipulation.html
 
+--Follow StoryBench, Northeastern Univ.
+https://twitter.com/storybench
+
 **Resources**  
+--Use R instead of Excel: Andrew Ba Tran  
+    Excellent Tutorial Spelling out Excel and Comparable Commands in R  
+https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/  
+    Basic data work- head to http://bit.ly/excel_and_r 
 
 
 --All Cheat Sheets
@@ -383,7 +384,19 @@ https://www.rstudio.com/resources/cheatsheets/
 --Work with sample Twitter data
 
 
-**Notes**  
+**Exercises**
+
+Median Income For City.R
+Basic crime rate in R exercise.txt
+Twitter Metadata  
+Work with sample Twitter data
+
+**Notes** 
+
+--Basic data visualization
+  Basic Data Visualization 12-26-18.R
+  Basic-Chart-January-2018.R
+
 --DPLYR
 Five basic verbs • filter() • select() • arrange() • mutate() • summarize() plus group_by()
 ![](Images/Logical_operators.png)   
@@ -405,6 +418,15 @@ http://learn.r-journalism.com/en/publishing/workflow/r-projects/
   Pipes as a way of chaining commands.
   object %>% operation() —> result
 
+--Visualizing data
+  ggplot2 - charts and maps
+  htmlwidgets - web visualization interactives
+  plotly - exporting charts online
+
+--Data Wrangling-Text Mining in Twitter. 
+--See entire scraping sequence. Extract from Twitter.
+--Chart
+--Export Static  
 
 **Reading** 
 Machlis Chs. 5 & 6. 
@@ -415,12 +437,14 @@ Transforming and Analyzing Data dplyr.pdf -- Andrew Ba Tran, Washington Post
 
 For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tran
 
+--Read Kavanaugh text mining story: Text analysis of Brett Kavanaugh’s opinion.  
+http://www.storybench.org/bringing-textual-analysis-tools-to-judge-brett-kavanaughs-latest-opinion/
+
 **Resources:**
 
 --For analysis library(dplyr) 
 
 
-**Exercises**
 **--**  
 
 
@@ -437,7 +461,10 @@ For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tr
 --GGplot  
 --Conventions in coding     
 --R Markdown  
---Work with sample Twitter data  
+--Work with sample Twitter data 
+
+**Exercises**
+--Ch. 3.8 Run a remote script to make an interactive map
 
 **Notes**  
 
