@@ -102,7 +102,7 @@ glimpse(ArkCo_Income_2017)
 #Delete First Row Headers
 #read.csv(.... , skip=1)
 
-ArkCo_Income2_2017_copy <- rio::import("Data/ArkCo_Income2_2017_copy.csv", skip=1)
+ArkCo_Income_2017 <- rio::import("Data/ArkCo_Income_2017.csv", skip=1)
 
 #Clean Headers - Janitor package
 library(janitor)
@@ -159,6 +159,15 @@ bind_rows Merge two data frames into one, combining data from columns with the s
 --Export data 
 Write Export output this file to a CSV or Excel  write.csv or write.excel
 write.csv(AR2016_SMALL,"AR2016_SMALL.csv") 
+
+#Quick Data Viz
+#Basic graphs
+plot(ArkCo_Income_2017$median_income)
+
+hist(ArkCo_Income_2017$median_income)  
+boxplot(ArkCo_Income_2017$median_income)
+barplot(ArkCo_Income_2017$median_income)
+barplot(sort(ArkCo_Income_2017$median_income, decreasing = TRUE))
 
 
 #--------------------------------------------------------------------#

@@ -150,16 +150,15 @@ write.csv(Washington1, "Washington1.csv")
 
 
 #-------------------------------------------------------------------#
-#Build a chart - Total loan disbursement
+#Build a chart - Total Growth
 #-------------------------------------------------------------------#
 
 library(ggplot2)
-
-TopGrowthChart <- ggplot(TopGrowth, aes(x = county, y=Pct2017)) +
-geom_bar(stat = "identity") +
-coord_flip() +     #this makes it a horizontal bar chart instead of vertical
-labs(title = "Your title here", 
-subtitle = "Subtitle and source ",
+TopGrowthChart <- ggplot(TopGrowth, aes(x = reorder(county, -Pct2017), y = Pct2017))  +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+labs(title = "Top Growing Counties in Arkansas", 
+subtitle = "U.S. Census Data, 2017: https://factfinder.census.gov",
 caption = "Graphic by Rob Wells",
 x="County",
 y="Population growth 2016-2017")
