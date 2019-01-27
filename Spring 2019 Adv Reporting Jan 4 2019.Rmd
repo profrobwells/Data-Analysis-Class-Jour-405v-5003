@@ -293,9 +293,10 @@ https://www.rstudio.com/resources/cheatsheets/
 > [ProPublica Sponsoring Students for Conferences](https://www.propublica.org/article/propublica-wants-to-pay-for-students-to-attend-a-journalism-conference-in-2019){target="_blank"}  
      
 > [Apply for Scholarships: Deadline Feb. 15](https://fulbright.uark.edu/departments/journalism/resources/scholarships.php){target="_blank"}       
+
      
-     Special Certification in Crime Data Analysis
-     XXXX RTMDx_Flyer_Spring2019 XXXX
+> [Special Certification in Crime Data Analysis](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/blob/master/Images/RTMDx_Flyer_Spring2019.pdf){target="_blank"}   
+
 
 **Agenda**
 
