@@ -217,21 +217,9 @@ https://smach.github.io/R4JournalismBook/packages.html
 
 
 --------------------------------------------------------------------
+#Week #2 - 1/21/2019: File management  
 
-
-
-
-
-#Week #2: File management  
-
-**Agenda:**
---1/21/2019 - Week 2  
-
-
-
-
-
-##Wednesday, Jan. 23 
+##Wednesday, Jan. 23 Agenda
 
 --Next week Quiz on Basic R functions described so far in exercises. 
 
@@ -256,6 +244,63 @@ https://smach.github.io/R4JournalismBook/packages.html
     7. AOC.csv filter the text field for “Pelosi” or “Trump” or “New Deal"
 
 
+**Reading:**
+
+--Machlis. Chapter 3 & 4.  
+
+--Study Twitter meta data  
+https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object.html
+
+--Look at this example: Ocasio.csv  (in data folder of course page)
+
+--Cohen, "Numbers in the Newsroom," Common Mistakes.    
+
+--String data manipulation
+https://dereksonderegger.github.io/570L/13-string-manipulation.html
+
+--Follow StoryBench, Northeastern Univ.
+https://twitter.com/storybench
+
+**Resources**  
+--Use R instead of Excel: Andrew Ba Tran  
+    Excellent Tutorial Spelling out Excel and Comparable Commands in R  
+https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/  
+Basic data work- head to http://bit.ly/excel_and_r 
+
+
+--All Cheat Sheets
+https://www.rstudio.com/resources/cheatsheets/
+
+**--**  
+
+
+
+--------------------------------------------------------------------
+
+#Week #3- 1/28/2019: R Twitter Data. Data Types. Scripts
+
+##Monday, Jan. 28   
+
+--**Quiz on Basic R functions for Wednesday**
+
+--Describe Assignment #1 due Feb. 6: Managing Data / Static Graphic 
+
+--Announcements  
+
+      Blackboard site has web links for course
+      
+     
+> [ProPublica Sponsoring Students for Conferences](https://www.propublica.org/article/propublica-wants-to-pay-for-students-to-attend-a-journalism-conference-in-2019){target="_blank"}  
+     
+> [Apply for Scholarships: Deadline Feb. 15](https://fulbright.uark.edu/departments/journalism/resources/scholarships.php){target="_blank"}       
+     
+     Special Certification in Crime Data Analysis
+     XXXX RTMDx_Flyer_Spring2019 XXXX
+
+**Agenda**
+
+--Continue with week #2 tutorial
+
 --**The course GitHub Page**
 > [**Here it is**](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003){target="_blank"}  
 
@@ -265,6 +310,24 @@ https://smach.github.io/R4JournalismBook/packages.html
     "View raw"   
     Cntl + click (or right click) - Save As - AOC.csv   
 
+**Exercise**
+
+--Loading Data from U.S. Census & Student Loans
+--Load tutorial: Downloading Data 12-24-18.R    
+
+> [**Download this file and open it in R Studio**](https://bit.ly/2HpApQ7){target="_blank"} 
+
+
+--Loading and basic file management
+
+    Bringing in data
+    Data Frames
+    Extracting interesting details
+    Cleaning the data
+    Reshaping the format
+    Manipulating the data
+    Exporting  
+    Add a column with a math conversion  
 
 
 --**Ch 3 & 4 of Machlis: Key Points**
@@ -280,25 +343,7 @@ https://smach.github.io/R4JournalismBook/packages.html
     Loading data
     Manipulating data: dplyr -  stringr
     Data Management: mutate rename bind_rows 
-    
 
-**Exercise**
-
---Loading Data from U.S. Census & Student Loans
---Load tutorial: Downloading Data 12-24-18.R
-> [**Download this file and open it in R Studio**](https://bit.ly/2HpApQ7){target="_blank"} 
-
-
---Loading and basic file management
-
-    Bringing in data
-    Data Frames
-    Extracting interesting details
-    Cleaning the data
-    Reshaping the format
-    Manipulating the data
-    Exporting  
-    Add a column with a math conversion  
 
 --Math 
 --Summary Statistics
@@ -329,65 +374,37 @@ https://smach.github.io/R4JournalismBook/packages.html
   * the function return() assigns the result of the math to percent_change from the first line
   Build enough functions and you can save them as your own package.
 
-
-
 --Set up column for math calculations
   Example: Total column shows winter snowfall in inches. To add a column    showing totals in Meters, you can use this format:   
   .snowdata$Meters <- snowdata$Total * 0.0254
-  
   
 --Export data 
   Write Export output this file to a CSV or Excel  write.csv or write.excel
   write.csv(AR2016_SMALL,"AR2016_SMALL.csv") 
   
-  
-**Reading:**
+**Reading** 
+Machlis Chs. 5 & 6. 
 
---Machlis. Chapter 3 & 4.  
+Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Economics and Ethics,” Digital Journalism, 2015
 
---Study Twitter meta data  
-https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object.html
+**Resources:**
 
---Look at this example: Ocasio.csv  (in data folder of course page)
+--For analysis library(dplyr)  
 
---Cohen, "Numbers in the Newsroom," Common Mistakes.    
+##Wednesday, Jan. 30   
 
---String data manipulation
-https://dereksonderegger.github.io/570L/13-string-manipulation.html
+--**Quiz on Basic R functions**
 
---Follow StoryBench, Northeastern Univ.
-https://twitter.com/storybench
-
-**Resources**  
---Use R instead of Excel: Andrew Ba Tran  
-    Excellent Tutorial Spelling out Excel and Comparable Commands in R  
-https://trendct.org/2015/06/12/r-for-beginners-how-to-transition-from-excel-to-r/  
-    Basic data work- head to http://bit.ly/excel_and_r 
+--Setting up an R Workflow
+--Twitter Metadata  
+--Work with sample Twitter data
+--Lubridate  
 
 
---All Cheat Sheets
-https://www.rstudio.com/resources/cheatsheets/
-
-**--**  
-
-
-
---------------------------------------------------------------------
-
-#Week #3: R Twitter Data. Data Types. Scripts
-
-**Agenda**
---1/28/2019 - Week 3  
-
-##Monday, Jan. 28   
-
---**Quiz on Basic R functions for Wednesday**
-
---Describe Assignment #1 due Feb. 6: Managing Data / Static Graphic 
-
---Key Concepts - Tasks This Week:    
+--Key Concepts - Moving Forward:    
 
     Dplyr: Filters, Grouping, Sorting, pipes %>%  
+    Pipe shortcut = CMD + SHIFT + M
     Basic data visualization  
     Tidyverse 
     Work with sample Twitter data
@@ -433,33 +450,6 @@ Five basic verbs • filter() • select() • arrange() • mutate() • summar
     See entire scraping sequence. Extract from Twitter.
 
 
-**Reading** 
-Machlis Chs. 5 & 6. 
-
-Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Economics and Ethics,” Digital Journalism, 2015
-
-Transforming and Analyzing Data dplyr.pdf -- Andrew Ba Tran, Washington Post
-
-For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tran
-
---Read Kavanaugh text mining story: Text analysis of Brett Kavanaugh’s opinion.  
-http://www.storybench.org/bringing-textual-analysis-tools-to-judge-brett-kavanaughs-latest-opinion/
-
-    
-       
-          
-**Resources:**
-
---For analysis library(dplyr)  
-
-##Wednesday, Jan. 30   
-
---**Quiz on Basic R functions**
-
---Setting up an R Workflow
---Twitter Metadata  
---Work with sample Twitter data
---Lubridate  
 
 **Exercises**  
 
@@ -502,6 +492,8 @@ So geom_point()
  geom_boxplot()   
  
 **Notes**   
+--How Do I?
+https://smach.github.io/R4JournalismBook/HowDoI.html
 
 --Setting up an R Workflow
 http://learn.r-journalism.com/en/publishing/workflow/r-projects/
@@ -519,7 +511,8 @@ https://www.youtube.com/watch?v=Sx7d7eGRSj0&t=9s
 
 **Reading**  
 Machlis Chs. 7 & 8.    
-Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and How You Can Avoid Them,” American Press Institute, 2016
+
+Transforming and Analyzing Data dplyr.pdf -- Andrew Ba Tran, Washington Post
 
 charts_with_ggplot by Andrew Ba Tran, Washington Post
 
@@ -562,8 +555,16 @@ http://vita.had.co.nz/papers/layered-grammar.html
 
 
 **Reading:**  
-Machlis Chs. 9 & 10   
+Machlis Chs. 9 & 10 
+
 Albert Cairo, "The Functional Art," Principles of Data Visualization.   
+
+--Read Kavanaugh text mining story: Text analysis of Brett Kavanaugh’s opinion.  
+http://www.storybench.org/bringing-textual-analysis-tools-to-judge-brett-kavanaughs-latest-opinion/
+
+For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tran
+
+Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and How You Can Avoid Them,” American Press Institute, 2016
 
 
 **Exercises**  

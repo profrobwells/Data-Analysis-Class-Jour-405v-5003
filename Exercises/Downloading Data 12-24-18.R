@@ -7,8 +7,8 @@ install.packages("rio")
 #rio handles more than two dozen formats including tab-separated data (with the extension .tsv), 
 #JSON, Stata, and fixed-width format data (.fwf).
 
-StudentLoans <- rio::import("AR2016_SMALL.csv")
-glimpse(StudentLoans)
+StudentLoans3 <- rio::import('./Data/AR2016_SMALL.csv')
+View(StudentLoans)
 
 # Number columns
 ncol(StudentLoans)
@@ -24,11 +24,11 @@ ncol(StudentLoans)
 #--------------------------------------------------------------------#
   
 #What is the character type?
-  
-#Install tibble for the glimpse function
-library (tibble)
-
-glimpse(StudentLoans)  
+library(dplyr)
+    
+#Tibble or Dplyr for the glimpse function
+dplyr::glimpse(StudentLoans)
+tibble::glimpse(StudentLoans)  
   
 #Convert numbers to "numeric" data
 #We want to turn all columns after HMC2 into numeric
@@ -59,15 +59,15 @@ mean(StudentLoans$TUITIONFEE_IN, na.rm=TRUE)
 # Loading Data from Scratch
 #--------------------------------------------------------------------#
 
-Loading data
-RSQlite - read data from a database
-xlsx - read in Excel spreadsheets
+#Loading data
+#RSQlite - read data from a database
+#xlsx - read in Excel spreadsheets
 
 #Import Income data from US Census
 #INCOME IN THE PAST 12 MONTHS (IN 2017 INFLATION-ADJUSTED DOLLARS) 
 #2013-2017 American Community Survey 5-Year Estimates. S1901. All Arkansas Counties
 
-https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_17_5YR_S1901&prodType=table
+#https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_17_5YR_S1901&prodType=table
 
 #Load Data
 ArkCo_Income_2017 <- rio::import("Data/ArkCo_Income_2017.csv")
@@ -81,8 +81,8 @@ nrow(ArkCo_Income_2017)
 # How many columns?
 ncol(ArkCo_Income_2017)
 
-#Install tibble for the glimpse function
-library (tibble)
+#Install dplyr or tibble for the glimpse function if you haven't already
+#library (tibble)
     
 #Check data types
 glimpse(ArkCo_Income_2017)
@@ -103,9 +103,10 @@ glimpse(ArkCo_Income_2017)
 #read.csv(.... , skip=1)
 
 ArkCo_Income_2017 <- rio::import("Data/ArkCo_Income_2017.csv", skip=1)
+View(ArkCo_Income_2017)
 
 #Clean Headers - Janitor package
-library(janitor)
+#library(janitor)
 
 # Clean up column names to they are R friendly
 ArkCo_Income_2017 <- janitor::clean_names(ArkCo_Income_2017)
@@ -121,10 +122,13 @@ colnames(ArkCo_Income_2017)
 #setnames(d, old = c('a','d'), new = c('anew','dnew'))
 #d
 
+#So the following is a *little intense*
+#We are changing all of the old column names to new ones
+#That's 19 column names we are changing.
 
 #New Names
-library(data.table)
-setnames(ArkCo_Income_2017, old = c('id', 'id2', 'geography', 'households_estimate_total', 
+#library(data.table)
+data.table::setnames(ArkCo_Income_2017, old = c('id', 'id2', 'geography', 'households_estimate_total', 
   'households_estimate_less_than_10_000', 'households_estimate_10_000_to_14_999', 
   'households_estimate_15_000_to_24_999', 'households_estimate_25_000_to_34_999', 
   'households_estimate_35_000_to_49_999', 'households_estimate_50_000_to_74_999', 
@@ -141,14 +145,36 @@ setnames(ArkCo_Income_2017, old = c('id', 'id2', 'geography', 'households_estima
 
 View(ArkCo_Income_2017)  
 
-Manipulating data
-dplyr - fast data work
-stringr - work with strings
+#Manipulating data
+#dplyr - fast data work
+#stringr - work with strings
 
-Data Management
-mutate Create new column(s) in the data, or change existing column(s).
-rename Rename column(s).  
-bind_rows Merge two data frames into one, combining data from columns with the same name.
+#Data Management
+#mutate - Create new column(s) in the data, or change existing column(s).
+#mutate() adds new variables and preserves existing;
+# Newly created variables are available immediately
+
+mtcars <- as.data.frame(mtcars)
+View(mtcars)
+
+mtcars2 <- mtcars %>% as_tibble() %>% mutate(
+  cyl2 = cyl * 2,
+  cyl4 = cyl2 * 2
+)
+
+# window functions are useful for grouped mutates
+mtcars %>%
+  group_by(cyl) %>%
+  mutate(rank = min_rank(desc(mpg)))
+
+#Use mutate to add together low-wage households
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(Low_Wage_Households = rowSums(.[5:7]))
+
+
+rename - Rename column(s).  
+bind_rows - Merge two data frames into one, combining data from columns with the same name.
 
 
 #Other data cleaning tricks
