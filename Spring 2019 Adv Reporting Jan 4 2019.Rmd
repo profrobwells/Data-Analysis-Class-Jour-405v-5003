@@ -162,6 +162,8 @@ Machlis: 2.4.2 Data types you’re likely to use often
   
 ![](Images/Slide Data Structures in R.jpeg)
 
+<img src="Images/Slide Data Structures in R.jpeg" width="300" height="100" />
+
 
 
 
@@ -282,6 +284,8 @@ https://www.rstudio.com/resources/cheatsheets/
 ##Monday, Jan. 28   
 
 --**Quiz on Basic R functions for Wednesday**
+The quiz will be multiple choice and will cover basic file management and data types, stuff I mentioned the first two weeks.
+
 
 --Describe Assignment #1 due Feb. 6: Managing Data / Static Graphic 
 
@@ -296,6 +300,7 @@ https://www.rstudio.com/resources/cheatsheets/
 
      
 > [Special Certification in Crime Data Analysis](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/blob/master/Images/RTMDx_Flyer_Spring2019.pdf){target="_blank"}   
+
 
 
 **Agenda**
@@ -317,6 +322,11 @@ https://www.rstudio.com/resources/cheatsheets/
 --Load tutorial: Downloading Data 12-24-18.R    
 
 > [**Download this file and open it in R Studio**](https://bit.ly/2HpApQ7){target="_blank"} 
+
+#Alternate download option: Use read.table() works for importing data:      
+
+![](Images/ImportingDataTip.jpg)
+
 
 
 --Loading and basic file management

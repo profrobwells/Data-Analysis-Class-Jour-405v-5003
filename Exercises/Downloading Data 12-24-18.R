@@ -7,17 +7,16 @@ install.packages("rio")
 #rio handles more than two dozen formats including tab-separated data (with the extension .tsv), 
 #JSON, Stata, and fixed-width format data (.fwf).
 
-StudentLoans3 <- rio::import('./Data/AR2016_SMALL.csv')
+StudentLoans <- rio::import('./Data/AR2016_SMALL.csv')
 View(StudentLoans)
 
 # Number columns
 ncol(StudentLoans)
 
+#vignettes: Learn about packages and commands
+browseVignettes("rio")
+??rio
 
-#Alternate download option: Use read.table() works for importing data:      
-
-<img src="Images/ImportingDataTip.jpg", width="300" height="100" />
-  
 
 #--------------------------------------------------------------------#
 #Converting character strings into numeric
@@ -29,13 +28,26 @@ library(dplyr)
 #Tibble or Dplyr for the glimpse function
 dplyr::glimpse(StudentLoans)
 tibble::glimpse(StudentLoans)  
-  
+
+#chr stands for character vectors, or strings.
+#int stands for integers.
+#dbl stands for doubles, or real numbers.
+#dttm stands for date-times (a date + a time).
+
 #Convert numbers to "numeric" data
 #We want to turn all columns after HMC2 into numeric
-#HMC2 is Column #9
-StudentLoans[9:102] <- lapply(StudentLoans[9:102], as.numeric)
-View(StudentLoans)
+#HMC2 is Column #10
+
+#Check you have the right names you want to convert
+colnames(StudentLoans[10:102])
+  
+
+StudentLoans[10:102] <- lapply(StudentLoans[10:102], as.numeric)
 glimpse(StudentLoans)  
+#Data changed from <chr> to <dbl>
+
+
+#Run stats
 summary(StudentLoans)
 
 #Do some math - average number of white students
@@ -52,7 +64,6 @@ StudentLoans[!complete.cases(StudentLoans)]
 
 sum(StudentLoans$UGDS_WHITE, na.rm=TRUE)
 mean(StudentLoans$TUITIONFEE_IN, na.rm=TRUE)
-
 
 
 #--------------------------------------------------------------------#
@@ -100,6 +111,7 @@ glimpse(ArkCo_Income_2017)
 
 
 #Delete First Row Headers
+#Reimport the data and skip the first row
 #read.csv(.... , skip=1)
 
 ArkCo_Income_2017 <- rio::import("Data/ArkCo_Income_2017.csv", skip=1)
@@ -116,13 +128,27 @@ View(ArkCo_Income_2017)
 # Still need to fix column names
 colnames(ArkCo_Income_2017)
 
+#You can do it one at a time
+#Column 4 households_estimate_total renamed to household_income
+colnames(ArkCo_Income_2017)[4] <- "household_income"
+colnames(ArkCo_Income_2017)
+
+#change it back
+colnames(ArkCo_Income_2017)[4] <- "households_estimate_total"
+colnames(ArkCo_Income_2017)
+
+#------------------------------------------#
+#Rename a whole slug of columns at once!
+#So the following is a *little intense*
+#------------------------------------------#
+
 #Use setnames from the data.tablepackage will work on data.frames or data.tables
 #Example
 #library(data.table)
 #setnames(d, old = c('a','d'), new = c('anew','dnew'))
 #d
 
-#So the following is a *little intense*
+
 #We are changing all of the old column names to new ones
 #That's 19 column names we are changing.
 
@@ -154,6 +180,7 @@ View(ArkCo_Income_2017)
 #mutate() adds new variables and preserves existing;
 # Newly created variables are available immediately
 
+#An example:
 mtcars <- as.data.frame(mtcars)
 View(mtcars)
 
@@ -167,14 +194,38 @@ mtcars %>%
   group_by(cyl) %>%
   mutate(rank = min_rank(desc(mpg)))
 
-#Use mutate to add together low-wage households
+#Use mutate to add together the percentages of low-wage households
 ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
   replace(is.na(.), 0) %>%
   mutate(Low_Wage_Households = rowSums(.[5:7]))
 
 
-rename - Rename column(s).  
-bind_rows - Merge two data frames into one, combining data from columns with the same name.
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(Low_Wage_Households = rowSums(.[5:14]))
+
+--Export data 
+Write Export output this file to a CSV or Excel  write.csv or write.excel
+write.csv(ArkCo_Income_2017,"ArkCo_Income_2017.csv") 
+
+
+
+#Exercises
+# 1) Create a column for working class households: $25,000 to $50,000
+# 2) Create a column for middle class households: $50,000 to $150,000
+# 3) Create a column for upper income households: More than $150,000
+# 4) Using these percentages, create new columns for low-wage, working class, middle class, and upper income 
+# and calculate the actual number of people in each income group
+# This will require looking at the table data structure, so go to the census.gov link provided above
+
+
+
+
+
+#Other tools
+
+#rename - Rename column(s).  
+#bind_rows - Merge two data frames into one, combining data from columns with the same name.
 
 
 #Other data cleaning tricks
@@ -182,9 +233,6 @@ bind_rows - Merge two data frames into one, combining data from columns with the
 --The $ is a special character  
 -- earnings$TOTAL.EARNINGS <- gsub("\\$", "", earnings$TOTAL.EARNINGS) 
 
---Export data 
-Write Export output this file to a CSV or Excel  write.csv or write.excel
-write.csv(AR2016_SMALL,"AR2016_SMALL.csv") 
 
 #Quick Data Viz
 #Basic graphs
