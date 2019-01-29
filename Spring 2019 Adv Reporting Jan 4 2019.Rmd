@@ -404,8 +404,26 @@ Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Econo
 
 ##Wednesday, Jan. 30   
 
---**Quiz on Basic R functions**
+--**Quiz on Basic R functions**    
 
+--Data Visualization Intro   
+--Load tutorial: Basic Data Visualization 12-26-18.R       
+
+> [**Download this file and open it in R Studio**](https://bit.ly/2RlQtSE){target="_blank"} 
+
+
+
+--Visualizing data
+  
+    ggplot2 - charts and maps
+    htmlwidgets - web visualization interactives
+    plotly - exporting charts online
+    Chart
+    Export Static chart 
+
+
+
+--**Other Topics**   
 --Setting up an R Workflow
 --Twitter Metadata  
 --Work with sample Twitter data
@@ -445,15 +463,6 @@ Five basic verbs • filter() • select() • arrange() • mutate() • summar
    https://www.rstudio.com/resources/videos/writing-readable-code-with-pipes/
   Pipes as a way of chaining commands.
   object %>% operation() —> result
-
-
---Visualizing data
-  
-    ggplot2 - charts and maps
-    htmlwidgets - web visualization interactives
-    plotly - exporting charts online
-    Chart
-    Export Static chart 
 
 
 --Data Wrangling-Text Mining in Twitter. 

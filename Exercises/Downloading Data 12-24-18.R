@@ -199,11 +199,6 @@ ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
   replace(is.na(.), 0) %>%
   mutate(Low_Wage_Households = rowSums(.[5:7]))
 
-
-ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
-  replace(is.na(.), 0) %>%
-  mutate(Low_Wage_Households = rowSums(.[5:14]))
-
 --Export data 
 Write Export output this file to a CSV or Excel  write.csv or write.excel
 write.csv(ArkCo_Income_2017,"ArkCo_Income_2017.csv") 
@@ -219,7 +214,67 @@ write.csv(ArkCo_Income_2017,"ArkCo_Income_2017.csv")
 # This will require looking at the table data structure, so go to the census.gov link provided above
 
 
+#Answers
+# 1) Create a column for working class households: $25,000 to $50,000
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(WorkingClass = rowSums(.[8:9]))
 
+
+# 2) Create a column for middle class households: $50,000 to $150,000
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(MiddleClass = rowSums(.[10:12]))
+
+
+# 3) Create a column for upper income households: More than $150,000
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(UpperIncome = rowSums(.[13:14]))
+
+
+# 4) Using these percentages, create new columns for low-wage, working class, middle class, and upper income 
+# and calculate the actual number of people in each income group
+# This will require looking at the table data structure, so go to the census.gov link provided above
+
+#Copied this as a test
+#ArkCensus$Pct2017 <- ((ArkCensus$x2017-ArkCensus$x2016)/(ArkCensus$x2016))
+
+
+ArkCo_Income_2017$LowWagePop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$Low_Wage_Households)/100)
+
+ArkCo_Income_2017$WorkingClassPop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$WorkingClass)/100)
+
+ArkCo_Income_2017$MiddleClassPop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$MiddleClass)/100)
+
+ArkCo_Income_2017$UpperIncomePop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$UpperIncome)/100)
+
+#For amusement, see if they all add up
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(SumPop = rowSums(.[24:27]))
+
+
+#Eyeball the two columns, household_estimate_total and our SumPop
+#df1 <- select(AR2016ALL, V4:V8, V10:20)
+PopCheck <- select(ArkCo_Income_2017, households_estimate_total, SumPop) 
+       
+#which ones varied the most?
+
+PopCheck$variance <- (ArkCo_Income_2017$households_estimate_total- ArkCo_Income_2017$SumPop) 
+
+#nerdy checking individual
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  +   replace(is.na(.), 0) %>%
+  +   mutate(SumIndivdPct = rowSums(.[5:14]))
+
+#more sum groups
+ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
+  replace(is.na(.), 0) %>%
+  mutate(SumGroupPct = rowSums(.[20:23]))
+
+
+PopCheck <- select(ArkCo_Income_2017, households_estimate_total, SumPop, SumIndivdPct, SumGroupPct) 
 
 
 #Other tools
@@ -283,29 +338,7 @@ citytable$PopEst2017 <- number_with_commas(citytable$`2017estimate`)
 citytable$PopEst2017 <- readr::parse_number(citytable$`2017 estimate`)
 
 
-#-----------------------------#
-#Install pacman adventure
-#-----------------------------#
 
-install.packages("devtools")
-install.packages("tsibble")
-library(devtools)
-
-## Make sure your current packages are up to date
-update.packages()
-#ERROR: this R is version 3.4.3, package 'pacman' requires R >= 3.5.0
-install.packages("devtools")
-devtools::install_github("AndreaCirilloAC/updateR")
-updateR(admin_password = "taxi66") 
-# Where "PASSWORD" stands for your system password
-#https://www.r-statistics.com/2018/04/r-3-5-0-is-released-major-release-with-many-new-features/
-  
-
-## devtools is required
-library(devtools)
-install_github("trinker/pacman")
-
-install.packages("pacman", repos="https://cran.rstudio.com/mirrors.html 576", dependencies=TRUE)
 
 
 #-----------------------------#
