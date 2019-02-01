@@ -316,20 +316,21 @@ The quiz will be multiple choice and will cover basic file management and data t
     "View raw"   
     Cntl + click (or right click) - Save As - AOC.csv   
 
-**Exercise**
+**Exercise**    
 
---Loading Data from U.S. Census & Student Loans
---Load tutorial: Downloading Data 12-24-18.R    
+--Loading Data from U.S. Census & Student Loans    
+--Load tutorial: Downloading Data 12-24-18.R     
+
 
 > [**Download this file and open it in R Studio**](https://bit.ly/2HpApQ7){target="_blank"} 
 
-#Alternate download option: Use read.table() works for importing data:      
+--Alternate download option: Use read.table() works for importing data:      
 
 ![](Images/ImportingDataTip.jpg)
 
 
 
---Loading and basic file management
+--**Loading and basic file management**
 
     Bringing in data
     Data Frames
@@ -345,7 +346,6 @@ The quiz will be multiple choice and will cover basic file management and data t
 
     Ch 3 Exercises:
     Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
     Median Income for a City
     Loading packages
     
@@ -389,7 +389,7 @@ The quiz will be multiple choice and will cover basic file management and data t
   Example: Total column shows winter snowfall in inches. To add a column    showing totals in Meters, you can use this format:   
   .snowdata$Meters <- snowdata$Total * 0.0254
   
---Export data 
+--**Export data**    
   Write Export output this file to a CSV or Excel  write.csv or write.excel
   write.csv(AR2016_SMALL,"AR2016_SMALL.csv") 
   
@@ -402,6 +402,8 @@ Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Econo
 
 --For analysis library(dplyr)  
 
+--------------------------------------------------------------------
+
 ##Wednesday, Jan. 30   
 
 --**Quiz on Basic R functions**    
@@ -411,25 +413,56 @@ Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Econo
 
 > [**Download this file and open it in R Studio**](https://bit.ly/2RlQtSE){target="_blank"} 
 
+--Visualizing data
+  
+    ggplot2 - charts and maps
+    Export Static chart 
+
+**Exercises**
+
+Basic Data Visualization 12-26-18.R  
+
+**--**  
 
 
+--------------------------------------------------------------------
+
+#Week #4 - 2/4/2019: Using R to build basic graphs and charts  
+
+-----------------
+
+##Monday, Feb. 4 
+**Agenda** 
+
+--**Assignment #1 due Feb. 6: Managing Data / Static Graphic**
+
+--GGplot 
+--Work with sample Twitter data  
+--Conventions in coding     
+ 
 --Visualizing data
   
     ggplot2 - charts and maps
     htmlwidgets - web visualization interactives
     plotly - exporting charts online
     Chart
-    Export Static chart 
 
+**Exercises**
+--Ch. 3.8 Run a remote script to make an interactive map
+--Median Income For City.R 
+--Work with sample Twitter data   
 
+**Notes**  
 
---**Other Topics**   
---Setting up an R Workflow
---Twitter Metadata  
---Work with sample Twitter data
---Lubridate  
+--A handy explanation of ggplot and its components  
+![](Images/GGplot_explainer.png)
+If you’re using ggplot: plus it!
+For everything else: pipe it!
 
-
+So geom_point() 
+ geom_bar()
+ geom_boxplot() 
+ 
 --Key Concepts - Moving Forward:    
 
     Dplyr: Filters, Grouping, Sorting, pipes %>%  
@@ -437,14 +470,6 @@ Seth C. Lewis, et al. “Big Data and Journalism: Epistemology, Expertise, Econo
     Basic data visualization  
     Tidyverse 
     Work with sample Twitter data
-
-
-**Exercises**
-
-  
-Basic Data Visualization 12-26-18.R  
-Median Income For City.R 
-Work with sample Twitter data   
 
 **Notes** 
 
@@ -470,75 +495,53 @@ Five basic verbs • filter() • select() • arrange() • mutate() • summar
     See entire scraping sequence. Extract from Twitter.
 
 
+--**Other Topics**   
+--Setting up an R Workflow
+--Twitter Metadata  
+--Work with sample Twitter data
+--Lubridate  
+
+ 
+Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
+ 
+**Notes**   
+--How Do I?
+https://smach.github.io/R4JournalismBook/HowDoI.html
+
+**Resources**  
+Basic Charts in R  
+https://www.youtube.com/watch?v=1EUJ0tsVsUA&t=12s
+
+**Reading**  
+    
+    Machlis Chs. 7 & 8.    
+    
+    Transforming and Analyzing Data dplyr.pdf --       Andrew Ba Tran, Washington Post
+    
+    Charts_with_ggplot by Andrew Ba Tran,
+    Washington Post
+
+**--**  
+
+-----------------
+
+##Wednesday, Feb. 6
+
+--Note: Dr. Wells will be late - 10 a.m. - due to data mining presentation    
+--Begin class by working on XXXX exercise  
+
+--GGplot Video from Andrew Ba Tran  
+https://www.youtube.com/watch?v=Sx7d7eGRSj0&t=9s
+
 
 **Exercises**  
 
 Basic crime rate in R exercise.txt
 Basic-Chart-January-2018.R  
 Twitter Metadata  
-Work with sample Twitter data 
-
-
-**--**  
-
-
-
---------------------------------------------------------------------
-
-#Week #4: Using R to build basic graphs and charts  
-
-**Agenda** 
---2/4/2019 - Week 4 
-
---**Assignment #1 due Feb. 6: Managing Data / Static Graphic**
-
---GGplot  
---Conventions in coding     
---R Markdown  
---Work with sample Twitter data 
-
-**Exercises**
---Ch. 3.8 Run a remote script to make an interactive map
-
-**Notes**  
-
---A handy explanation of ggplot and its components  
-![](Images/GGplot_explainer.png)
-If you’re using ggplot: plus it!
-For everything else: pipe it!
-
-So geom_point() 
- geom_bar()
- geom_boxplot()   
- 
-**Notes**   
---How Do I?
-https://smach.github.io/R4JournalismBook/HowDoI.html
-
---Setting up an R Workflow
-http://learn.r-journalism.com/en/publishing/workflow/r-projects/
-
-**Resources**  
-Basic Charts in R  
-https://www.youtube.com/watch?v=1EUJ0tsVsUA&t=12s
-
-GGplot Video from Andrew Ba Tran  
-https://www.youtube.com/watch?v=Sx7d7eGRSj0&t=9s
-
-
-
-
-
-**Reading**  
-Machlis Chs. 7 & 8.    
-
-Transforming and Analyzing Data dplyr.pdf -- Andrew Ba Tran, Washington Post
-
-charts_with_ggplot by Andrew Ba Tran, Washington Post
-
-**--**  
-
-
+Work with sample Twitter data
 
 --------------------------------------------------------------------
 
@@ -662,6 +665,10 @@ Installing Git for a Mac - Andrew Ba Tran
     Team 2 forks the code. Makes changes.  
     Pull & Commit  
 
+
+--Setting up an R Workflow
+http://learn.r-journalism.com/en/publishing/workflow/r-projects/
+
 **Workbooks, Markdown**
 **--**  
 
@@ -710,6 +717,7 @@ Twitter meta data
 --3/4/2019 - Week 8  
 
 --**Quiz on GitHub** 
+--R Markdown 
 
 --R Markdown, Desktop Publishing
   --Andrew Ba Tran - Week 5 Publishing
