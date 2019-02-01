@@ -448,12 +448,33 @@ Basic Data Visualization 12-26-18.R
     Chart
 
 **Exercises**
---Ch. 3.8 Run a remote script to make an interactive map
---Median Income For City.R 
---Work with sample Twitter data   
+--Continue with Basic Data Visualization Exercise questions    
 
-**Notes**  
+> [**Start at Line 112**](https://bit.ly/2RlQtSE){target="_blank"} 
 
+--Dplyr Presentation   
+
+--**DPLYR**   
+
+Five basic verbs • filter() • select() • arrange() • mutate() • summarize() plus group_by()
+![](Images/Logical_operators.png)   
+
+
+  
+--Pipes - a Much-Used Command to Link Filters, Functions
+
+    pipe %>%
+    CMD +  Shift + M   
+    
+--Presentation from Bob Rudis on Writing Readable Code with Pipes, delivered at the rstudio::conf 2017.    
+
+https://www.rstudio.com/resources/videos/writing-readable-code-with-pipes/   
+
+Pipes as a way of chaining commands.   
+object %>% operation() —> result   
+
+
+--**GGPLOT**
 --A handy explanation of ggplot and its components  
 ![](Images/GGplot_explainer.png)
 If you’re using ggplot: plus it!
@@ -473,26 +494,16 @@ So geom_point()
 
 **Notes** 
 
---DPLYR
-Five basic verbs • filter() • select() • arrange() • mutate() • summarize() plus group_by()
-![](Images/Logical_operators.png)   
-
-
-  
---Pipes - a Much-Used Command to Link Filters, Functions
-
-    pipe %>%
-    CMD +  Shift + M   
-    
---Presentation from Bob Rudis on Writing Readable Code with Pipes,           delivered at the rstudio::conf 2017.
-   https://www.rstudio.com/resources/videos/writing-readable-code-with-pipes/
-  Pipes as a way of chaining commands.
-  object %>% operation() —> result
-
 
 --Data Wrangling-Text Mining in Twitter. 
     
     See entire scraping sequence. Extract from Twitter.
+
+**Additional Exercises**  
+--Ch. 3.8 Run a remote script to make an interactive map   
+--Median Income For City.R    
+--Work with sample Twitter data     
+
 
 
 --**Other Topics**   
