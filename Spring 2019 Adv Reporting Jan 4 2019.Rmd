@@ -480,9 +480,9 @@ Translation:
 
 --**Assignment #1 due Feb. 6: Managing Data / Static Graphic**
 
---GGplot 
---Work with sample Twitter data  
---Conventions in coding     
+--GGplot   
+--Work with sample Twitter data    
+--Conventions in coding      
  
 --Visualizing data
   
@@ -496,9 +496,28 @@ Translation:
 
 > [**Start at Line 112**](https://bit.ly/2RlQtSE){target="_blank"} 
 
---Dplyr Presentation   
+--Answer to Monday's in-class exercise
+https://bit.ly/2RG6VNy
+
+
+
+--**GGPLOT**
+--A handy explanation of ggplot and its components   
+
+![](Images/GGplot_explainer.png)
+
+If you’re using ggplot: plus it!
+For everything else: pipe it!
+
+ geom_point() 
+ geom_bar()
+ geom_boxplot() 
+ 
 
 --**DPLYR**   
+
+
+--Dplyr Presentation 
 
 Five basic verbs • filter() • select() • arrange() • mutate() • summarize() plus group_by()
 ![](Images/Logical_operators.png)   
@@ -518,16 +537,6 @@ Pipes as a way of chaining commands.
 object %>% operation() —> result   
 
 
---**GGPLOT**
---A handy explanation of ggplot and its components  
-![](Images/GGplot_explainer.png)
-If you’re using ggplot: plus it!
-For everything else: pipe it!
-
-So geom_point() 
- geom_bar()
- geom_boxplot() 
- 
 --Key Concepts - Moving Forward:    
 
     Dplyr: Filters, Grouping, Sorting, pipes %>%  
