@@ -109,151 +109,84 @@ SnowChartBoston <- ggplot(bostonsnow, aes(x = reorder(Winter, TotalSnow), y = To
 plot(SnowChartBoston)
 
 
+#Notes from R for Data Scientists - Wickham
+#https://r4ds.had.co.nz/
+
+#Feb. 2 2019
+install.packages('tidyverse')
+install.packages(c("nycflights13", "gapminder", "Lahman"))
+
+#If we want to make it clear what package an object comes from, we’ll use the package name followed by two colons, like dplyr::mutate(), or
+#nycflights13::flights. This is also valid R code.
+
+library(tidyverse)
+
+
+#Do cars with big engines use more fuel than cars with small engines? 
+#displ, a car’s engine size, in litres.
+#hwy, a car’s fuel efficiency on the highway, in miles per gallon (mpg). 
+#A car with a low fuel efficiency consumes more fuel than a car with a high fuel efficiency when they travel the same distance.
+#To learn more about mpg, open its help page by running ?mpg.
+
+mpg
+
+#Create a ggplot
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+
+#3.2.3 A graphing template
+#Let’s turn this code into a reusable template for making graphs with ggplot2. 
+#To make a graph, replace the bracketed sections in the code below with a dataset, a geom function, or a collection of mappings.
+#ggplot(data = <DATA>) + 
+#  <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+
+ggplot(data = mpg)
+
+#using color to distinguish class
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class))
+
+#MPG categorical = manufacturer model cyl trans drv fl class
+#continuous = disply cty hwy
+#Map a continuous variable to color, size, and shape. 
+#How do these aesthetics behave differently for categorical vs. continuous variables?
+#Answer - they do not come up in discrete blocks by on a spectrum range
+
+#Color by manufacturer
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color =manufacturer))
+
+#Color and Size
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color =manufacturer, size=manufacturer))
+
+
+#adding size
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, size = class, color = class))
+
+#What does the stroke aesthetic do? What shapes does it work with? (Hint: use ?geom_point)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class, stroke=20))
+
+#What happens if you map an aesthetic to something other than a variable name, 
+#like aes(colour = displ < 5)? Note, you’ll also need to specify x and y.
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = displ < 5))
+
+#It gives you a true false by color
+
 #Exercise:
-#Pull in ArkCo_Income_2017
-#1. Create a bar chart with the top 10 counties with the greatest percentage of low-income population
-#Your answer will look like this
+#Exercise with ArkCo_Income_2017
+#1. Create a plot chart with the top 10 counties with the greatest percentage of low-income population
+#Your answer should look like this
+https://bit.ly/2BgPmyo
 
-
-https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/Images/LowWageHouseholds.png
-
-#2. Create a bar chart with the top 10 counties with the greatest percentage of upper-income population
-
-
-#-------------------------------------------------------------------------#
-#Stop Here Wednesday #
-#-------------------------------------------------------------------------#
+#2. Create a plot chart with the top 10 counties with the greatest percentage of upper-income population
 
 
 
-#Code snippets
-snippet myg_barplot_grouped
-  ggplot(${1:mydataframe}, aes(${2:xcolname}, ${3:ycolname}, group = ${4:groupbycolname},
-                               fill = ${4:groupbycolname})) +
-  geom_col(position = "dodge")
 
-ggplot(mydataframe, aes(xcolname, ycolname, group = groupbycolname, 
-fill = groupbycolname)) +
-geom_col(position = "dodge")
-
-boston10 <- bostonsnow %>%
-  top_n(10, TotalSnow) %>%
-  arrange(desc(TotalSnow))
-
-ggplot(data = boston10, aes(x = Winter, y = TotalSnow)) + 
-  geom_col(fill = "rainbow") +
-  theme_minimal() 
-
-ggplot(data = boston10, aes(x = Winter, y = TotalSnow)) + 
-geom_col(fill = "dodgerblue4") +
-theme_minimal() +
-labs(title = " XXXX Any Title Here",
-subtitle = "XXXX Any subtitle", 
-caption = "Source: XXXXX")
-
-#With ordered bars
-ggplot(boston10, aes(x=fct_reorder(Winter, TotalSnow), y=TotalSnow)) + 
-  geom_col()
-
-#month factor
-month_factor <- factor(month.name, levels = month.name, ordered = TRUE) 
-month_factor
-
-
-#Adjust the axes
-myplot + theme(axis.text.x = element_text(angle = 45, vjust = 0.5))
-
-#---------------------------------------------------------------------#
-#Exercise Answer:
-#---------------------------------------------------------------------#
-
-https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/Images/LowWageHouseholds.png
-
-
-#Pull in ArkCo_Income_2017
-#Load Data
-ArkCo_Income_2017 <- rio::import("https://raw.githubusercontent.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/master/Data/ArkCo_Income_2017.csv", skip=1)
-
-#Clean labels
-ArkCo_Income_2017 <- janitor::clean_names(ArkCo_Income_2017)
-View(ArkCo_Income_2017)
-
-#Rename Columns
-library(data.table)
-data.table::setnames(ArkCo_Income_2017, old = c('id', 'id2', 'geography', 'households_estimate_total', 
-                                                'households_estimate_less_than_10_000', 'households_estimate_10_000_to_14_999', 
-                                                'households_estimate_15_000_to_24_999', 'households_estimate_25_000_to_34_999', 
-                                                'households_estimate_35_000_to_49_999', 'households_estimate_50_000_to_74_999', 
-                                                'households_estimate_75_000_to_99_999', 'households_estimate_100_000_to_149_999', 
-                                                'households_estimate_150_000_to_199_999', 'households_estimate_200_000_or_more',
-                                                'households_estimate_median_income_dollars', 'households_estimate_mean_income_dollars',
-                                                'households_estimate_percent_allocated_household_income_in_the_past_12_months',
-                                                'households_estimate_percent_allocated_family_income_in_the_past_12_months',
-                                                'households_estimate_percent_allocated_nonfamily_income_in_the_past_12_months'),
-                     new = c('id','id2','geography','households_estimate_total','less10_000','10k_to_14_999','15k_to_24_999',
-                             '25k_to_34_999', '35k_to_49_999','50k_to_74_999','75k_to_99_999','100k_to_149_999',
-                             '150k_to_199_999','200k_plus','median_income','mean_income',
-                             'pct_allocated_household_income','pct_allocated_family_income','pct_allocated_nonfamily_income'))
-
-#load dplyr to use the mutate function and create groups
-library(dplyr)
-
-#Create Groups
-#Low Wage
-ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
-  replace(is.na(.), 0) %>%
-  mutate(Low_Wage_Households = rowSums(.[5:7]))
-
-#Working Class households: $25,000 to $50,000
-ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
-  replace(is.na(.), 0) %>%
-  mutate(WorkingClass = rowSums(.[8:9]))
-
-#Middle class households: $50,000 to $150,000
-ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
-  replace(is.na(.), 0) %>%
-  mutate(MiddleClass = rowSums(.[10:12]))
-
-#Upper income households: More than $150,000
-ArkCo_Income_2017 <- ArkCo_Income_2017 %>%
-  replace(is.na(.), 0) %>%
-  mutate(UpperIncome = rowSums(.[13:14]))
-
-#Using these percentages, create new columns for low-wage, working class, middle class, and upper income 
-# and calculate the actual number of people in each income group
-ArkCo_Income_2017$LowWagePop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$Low_Wage_Households)/100)
-ArkCo_Income_2017$WorkingClassPop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$WorkingClass)/100)
-ArkCo_Income_2017$MiddleClassPop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$MiddleClass)/100)
-ArkCo_Income_2017$UpperIncomePop <- ((ArkCo_Income_2017$households_estimate_total*ArkCo_Income_2017$UpperIncome)/100)
-
-#Save this table
-Write Export output this file to a CSV or Excel  write.csv or write.excel
-write.csv(ArkCo_Income_2017,"ArkCo_Income_2017_Modified.csv") 
-
-#1. Create a bar chart with the top 10 counties with the greatest percentage of low-income population
-#Find Top10Counties
-#Use Dplyr - arrange
-#https://dplyr.tidyverse.org/reference/arrange.html
-
-Top10_LowWage <- ArkCo_Income_2017%>%select(geography, Low_Wage_Households)%>%arrange(desc(Low_Wage_Households))
-
-#The cutoff for the top 10 is 39%
-#Filter table to just that
-Top10_LowWage <- Top10_LowWage%>%filter(Low_Wage_Households > 38.9)
-
-#Chart It
-library(ggplot2)
-Top10_LowWage_Chart <- ggplot(Top10_LowWage, aes(x = reorder(geography, Low_Wage_Households), y = Low_Wage_Households))  +
-  geom_bar(stat = "identity") +
-  coord_flip() +
-  labs(title = "Arkansas Counties With Most Low Wage Households", 
-       subtitle = "Source: U.S. Census Data, 2017",
-       caption = "Graphic by Rob Wells",
-       x="Counties",
-       y="Percentage Households Less $25,000")
-plot(Top10_LowWage_Chart)
-
-
-#2. Create a bar chart with the top 10 counties with the greatest percentage of upper-income population
 
 

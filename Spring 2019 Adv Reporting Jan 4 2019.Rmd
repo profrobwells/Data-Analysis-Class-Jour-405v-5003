@@ -573,7 +573,7 @@ https://www.youtube.com/watch?v=1EUJ0tsVsUA&t=12s
     
     Machlis Chs. 7 & 8.    
     
-    Transforming and Analyzing Data dplyr.pdf --       Andrew Ba Tran, Washington Post
+    Transforming and Analyzing Data dplyr.pdf, Andrew Ba Tran, Washington Post
     
     Charts_with_ggplot by Andrew Ba Tran,
     Washington Post
