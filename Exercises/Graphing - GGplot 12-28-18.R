@@ -2,8 +2,16 @@
 #-------------------------------------
 #9 Graphing by Group
 #-------------------------------------
+install.packages('pacman')
+install.packages('geofacet')
+install.packages('RColorBrewer')
+library(geofacet)
+library(RColorBrewer)
 
-pacman::p_load(geofacet, RColorBrewer)
+
+Load this file
+ny <- rio::import("https://raw.githubusercontent.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/master/Data/ny.csv")
+
 
 #Exercise #2: Exercise 2: What was the percent of cancelled flights each day 
 #among flights that were supposed to leave during the Sandy time period? 
@@ -27,6 +35,22 @@ departing_cancellations <- ny %>%
 ggplot(departing_cancellations, aes(x=FL_DATE, y=PctCancelled, fill=ORIGIN)) + 
   geom_col(position="dodge") +
   theme(axis.text.x = element_text(angle = 45, vjust = 1.2, hjust = 1.1))
+
+#Add your own colors
+ggplot(departing_cancellations, aes(x=FL_DATE, y=PctCancelled, fill=ORIGIN)) + 
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("black", "darkgrey", "white"))
+
+#Get ugly
+ggplot(departing_cancellations, aes(x=FL_DATE, y=PctCancelled, fill=ORIGIN)) + 
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("pink", "green", "blue"))
+
+
+#Exercise stopped 2-5-19 #
+
+
+
 
 
 #facet_grid

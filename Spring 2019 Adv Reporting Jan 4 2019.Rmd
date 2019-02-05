@@ -543,33 +543,7 @@ object %>% operation() —> result
     Pipe shortcut = CMD + SHIFT + M
     Basic data visualization  
     Tidyverse 
-    Work with sample Twitter data
-
-**Notes** 
-
-
---Data Wrangling-Text Mining in Twitter. 
-    
-    See entire scraping sequence. Extract from Twitter.
-
-**Additional Exercises**  
---Ch. 3.8 Run a remote script to make an interactive map   
---Median Income For City.R    
---Work with sample Twitter data     
-
-
-
---**Other Topics**   
---Setting up an R Workflow
---Twitter Metadata  
---Work with sample Twitter data
---Lubridate  
-
- 
-Ch 3 Exercises:
-    Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
- 
+  
 **Notes**   
 --How Do I?
 https://smach.github.io/R4JournalismBook/HowDoI.html
@@ -593,19 +567,50 @@ https://www.youtube.com/watch?v=1EUJ0tsVsUA&t=12s
 
 ##Wednesday, Feb. 6
 
---Note: Dr. Wells will be late - 10 a.m. - due to data mining presentation    
---Begin class by working on XXXX exercise  
+--Note: Dr. Wells will be late - 10 a.m. - due to data mining presentation in the library       
+--Please begin class by working on this exercise: https://bit.ly/2Sqn1j1
+
+
+--Discuss Twitter Metadata     
+--Work with sample Twitter data    
+https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/user-object   
+
 
 --GGplot Video from Andrew Ba Tran  
 https://www.youtube.com/watch?v=Sx7d7eGRSj0&t=9s
 
 
-**Exercises**  
+**Exercises**    
+--AOC Twitter feed   
+https://bit.ly/2Sqn1j1        
 
-Basic crime rate in R exercise.txt
-Basic-Chart-January-2018.R  
-Twitter Metadata  
-Work with sample Twitter data
+--Graphing in GGPlot   
+https://bit.ly/2Gqjfj4   
+
+
+--Multiple variable in a graph
+--Geom_Line, Geom_point, Geom_bar
+--How to alter the colors in a chart.
+
+
+**Notes** 
+
+--Data Wrangling-Text Mining in Twitter. 
+    
+    See entire scraping sequence. Extract from Twitter.
+
+**Additional Exercises**  
+--Ch. 3.8 Run a remote script to make an interactive map   
+--Median Income For City.R    
+--Work with sample Twitter data     
+
+
+
+--**Other Topics**   
+--Setting up an R Workflow
+
+ 
+
 
 --------------------------------------------------------------------
 
@@ -631,6 +636,10 @@ http://vita.had.co.nz/papers/layered-grammar.html
 
 --Graphing GGplot 12-28.R
   Exercises from Machlis Ch. 9. Facets
+
+Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
 
 
 **Notes**
