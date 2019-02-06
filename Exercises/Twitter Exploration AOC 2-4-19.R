@@ -9,9 +9,7 @@
 getwd()
 setwd("")
 
-
-library (tidyverse)
-library (readxl)
+library(ggplot2)
 library (dplyr)
 
 #-------------------------------------------------------------------#
@@ -25,16 +23,16 @@ AOC <- rio::import("https://raw.githubusercontent.com/profrobwells/Data-Analysis
 AOC <- janitor::clean_names(AOC)
 
 #Look at table
-View(AOC)
-str(AOC)
-
 #Question: How many rows?
 #Question: Earliest tweet?
 
 #What do these columns mean? Read this:
 https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/user-object
 
-#Question #1: What is the most popular tweet, what did it say and what day did it happen?
+#Question #1: 
+#
+#What is the most popular tweet, what did it say and what day did it happen?
+#
 #Build a Smaller Table with four elements: 
 #the date of the tweet, the text, count of favorites, count of retweets
 #and sort by number of favorites

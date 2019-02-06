@@ -1,26 +1,34 @@
 
 #-------------------------------------
-#9 Graphing by Group
+#9           Graphing by Group. 
+#            Updated Feb 6 2019
 #-------------------------------------
-install.packages('pacman')
+#
+#Exercise #2: What was the percent of cancelled flights each day 
+#among flights that were supposed to leave during the Hurricane Sandy time period? 
+#Create a data frame called departing_cancellations from the ny data. 
+#Hint: You first want to filter for flights leaving JFK, LGA, and EWR; 
+#group by day; summarize the number of cancellations and total flights; 
+#and then calculate percents. 
+
+
 install.packages('geofacet')
 install.packages('RColorBrewer')
 library(geofacet)
 library(RColorBrewer)
+library(dplyr)
+library(ggplot2)
 
-
-Load this file
+#Load this file
 ny <- rio::import("https://raw.githubusercontent.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/master/Data/ny.csv")
 
+#Check it out
+View(ny)
+ncol(ny)
+nrow(ny)
+colnames(ny)
 
-#Exercise #2: Exercise 2: What was the percent of cancelled flights each day 
-#among flights that were supposed to leave during the Sandy time period? 
-#Create a data frame called departing_cancellations from the ny data. 
-#Hint: You first want to filter for flights leaving JFK, LGA, and EWR; 
-#group by day; summarize the number of cancellations and total flights; 
-#and then calculate percents. (Answer is at the end of this chapter.)
-
-
+#Filter file on airport departures
 departing_cancellations <- ny %>%
   filter(ORIGIN %in% c("JFK", "LGA", "EWR")) %>%
   filter(FL_DATE >= "2012-10-27", FL_DATE <= "2012-11-03",
@@ -44,10 +52,92 @@ ggplot(departing_cancellations, aes(x=FL_DATE, y=PctCancelled, fill=ORIGIN)) +
 #Get ugly
 ggplot(departing_cancellations, aes(x=FL_DATE, y=PctCancelled, fill=ORIGIN)) + 
   geom_col(position = "dodge") +
-  scale_fill_manual(values = c("pink", "green", "blue"))
+  scale_fill_manual(values = c("pink", "green", "orange"))
+
+#Multiple Lines on a Graph
+#Geom_Line, Geom_point, Geom_bar
+#How to alter the colors in a chart.
 
 
-#Exercise stopped 2-5-19 #
+mpg <- as_data_frame(mpg)
+View(mpg)
+
+#test with colors
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = manufacturer, size=hwy))
+
+#Geom_bar vs geom_col
+#There are two types of bar charts: geom_bar() and geom_col(). 
+#geom_bar() uses stat_count() by default: it counts the number of cases at each x position. geom_col() uses stat_identity(): it leaves the data as is.
+#geom_bar() makes the height of the bar proportional to the number of cases in each group 
+#(or if the weight aesthetic is supplied, the sum of the weights).
+
+#If you want the heights of the bars to represent values in the data, use geom_col() instead. 
+
+ggplot(data = mpg) + 
+  geom_col(aes(x = displ, y = hwy))
+
+#Geom_bar example
+g <- ggplot(mpg, aes(class))
+# Number of cars in each class:
+g + geom_bar()
+
+#See how it automatically counts the cars
+ggplot(mpg, aes(manufacturer)) +
+  geom_bar()
+
+#fix the axis
+ggplot(mpg, aes(manufacturer)) +
+  geom_bar() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1.2, hjust = 1.1))
+
+
+#geom_bar() understands the following aesthetics (required aesthetics are in bold):
+#x
+#y
+#alpha
+#colour
+#fill
+#group
+#linetype
+#size
+
+# Bar charts are automatically stacked when multiple bars are placed
+# at the same location. The order of the fill is designed to match
+# the legend
+g + geom_bar(aes(fill = drv))
+
+#flip chart
+g +
+  geom_bar(aes(fill = drv), position = position_stack(reverse = TRUE)) +
+  coord_flip() +
+  theme(legend.position = "top")
+
+#References
+https://ggplot2.tidyverse.org/reference/geom_bar.html
+https://plot.ly/ggplot2/geom_line/
+  
+  #Exercise stopped 2-5-19 #
+
+#geom_line
+#Aesthetics
+#x
+#y
+#alpha
+#colour
+#linetype
+#size
+
+library(plotly)
+
+ggplot(mpg, aes(x = year, y = hwy)) + 
+geom_line()
+
+
+
+
+
+
 
 
 
