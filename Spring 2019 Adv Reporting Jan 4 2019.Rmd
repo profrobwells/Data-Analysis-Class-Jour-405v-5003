@@ -614,23 +614,41 @@ https://bit.ly/2Gqjfj4
 
 --------------------------------------------------------------------
 
-#Week #5: Using R to build basic graphs and charts  
+#Week #5: Dplyr - Using R to build basic graphs and charts  
 
-**Agenda**
---2/11/2019 - Week 5
+##Monday, Feb. 11   
+
+--Review Assignment #1   
+Assignment1_KEY_StaticGraphic_2_9.R    
+
+--Dplyr bootcamp. See this exercise: DPLYR_bootcamp_Feb_9   
+
+**Homework!**   
+--Hand in your Dplyr Cheat Sheets on Blackboard by 11:59 pm Monday.   
+--Did I say this was Dplyr bootcamp?   
+
+
+**Reading:**  
+Machlis Chs. 9 & 10 
+
+Albert Cairo, "The Functional Art," Principles of Data Visualization.   
+
+
+-----------------
+##Wednesday, Feb. 13
 
 --Themes for data viz library(ggthemes) 
 
-----Work with sample Twitter data  
- 
 --Terminology
 
     ggplot
     aes
     
+**Exercises**  
+--Create R Markdown document, export to PDF, HTML  
+--Class Exercise - Graphing and Grouping Data Viz Exercise 2 From Ch 9
 
-
-**Resources*  
+*Resources*  
 Grammar of Graphics
 http://vita.had.co.nz/papers/layered-grammar.html
 
@@ -647,13 +665,7 @@ Ch 3 Exercises:
 --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
 --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
 
-
-
-
-**Reading:**  
-Machlis Chs. 9 & 10 
-
-Albert Cairo, "The Functional Art," Principles of Data Visualization.   
+**Resources**  
 
 --Read Kavanaugh text mining story: Text analysis of Brett Kavanaugh’s opinion.  
 http://www.storybench.org/bringing-textual-analysis-tools-to-judge-brett-kavanaughs-latest-opinion/
@@ -663,9 +675,7 @@ For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tr
 Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and How You Can Avoid Them,” American Press Institute, 2016
 
 
-**Exercises**  
---Create R Markdown document, export to PDF, HTML  
---Class Exercise - Graphing and Grouping Data Viz Exercise 2 From Ch 9
+
 **--**  
 
 
