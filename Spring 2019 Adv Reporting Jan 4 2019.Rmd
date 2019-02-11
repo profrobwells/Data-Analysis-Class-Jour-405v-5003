@@ -621,7 +621,15 @@ https://bit.ly/2Gqjfj4
 --Review Assignment #1   
 Assignment1_KEY_StaticGraphic_2_9.R    
 
---Dplyr bootcamp. See this exercise: DPLYR_bootcamp_Feb_9   
+--Dplyr bootcamp. 
+
+    See this exercise: 
+    DPLYR_bootcamp_Feb_9  
+
+    Dplyr bootcamp, #2. 
+    Dplyr_Tutorial_Tran 
+    Dplyr - Andrew Ba  Tran - pipes-dplyr.pdf
+    
 
 **Homework!**   
 --Hand in your Dplyr Cheat Sheets on Blackboard by 11:59 pm Monday.   
