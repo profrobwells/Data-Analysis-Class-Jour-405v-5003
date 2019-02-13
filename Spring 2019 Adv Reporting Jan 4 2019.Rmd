@@ -645,43 +645,46 @@ Albert Cairo, "The Functional Art," Principles of Data Visualization.
 -----------------
 ##Wednesday, Feb. 13
 
+--Finish last question on DPLYR_bootcamp_Feb_9 
+    
+    6: Calculate a violate crime rate per 1,000 students. 
+    Create a table selecting campuses, enrollment and crime rates 
+    just for the top 5 crime rates
+
+--Andrew Ba Tran dplyr class lesson    
+
+
+**Exercises**   
+
+--Andrew Ba Tran dplyr class lesson   
+
+    The repo for this class is on Github, but can be easily downloaded to your desktop with the following commands:    
+
+    install.packages("usethis")    
+    usethis::use_course("https://github.com/r-journalism/learn-chapter-3/archive/master.zip")    
+
+    --Before running the command, make sure the script is in the working directory folder and that the SHR76_16.sav.zip file is in the data sub folder.   
+    --For example, on my computer, the import_murders.R script is in the dplyr folder and SHR76_16.sav.zip file is in the dplyr/data folder.
+
+
+--And if this *blows up*, we have a backup: Return to dplyr bootcamp, graphing exercises.
+
 --Themes for data viz library(ggthemes) 
 
---Terminology
-
-    ggplot
-    aes
-    
-**Exercises**  
---Create R Markdown document, export to PDF, HTML  
---Class Exercise - Graphing and Grouping Data Viz Exercise 2 From Ch 9
 
 *Resources*  
 Grammar of Graphics
 http://vita.had.co.nz/papers/layered-grammar.html
 
---Graphing GGplot 12-28.R
-  Exercises from Machlis Ch. 9. Facets
 
-Ch 3 Exercises:
-    Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
+**Notes**    
 
+    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
+    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
+    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
 
-**Notes**
---The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
---The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
---This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
 
 **Resources**  
-
---Read Kavanaugh text mining story: Text analysis of Brett Kavanaugh’s opinion.  
-http://www.storybench.org/bringing-textual-analysis-tools-to-judge-brett-kavanaughs-latest-opinion/
-
-For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tran
-
-Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and How You Can Avoid Them,” American Press Institute, 2016
-
 
 
 **--**  
@@ -690,10 +693,54 @@ Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and 
 
 --------------------------------------------------------------------
 
-#Week #6: GitHub 
+#Week #6: Twitter
 
 **Agenda**
 --2/18/2019 - Week 6  
+
+--Analyzing Tweets from public officials.
+Dataset AOC 
+
+--Study Twitter meta data  
+https://twittercommunity.com/
+https://developer.twitter.com/en/docs
+
+--Register as Twitter Developer
+https://developer.twitter.com/en/account/get-started
+
+--Extracting Text from Twitter 
+
+--Lubridate
+
+
+
+**Exercises**
+
+    Extracting Text Strings from Twitter
+
+
+**Reading:**  
+Machlis Chs. 11 & 12   
+
+Twitter meta data  
+https://twittercommunity.com/
+https://developer.twitter.com/en/docs
+
+For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tran
+
+**--**  
+
+
+
+--------------------------------------------------------------------
+
+#Week #7: GitHub
+
+**Agenda**
+--2/25/2019 - Week 7  
+
+--**Due Feb 27: Assignment #2. Visualization of Twitter data**
+
 
 --Create a GitHub account.
 https://github.com/
@@ -742,14 +789,17 @@ https://guides.github.com/
 --Another GitHub guide  
 https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
 
+**Reading** 
+Machlis Chs. 13 & 14.
+
+**Resources:**
 
 
-**Reading:**  
-Machlis Chs. 11 & 12   
 
+
+**Exercises**
 Installing Git for a Mac - Andrew Ba Tran
 
-**Exercises**   
 
     Pair up.  
     Team 1 takes this code. Make changes.    
@@ -759,42 +809,6 @@ Installing Git for a Mac - Andrew Ba Tran
 
 --Setting up an R Workflow
 http://learn.r-journalism.com/en/publishing/workflow/r-projects/
-
-**Workbooks, Markdown**
-**--**  
-
-
-
---------------------------------------------------------------------
-
-#Week #7: Twitter
-
-**Agenda**
---2/25/2019 - Week 7  
-
---**Due Feb 27: Assignment #2. Visualization of Twitter data**
-
---Analyzing Tweets from public officials.
-Dataset TK 
-
---Study Twitter meta data  
-https://twittercommunity.com/
-https://developer.twitter.com/en/docs
-
---Register as Twitter Developer
-https://developer.twitter.com/en/account/get-started
-
- 
-**Reading** 
-Machlis Chs. 13 & 14.  
-Twitter meta data  
-
-
-**Resources:**
-
-
-
-**Exercises**
 
 **--**  
 
@@ -858,7 +872,15 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 **Reading**   
 Machlis Chs. 15 & 16
 
+
+--Read Kavanaugh text mining story: Text analysis of Brett Kavanaugh’s opinion.  
+http://www.storybench.org/bringing-textual-analysis-tools-to-judge-brett-kavanaughs-latest-opinion/
+
+Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and How You Can Avoid Them,” American Press Institute, 2016
+
+
 **Resources:**
+--Create R Markdown document, export to PDF, HTML  
 
 **Exercises**
 
@@ -930,6 +952,15 @@ http://learn.r-journalism.com/en/mapping/
 “Connecting the Dots” by Jacob Harris (2015) and discuss how people should or should not be represented through news visualizations.
 
 What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+
+--Graphing GGplot 12-28.R
+  Exercises from Machlis Ch. 9. Facets
+
+Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
+
+
 
 **Resources:**
 --Visual Narrative Tricks by Albert Cairo

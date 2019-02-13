@@ -1,5 +1,5 @@
 # DPLYR Bootcamp
-# Rob Wells - Feb 11 2019
+# Rob Wells - *Updated* Feb 13 2019
 
 
 library(dplyr)
@@ -86,3 +86,27 @@ ArkCampusCrime <- rio::import('./Data/ArkCampusCrime.xlsx')
 #Create a table selecting campuses, enrollment and crime rates 
 #just for the top 5 crime rates
 
+#--------------------------------------#
+#     Now We Will Graph                #
+#--------------------------------------#
+
+library(ggplot2)
+
+#Refer to Basic Data Visualization 2-4-19.R for the following
+
+#1: Create a histogram of campus violentrate
+
+#Basic plot of violentrate
+
+#Histogram of property crime
+
+#Box Plot
+
+#Dual box plots
+
+#2: Graph the top 5 by violent rate in a chart
+#For guidance, see Answer Key to Assignment #1
+#Do the Katie Serrano special and add some killer colors
+
+#3: Super Nerd Bonus Question: Dual Chart Violent and Property Crime
+#For Guidance, Dual Chart was in Basic Data Visualization 2-4-19.r

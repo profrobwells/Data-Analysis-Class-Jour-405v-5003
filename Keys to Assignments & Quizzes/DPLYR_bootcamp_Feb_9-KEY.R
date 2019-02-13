@@ -123,7 +123,13 @@ Main <- ArkCampusCrime%>%select(university_college, campus, student_enrollment1,
 #4: Arrange table to sort descending by property crime.
 #Dump results into PropertyCrime
 
-PropertyCrime <- ArkCampusCrime%>%arrange(desc(property_crime))
+PropertyCrime <- ArkCampusCrime%>%
+  arrange(desc(property_crime))
+
+#4a: Combine #3 and #4:
+Main <- ArkCampusCrime%>%
+  select(university_college, campus, student_enrollment1, violent_crime, property_crime) %>% 
+  arrange(desc(property_crime))
 
 #5: Mutuate - Create New Column with Total Crimes
 #Put results in table TotalCrime
@@ -137,18 +143,75 @@ TotalCrime <- ArkCampusCrime %>%
 #6: Calculate a violate crime rate per 1,000 students. 
 #Create a table selecting campuses, enrollment and crime rates 
 #just for the top 5 crime rates
-ArkCampusCrime$ViolentRate <- (ArkCampusCrime$violent_crime/ArkCampusCrime$student_enrollment1)*1000
+
+#Halie's method is correct
+ArkCampusCrime$violentrate <- 
+  (ArkCampusCrime$violent_crime/ArkCampusCrime$student_enrollment1)*1000
 
 TopCrime <- ArkCampusCrime%>%
-  select(campus, student_enrollment1, ViolentRate)%>%
-  filter(ViolentRate > .34)
+  select(campus, student_enrollment1, violentrate)%>%
+  filter(violentrate > .34)
 
-#Or Using Mohamed's Top N function
+#Revision
+ArkCampusCrime2 <- ArkCampusCrime %>% 
+  mutate(violentrate = (violent_crime / student_enrollment1)*1000) %>% 
+  top_n(5, violentrate) %>%
+  arrange(desc(violentrate))
+
+
+
+# Using Mohamed's Top N function
 TopCrime <- ArkCampusCrime%>%select(campus, student_enrollment1, ViolentRate)%>%
-  top_n(6, ViolentRate) %>%
-  arrange(desc(ViolentRate))
+  top_n(6, violentrate) %>%
+  arrange(desc(violentrate))
 
+#--------------------------------------#
+#     Now We Will Graph                #
+#--------------------------------------#
 
+library(ggplot2)
 
+#Refer to Basic Data Visualization 2-4-19.R for the following
 
+#1: Create a histogram of campus violentrate
+hist(ArkCampusCrime$violentrate)
 
+#Basic plot of violentrate
+plot(ArkCampusCrime$violentrate)
+
+#Histogram of property crime
+hist(ArkCampusCrime$property_crime)
+
+#Box Plot
+boxplot(ArkCampusCrime$violentrate)
+
+#Dual box plots
+ggplot(data=ArkCampusCrime) + 
+  geom_boxplot(aes(x = "violentrate", y = violentrate)) +
+  geom_boxplot(aes(x = "property_crime", y = property_crime))
+
+#Use a top 5 chart
+
+#Do the Katie Serrano special and add some killer colors
+Top5Chart <- ggplot(ArkCampusCrime2, aes(x = reorder(university_college, -violentrate), 
+                                         y = violentrate, color = university_college, 
+                                         fill=university_college))+
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  labs(title = "Arkansas Campuses With Top Crime Rates Per 1,000", 
+       subtitle = "FBI Uniform Crime Report Data, 2017",
+       caption = "Graphic by Rob Wells",
+       x="City",
+       y="Crime Rate Per 10,000 People")
+plot(Top5Chart)
+
+#Dual Chart Violent and Property Crime
+ggplot(data=ArkCampusCrime, aes(campus)) + 
+  geom_point(aes(y = violent_crime, colour = "violent_crime")) + 
+  geom_point(aes(y = property_crime, colour = "property_crime"))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 1.2, hjust = 1.1))
+
+ggplot(data=ArkCampusCrime, aes(campus)) + 
+  geom_col(aes(y = violent_crime, fill = "violent_crime")) + 
+  geom_point(aes(y = property_crime, colour = "property_crime", size = "property_crime"))+
+  theme(axis.text.x = element_text(angle = 90, vjust = 1.2, hjust = 1.1))
