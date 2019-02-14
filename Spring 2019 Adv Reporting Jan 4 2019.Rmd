@@ -46,13 +46,12 @@ https://www.amazon.com/gp/search?keywords=9781138726918
 > [Link to several free chapters: "CNTL" + click for a New Tab](http://www.machlis.com/R4Journalists/){target="_blank"}
 
 
-> [**Syllabus - Jour 405v:**: "CNTL" + click for a New Tab](http://bit.do/Jour405v_syllabus){target="_blank"}
+> [**Syllabus - Jour 405v:**: "CNTL" + click for a New Tab](https://bit.ly/2SPilDr){target="_blank"}
 
 
+> [**Syllabus - Jour 5003**: "CNTL" + click for a New Tab](https://bit.ly/2S3tPP2){target="_blank"}   
 
-> [**Syllabus - Jour 5003**: "CNTL" + click for a New Tab](http://bit.do/Jour5003_syllabus){target="_blank"}   
-
-> [**Course Website**: "CNTL" + click for a New Tab](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003){target="_blank"}   
+> [**Course GitHub site**: "CNTL" + click for a New Tab](https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003){target="_blank"}   
 
 
 
@@ -424,7 +423,7 @@ Basic Data Visualization 12-26-18.R
 
 --------------------------------------------------------------------   
 
-##Questions on First Assignment   
+**Questions on First Assignment**   
 
 --Here is a good question that came in today about the first assignment.    
 
@@ -440,9 +439,9 @@ One of the obnoxious things about R is it considers commas as text. So it will s
 Crimedata$Population <- gsub(",", "", Crimedata$Population)   
 
 Translation:   
-#####Crimedata$Population   
+Crimedata$Population   
 -- is the population column in your crime dataset     
-#####gsub(",", "",  
+gsub(",", "",  
 finds a comma and replaces it with nothing.  --    
 and it found the comma in the column Crimedata$Population)
 and the <- dumps the results back into the Crimedata$Population  column.
@@ -453,17 +452,12 @@ Fancy!
 "How do I get rid of the last row that only has text in the table that I just imported?"   
 
 **Answer**:
-#Get rid of row using base R commands   
-#####Crimedata <- Crimedata[-c(187), ]    
+Get rid of row using base R commands   
+Crimedata <- Crimedata[-c(187), ]    
 
 Translation:     
-#####Crimedata[-c(187), ]    looks for row #187, which has this garbage text, and gives it the big minus sign, which eliminates it.    
-#####Crimedata <-  dumps this slimmed down table back into your table and so you are good to go.   
-
-
-
-
-
+Crimedata[-c(187), ]    looks for row #187, which has this garbage text, and gives it the big minus sign, which eliminates it.    
+Crimedata <-  dumps this slimmed down table back into your table and so you are good to go.   
 
 
 **--**  
@@ -614,6 +608,7 @@ https://bit.ly/2Gqjfj4
 
 --------------------------------------------------------------------
 
+
 #Week #5: Dplyr - Using R to build basic graphs and charts  
 
 ##Monday, Feb. 11   
@@ -641,8 +636,8 @@ Machlis Chs. 9 & 10
 
 Albert Cairo, "The Functional Art," Principles of Data Visualization.   
 
+----------------- 
 
------------------
 ##Wednesday, Feb. 13
 
 --Finish last question on DPLYR_bootcamp_Feb_9 
@@ -672,19 +667,16 @@ Albert Cairo, "The Functional Art," Principles of Data Visualization.
 --Themes for data viz library(ggthemes) 
 
 
-*Resources*  
-Grammar of Graphics
-http://vita.had.co.nz/papers/layered-grammar.html
+**Homework**    
+    
+    —Finish Andrew Ba Tran dplyr tutorial.   
+    —Bring questions to class   
+    -Using this data, produce two dplyr queries that investigate the murders dataset for Arkansas.   
+    -In class we looked at black and white victims and unsolved murders. Find other queries that would        yield newsworthy material.  
+    --Bring questions and your queries to class on Monday. I will call on you to discuss.
+    
+    
 
-
-**Notes**    
-
-    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
-    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
-    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
-
-
-**Resources**  
 
 
 **--**  
@@ -717,6 +709,18 @@ https://developer.twitter.com/en/account/get-started
 **Exercises**
 
     Extracting Text Strings from Twitter
+
+*Resources*  
+Grammar of Graphics
+http://vita.had.co.nz/papers/layered-grammar.html
+
+
+**Notes**    
+
+    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
+    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
+    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
+
 
 
 **Reading:**  
