@@ -609,7 +609,7 @@ https://bit.ly/2Gqjfj4
 --------------------------------------------------------------------
 
 
-#Week #5: Dplyr - Using R to build basic graphs and charts  
+#Week #5 - 2/11/19: Dplyr - Using R to build basic graphs and charts  
 
 ##Monday, Feb. 11   
 
@@ -685,13 +685,14 @@ Albert Cairo, "The Functional Art," Principles of Data Visualization.
 
 --------------------------------------------------------------------
 
-#Week #6: Twitter
+#Week #6 - 2/18/18: Twitter Text   
 
-**Agenda**
---2/18/2019 - Week 6  
 
---Analyzing Tweets from public officials.
-Dataset AOC 
+##Monday Feb. 18  
+
+**Agenda**  
+
+--Analyzing Tweets from public officials: Dataset AOC   
 
 --Study Twitter meta data  
 https://twittercommunity.com/
@@ -704,33 +705,62 @@ https://developer.twitter.com/en/account/get-started
 
 --Lubridate
 
+**Homework**    
+    
+    —Finish Andrew Ba Tran dplyr tutorial.   
+    —Bring questions to class   
+    -Using this data, produce two dplyr queries that investigate the murders dataset for Arkansas.   
+    -In class we looked at black and white victims and unsolved murders. Find other queries that would yield newsworthy material.  
+    --Bring questions and your queries to class on Monday. I will call on you to discuss.
 
+**Assignment #2 Details**
+    
+    Visualization of Twitter data.  Due Feb 27, 11:59 p.m.   
+    Students will produce publication-ready graphics from Twitter data. 
+    Data dictionary required
+    
+    Details:
+    With the assigned dataset, TK TK, students will produce the following tables:
+    --Most common words used in Twitter text field
+    --Most common hashtags
+    --A chart of the volume of Twitter messages by date
+    Based on this information, write a 300-500 word report, following AP style, that describes potential newsworthy trends in this Twitter feed and insights from your analysis.
+
+    By 11:59 pm., you will submit the following on Blackboard:  
+    3 charts in .jpeg format: 1) Common words 2) Common hashtags 3) Date trend chart
+    One Word document with your findings, 300-500 words. Append at the end a brief data dictionary describing the Twitter data fields you used in the assignment.
+    An R script with the coding that shows how you loaded and cleaned the data and produced the charts
 
 **Exercises**
 
     Extracting Text Strings from Twitter
+    https://bit.ly/2X5V9jL
+    
+    What we will produce
+![](Images/Top Words in AOC Feed.png)   
+    
+    
 
-*Resources*  
-Grammar of Graphics
-http://vita.had.co.nz/papers/layered-grammar.html
+##Wednesday Feb. 20  
 
-
-**Notes**    
-
-    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
-    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
-    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
-
+  --Using Lubridate
+  
 
 
 **Reading:**  
 Machlis Chs. 11 & 12   
 
-Twitter meta data  
+Twitter metadata  
 https://twittercommunity.com/
 https://developer.twitter.com/en/docs
 
-For working with dates library(lubridate) Dealing-with-dates.pdf by Andrew Ba Tran
+For working with dates library(lubridate)   
+
+Dealing-with-dates.pdf by Andrew Ba Tran  
+
+        https://github.com/profrobwells/Data-Analysis-Class-Jour-405v-5003/blob/master/Readings/dealing-with-dates.pdf
+        
+
 
 **--**  
 
@@ -912,6 +942,17 @@ Line breaks: Use HTML tags. Adding <br> will give a single line break --     opt
 Machlis Chs. 17 & 18
 
 **Resources:**
+*Resources*  
+Grammar of Graphics
+http://vita.had.co.nz/papers/layered-grammar.html
+
+
+**Notes**    
+
+    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
+    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
+    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
+
 
 --Joining Dataframes in R  
 https://www.youtube.com/watch?v=gLg4D9bMIyc&t=13s

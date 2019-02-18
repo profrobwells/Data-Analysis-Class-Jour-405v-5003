@@ -67,6 +67,10 @@ AOC_Trump2 <- filter(AOC, grepl ("Trump|green", text)) %>%
 Test1 <-AOC[grep("Trump", AOC$text), ]
 head(Test1)
 
+#Filter Boolean  operators: & is “and”, | is “or”, and ! is “not”. 
+
+
+
 #filter data set based on values that do not match the specified pattern
 #filter_for_not_a_value<-CO2[-(grep("non", CO2$Treatment)),]
 NotTrump <-AOC[-(grep("Trump", AOC$text)), ]
