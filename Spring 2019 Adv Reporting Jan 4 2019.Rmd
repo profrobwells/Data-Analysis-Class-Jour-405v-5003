@@ -705,6 +705,12 @@ https://developer.twitter.com/en/account/get-started
 
 --Lubridate
 
+**Class Discussion**     
+  
+    Material we discussed in class, including Mohamed's graphs     
+    https://bit.ly/2GQ1w4O    
+    
+      
 **Homework**    
     
     —Finish Andrew Ba Tran dplyr tutorial.   
