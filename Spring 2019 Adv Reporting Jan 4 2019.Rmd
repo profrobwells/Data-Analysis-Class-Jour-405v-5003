@@ -726,7 +726,7 @@ https://developer.twitter.com/en/account/get-started
     Data dictionary required
     
     Details:
-    With the assigned dataset, TK TK, students will produce the following tables:
+    With the assigned dataset, Coulter.csv, students will produce the following tables:
     --Most common words used in Twitter text field
     --Most common hashtags
     --A chart of the volume of Twitter messages by date
@@ -737,20 +737,31 @@ https://developer.twitter.com/en/account/get-started
     One Word document with your findings, 300-500 words. Append at the end a brief data dictionary describing the Twitter data fields you used in the assignment.
     An R script with the coding that shows how you loaded and cleaned the data and produced the charts
 
+
+##Wednesday Feb. 20  
+
 **Exercises**
 
     Extracting Text Strings from Twitter
     https://bit.ly/2X5V9jL
     
     What we will produce
-![](Images/Top Words in AOC Feed.png)   
-    
-    
+![](Images/Top Words in AOC Feed.png)
 
-##Wednesday Feb. 20  
 
-  --Using Lubridate
-  
+
+--Using Lubridate    
+    
+      The exercise   
+      Lubridate_Intro_Feb_20.R
+      What we will produce    
+    
+![](Images/AOCTweets_Month.png)
+
+
+
+
+
 
 
 **Reading:**  
