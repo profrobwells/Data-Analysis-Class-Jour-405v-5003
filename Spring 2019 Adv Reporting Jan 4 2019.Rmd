@@ -749,21 +749,6 @@ https://developer.twitter.com/en/account/get-started
 ![](Images/Top Words in AOC Feed.png)
 
 
-
---Using Lubridate    
-    
-      The exercise   
-      Lubridate_Intro_Feb_20.R
-      What we will produce    
-    
-![](Images/AOCTweets_Month.png)
-
-
-
-
-
-
-
 **Reading:**  
 Machlis Chs. 11 & 12   
 
@@ -785,60 +770,61 @@ Dealing-with-dates.pdf by Andrew Ba Tran
 
 --------------------------------------------------------------------
 
-#Week #7: GitHub
+#Week #7: 2/25/18: Text Mining   
 
-**Agenda**
---2/25/2019 - Week 7  
+##Monday Feb. 25  
 
---**Due Feb 27: Assignment #2. Visualization of Twitter data**
+**Agenda**    
 
-
---Create a GitHub account.
-https://github.com/
-
---Follow this tutorial
-https://guides.github.com/activities/hello-world/
+--Lubridate   
+--Processing and counting hashtags  
 
 
-This class is intended to teach you modern workflow techniques for coding. A centerpiece of that workflow is GitHub. This is a website with a system that allows you to collaborate with other programmers on coding projects. It manages versions of software code and is a very popular with the tech elite. 
+--Using Lubridate    
+    
+      The exercise   
+      Lubridate_Intro_Feb_20.R
+      https://bit.ly/2H07YpX
+      What we will produce    
+    
+![](Images/AOCTweets_Month.png)  
 
-Your GitHub account, which is public, represents an important professional image. Prospective employers and collaborators will look at your GitHub account.
 
---Andrew Ba Tran Tutorials on GitHub
-  Git and Github Pages
-http://learn.r-journalism.com/en/git/
 
-  Installing Git
-https://journalismcourses.org/courses/RC0818/installing_git.pdf
 
-  GIT
-https://journalismcourses.org/courses/RC0818/git.pdf
+**Exercises**   
 
-  Connecting to Github
-https://journalismcourses.org/courses/RC0818/github.pdf
-http://learn.r-journalism.com/en/git/github/github/
+Splitting Hashtags 2-25-19.R
 
-  Best Practices for Github
-http://learn.r-journalism.com/en/git/github_pages/github-pages/
+Data Wrangling-Text Mining in Twitter.R
 
---Loading and basic file management 
 
-    Commit  
-    Branch  
-    Pull Request  
-    Fork  
-  
-  
-**Resources on GitHub**  
+**Resources:**
 
---GitHub flow   
-https://guides.github.com/introduction/flow/
+Grammar of Graphics
+http://vita.had.co.nz/papers/layered-grammar.html
 
---GitHub Guides  
-https://guides.github.com/
+--Joining Dataframes in R  
+https://www.youtube.com/watch?v=gLg4D9bMIyc&t=13s
 
---Another GitHub guide  
-https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
+--Data Wrangling
+http://learn.r-journalism.com/en/wrangling/
+
+http://learn.r-journalism.com/en/wrangling/dplyr/dplyr/
+
+https://github.com/r-journalism/learn-chapter-3/blob/master/dplyr/pipes-dplyr.R
+
+
+
+**Notes**    
+
+    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
+    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
+    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
+
+
+
+
 
 **Reading** 
 Machlis Chs. 13 & 14.
@@ -848,18 +834,6 @@ Machlis Chs. 13 & 14.
 
 
 
-**Exercises**
-Installing Git for a Mac - Andrew Ba Tran
-
-
-    Pair up.  
-    Team 1 takes this code. Make changes.    
-    Team 2 forks the code. Makes changes.  
-    Pull & Commit  
-
-
---Setting up an R Workflow
-http://learn.r-journalism.com/en/publishing/workflow/r-projects/
 
 **--**  
 
@@ -944,49 +918,82 @@ Line breaks: Use HTML tags. Adding <br> will give a single line break --     opt
 
 --------------------------------------------------------------------
 
-#Week #9: Text Mining 
+#Week #9: GitHub 
 
 **Agenda**
 --3/11/2019 - Week 9  
 
---**Extra Grad Assignment** - Scraping Twitter. Due March 13.
+--**Extra Grad Assignment** - Due March 13.
 
---Basic text mining techniques  
---Lubridate  
+
 
 
 **Reading** 
 Machlis Chs. 17 & 18
 
-**Resources:**
-*Resources*  
-Grammar of Graphics
-http://vita.had.co.nz/papers/layered-grammar.html
-
-
-**Notes**    
-
-    --The pie chart focuses the reader on large percentages, and encourages the reader to think of the total
-    --The stacked bar plot provides the same information, but makes it easier to accurately determine at a glance how large each group is out of the whole.
-    --This bar chart splits the categories horizontally, and draws attention to how the family members are ordered. It encourages the reader to think about the distribution rather than disconnected categories, and gives a better sense of sense of scale.
-
-
---Joining Dataframes in R  
-https://www.youtube.com/watch?v=gLg4D9bMIyc&t=13s
-
---Data Wrangling
-http://learn.r-journalism.com/en/wrangling/
-
-http://learn.r-journalism.com/en/wrangling/dplyr/dplyr/
-
-https://github.com/r-journalism/learn-chapter-3/blob/master/dplyr/pipes-dplyr.R
-
-
-**Exercises**
-Data Wrangling-Text Mining in Twitter.R
 
 **--**  
 
+--Create a GitHub account.
+https://github.com/
+
+--Follow this tutorial
+https://guides.github.com/activities/hello-world/
+
+
+This class is intended to teach you modern workflow techniques for coding. A centerpiece of that workflow is GitHub. This is a website with a system that allows you to collaborate with other programmers on coding projects. It manages versions of software code and is a very popular with the tech elite. 
+
+Your GitHub account, which is public, represents an important professional image. Prospective employers and collaborators will look at your GitHub account.
+
+--Andrew Ba Tran Tutorials on GitHub
+  Git and Github Pages
+http://learn.r-journalism.com/en/git/
+
+  Installing Git
+https://journalismcourses.org/courses/RC0818/installing_git.pdf
+
+  GIT
+https://journalismcourses.org/courses/RC0818/git.pdf
+
+  Connecting to Github
+https://journalismcourses.org/courses/RC0818/github.pdf
+http://learn.r-journalism.com/en/git/github/github/
+
+  Best Practices for Github
+http://learn.r-journalism.com/en/git/github_pages/github-pages/
+
+--Loading and basic file management 
+
+    Commit  
+    Branch  
+    Pull Request  
+    Fork  
+  
+
+**Exercises**
+Installing Git for a Mac - Andrew Ba Tran
+
+
+    Pair up.  
+    Team 1 takes this code. Make changes.    
+    Team 2 forks the code. Makes changes.  
+    Pull & Commit  
+
+
+--Setting up an R Workflow
+http://learn.r-journalism.com/en/publishing/workflow/r-projects/
+
+
+**Resources on GitHub**  
+
+--GitHub flow   
+https://guides.github.com/introduction/flow/
+
+--GitHub Guides  
+https://guides.github.com/
+
+--Another GitHub guide  
+https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
 
 -------------------------------------------------------------------- 
 

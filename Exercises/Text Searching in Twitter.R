@@ -17,13 +17,14 @@ str(AOC)
 #--------------------------------------------------------------------#
 
 #Let's focus on the text and time
+library(dplyr)
 AOC1 <- AOC %>% select(created_at, text)
 View(AOC1)
 #What is wrong with this picture?
 
 #Put it in a readable format
 #https://haozhu233.github.io/kableExtra/awesome_table_in_html.html
-install.packages("kableExtra")
+#install.packages("kableExtra")
 library(knitr)
 library(kableExtra)
 kable(AOC1)
@@ -38,8 +39,6 @@ AOC1 %>%
 #Open File In Web Browser and read the Tweets
 
 #Find instances of Trump in the Tweets#
-library(dplyr)
-
 #Primitive Method of Filtering
 Test <- filter(AOC, grepl ("Trump", text))
 Test <- Test%>%select(created_at, text)
@@ -133,6 +132,7 @@ install.packages("tidyr")
 library(tidytext)
 library(tidyr)
 library(dplyr)
+library(stringr)
 
 #reg <- "([^A-Za-z\\d#@']|'(?![A-Za-z\\d#@]))"
 #tweet_words <- tweets %>%
