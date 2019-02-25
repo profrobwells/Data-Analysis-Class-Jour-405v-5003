@@ -790,11 +790,18 @@ Dealing-with-dates.pdf by Andrew Ba Tran
 ![](Images/AOCTweets_Month.png)  
 
 
+--Key to Lubridate Questions in Exercise:    
+https://bit.ly/2BO92d1
 
 
-**Exercises**   
 
-Splitting Hashtags 2-25-19.R
+**Homework**   
+
+Work through this exercise and bring questions to class:    
+
+Splitting Hashtags 2-25-19.R   
+https://bit.ly/2BQIE2i 
+
 
 Data Wrangling-Text Mining in Twitter.R
 
