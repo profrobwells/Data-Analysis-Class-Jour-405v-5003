@@ -799,6 +799,12 @@ Splitting Hashtags 2-25-19.R
 Data Wrangling-Text Mining in Twitter.R
 
 
+##Wednesday Feb. 27   
+
+  --Searching for narratives in Twitter   
+  
+
+
 **Resources:**
 
 Grammar of Graphics
