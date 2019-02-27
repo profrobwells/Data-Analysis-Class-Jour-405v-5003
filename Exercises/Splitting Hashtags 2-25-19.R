@@ -76,12 +76,29 @@ write.csv(hashtags, "AOC_hashtags.csv")
 #Examine the table - what are the major narratives?
 
 #Create a table with the original tweets by hashtag
-#Filtered Table with abolishIce in Tweets
+#Filtered Table with #abolishIce in Tweets
 AOC_ICE <- filter(AOC2, grepl ("abolishICE", hashtag1)) %>% 
-  select(created_at, text, hashtag1)
+  select(created_at, text, hashtags, hashtag1)
+
+AOC_ICE2 <- filter(AOC2, grepl ("abolishICE|AbolishICE|abolish ICE", text)) %>% 
+  select(created_at, text, hashtags, hashtag1)
+
+
+#Put it in a readable format
+#https://haozhu233.github.io/kableExtra/awesome_table_in_html.html
+#install.packages("kableExtra")
+library(knitr)
+library(kableExtra)
+kable(AOC_ICE2)
+
+#Better formatting into html. Bonus - you see emojis.
+AOC_ICE2 %>%
+  kable() %>%
+  kable_styling()
 
 #abolishIce
 #Look up AP on ProQuest in NYT when that narrative started
+#Was Ocasio Ortez ahead or behind the news coverage?
 
 #pub.Exact("New York Times") AND abolishICE
 
