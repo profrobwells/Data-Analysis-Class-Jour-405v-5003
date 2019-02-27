@@ -1,4 +1,4 @@
-#Introduction to Lubridate
+#Introduction to Lubridate - Answer KEY
 #Tutorials Based on Andrew Ba Tran dealing-with-dates.R
 
 #Install lubridate if you haven't already
@@ -111,5 +111,14 @@ tweetplot <- ggplot(AOCmonth, aes(x=month, y=n, fill=month)) +
 
 plot(tweetplot)   
 
-#End of Lesson for Now
+#Solve the Date Problem
+#
+# What does R need to the graphic sort properly?
+#
+#Use this as a template
+#https://stackoverflow.com/questions/46691933/r-sort-by-year-then-month-in-ggplot2
+
+#Once you figured this out, open Splitting Hashtags 2-25-19
+
+
 

@@ -806,13 +806,39 @@ https://bit.ly/2BQIE2i
 Data Wrangling-Text Mining in Twitter.R
 
 
-##Wednesday Feb. 27   
+##Wednesday Feb. 27  
 
-  --Searching for narratives in Twitter   
+--Solving Problems in R: Bend Templates to Your Will   
+--Analyzing Hashtags 
+--Finding Narratives In Twitter  
+
+
+**--#1: Solve the chronology problem with the chart**   
+
+![](Images/AOC Year-Months.png)  
+
+
+--**#2: Splitting Hashtags**
+    
+    Questions on Exercise   
+    Splitting Hashtags 2-25-19.R   
+    https://bit.ly/2BQIE2i 
+
+--Data Cleaning    
+--Disaggregating variables for summation   
+--Searching for narratives in Twitter     
   
 
 
 **Resources:**
+
+Lubridate vignette   
+browseVignettes("lubridate")   
+
+StackOverflow   
+https://stackoverflow.com/questions/46691933/r-sort-by-year-then-month-in-ggplot2  
+
+
 
 Grammar of Graphics
 http://vita.had.co.nz/papers/layered-grammar.html
