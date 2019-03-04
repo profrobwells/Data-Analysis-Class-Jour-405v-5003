@@ -90,7 +90,7 @@ AOCdates2 <- AOCdates %>%
 
 #Calculate Total Tweets by Day
 
-#Calculate Total Twwets by Month
+#Calculate Total Tweets by Month
 
 
 #------------------------------------------------------#
@@ -103,3 +103,8 @@ AOCdates2 <- AOCdates %>%
 library(ggplot2)
 
 ggplot(AOCmonth????
+         
+#------------------------------------------------------#
+# Question 4: Hashtags
+#------------------------------------------------------#
+
