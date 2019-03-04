@@ -878,60 +878,45 @@ Machlis Chs. 13 & 14.
 
 
 
---------------------------------------------------------------------
+--------------------------------------------------------------------   
 
-#Week #8: R Markdown 
+#Week #8: March 4, 2019: Text Mining, Cont. 
 
-**Agenda**
---3/4/2019 - Week 8  
+##Monday March 4  
 
---**Quiz on GitHub** 
---R Markdown 
+*Agenda*
+    
+    Review Assignment #2 
+    Coulter Tweet Analysis #2 Exercise
+    https://bit.ly/2TdY9Mv
+    
+*Assignment #2 Discussion*   
 
---R Markdown, Desktop Publishing
-  --Andrew Ba Tran - Week 5 Publishing
-http://learn.r-journalism.com/en/publishing/
-  --R Markdown
-http://learn.r-journalism.com/en/publishing/rmarkdown/rmarkdown/
-  --More R Markdown
-http://learn.r-journalism.com/en/publishing/more_rmarkdown/more-rmarkdown/
+     Answer Key discussion   
+     top_n function makes life easy  
+     aes - reorder in ggplot   
+ 
+*Misc Items*
 
---Rendering html as an output in GitHub  
-https://rmarkdown.rstudio.com/lesson-9.html
-https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+     Check what software packages are running: Global Environment
+     
+     ^ + shift + 8 = Zoom to Environment  
 
---R Markdown Formatting  
-Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
-  (Note: Remove the period before "img")
-https://rpubs.com/RatherBit/90926
+*Homework *    
 
---Terminology
+    Discuss Kavanaugh text mining story   
+    Complete Coulter Tweet Analysis #2 exercises
 
-    Render  
-    Html  
-    Markdown  
+    
+##Wednesday March 6   
 
-**Notes**
-R Markdown
+*Agenda*
+    
+    Coulter Tweet Analysis #2 Exercise
+    https://bit.ly/2TdY9Mv
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
+    More on this topic!   
+    Comparing AOC and Coulter tweets  
 
 **Reading**   
 Machlis Chs. 15 & 16
@@ -957,7 +942,7 @@ Line breaks: Use HTML tags. Adding <br> will give a single line break --     opt
 
 --------------------------------------------------------------------
 
-#Week #9: GitHub 
+#Week #9: March 11: GitHub, RMarkdown 
 
 **Agenda**
 --3/11/2019 - Week 9  
@@ -1033,6 +1018,59 @@ https://guides.github.com/
 
 --Another GitHub guide  
 https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
+
+
+
+R Markdown 
+
+**Agenda**
+--Wednesday 3/13/2019: R Markdown 
+
+--R Markdown, Desktop Publishing
+  --Andrew Ba Tran - Week 5 Publishing
+http://learn.r-journalism.com/en/publishing/
+  --R Markdown
+http://learn.r-journalism.com/en/publishing/rmarkdown/rmarkdown/
+  --More R Markdown
+http://learn.r-journalism.com/en/publishing/more_rmarkdown/more-rmarkdown/
+
+--Rendering html as an output in GitHub  
+https://rmarkdown.rstudio.com/lesson-9.html
+https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+
+--R Markdown Formatting  
+Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
+  (Note: Remove the period before "img")
+https://rpubs.com/RatherBit/90926
+
+--Terminology
+
+    Render  
+    Html  
+    Markdown  
+
+**Notes**
+R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
 
 -------------------------------------------------------------------- 
 
