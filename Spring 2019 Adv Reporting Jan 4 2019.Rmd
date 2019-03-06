@@ -896,12 +896,6 @@ Machlis Chs. 13 & 14.
      top_n function makes life easy  
      aes - reorder in ggplot   
  
-*Misc Items*
-
-     Check what software packages are running: Global Environment
-     
-     ^ + shift + 8 = Zoom to Environment  
-
 *Homework *    
 
     Discuss Kavanaugh text mining story   
@@ -918,6 +912,13 @@ Machlis Chs. 13 & 14.
     More on this topic!   
     Comparing AOC and Coulter tweets  
 
+*Misc Items*
+
+     Check what software packages are running: Global Environment
+     
+     ^ + shift + 8 = Zoom to Environment  
+
+
 **Reading**   
 Machlis Chs. 15 & 16
 
@@ -933,8 +934,6 @@ Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and 
 
 **Exercises**
 
-
-Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored. 
 
 **--**  
 
@@ -1071,6 +1070,8 @@ plot(pressure)
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 
+Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored. 
+
 
 -------------------------------------------------------------------- 
 
@@ -1087,7 +1088,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 **Agenda**
 --3/25/2019 - Week 10  
 
---**Due March 27: Assignment #3. Interactive Map**
+--**Due April 3: Assignment #3. Interactive Map**
 
 --Produce a basic interactive map in R, post on WordPress
 
@@ -1134,6 +1135,7 @@ Spatial data
 --You will make this in the class  
 ![](Images/AR_Employment_Map.html)  
 
+--**Due April 3: Assignment #3. Interactive Map**
 
 **Reading** 
 Bad data visualizations. Data Translation. 

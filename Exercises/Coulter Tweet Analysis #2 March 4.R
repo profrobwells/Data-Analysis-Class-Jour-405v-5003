@@ -113,7 +113,52 @@ p + geom_text(aes(size = wt)) + scale_radius(range = c(3,6))
 #plot
 
 #---------------------------------------------------------------------#
-# Measuring Engagement
+# Exercise #3: Measure how much engagement (likes) AOC gets over time
+#---------------------------------------------------------------------#
+# Measure how much engagement (likes) AOC gets over time
+# Construct a table based on favorite count, chart it
+# Favorite count
+#plot
+
+#---------------------------------------------------------------------#
+#  Exercise #4: Compare Tables - monthly tweets
 #---------------------------------------------------------------------#
 
-# TK
+#Build AOC monthly Tweets Table
+
+AOC_y_Month <- AOC %>%
+  mutate(created_at = ymd_hms(created_at)) %>%
+  mutate(yearmon= format(created_at, "%Y-%m")) %>%
+  group_by(yearmon) %>%
+  count(yearmon)
+
+
+#Add identifying label to the AOC and Coulter dataframes
+#data$newcolumn<-"your text"
+Coulter_y_Month$Name <- "Coulter"
+AOC_y_Month$Name <- "AOC"
+
+#Combine dataframes using rbind
+AOC_Coulter_Mo <- rbind(AOC_y_Month, Coulter_y_Month)
+
+#plot
+ggplot(AOC_Coulter_Mo)+
+  aes(x = yearmon, y = n, fill = Name)+
+  geom_col() +
+  theme_bw()+
+  labs(title = "AOC-Coulter Tweets", 
+       subtitle = "AOC-Coulter Twitter Feeds",
+       caption = "Source: Twitter 2019",
+       x="Year/Month",
+       y="Tweets Per month") 
+
+#---------------------------------------------------------------------#
+# Exercise #5: Build Table with AOC, Coulter Engagement (likes)
+# Plot over time
+#---------------------------------------------------------------------#
+
+#---------------------------------------------------------------------#
+# Exercise #6: Build Table with AOC, Coulter Immigration Narrative
+# Plot over time
+#---------------------------------------------------------------------#
+
