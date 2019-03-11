@@ -143,13 +143,13 @@ Students will use R Studio to gather, analyze and visualize U.S. Census data for
 They will produce graphics on median household income; income by women-led households; income by latino-based households; income by black-led households. Compare to state and national averages. Data dictionary required
 
 
-###2. Visualization of Twitter data.  Due Feb. 27.
+###2. Visualization of Twitter data.  Due Feb. 27    
 Students will produce publication-ready graphics from Twitter data. Results will be posted on GitHub. Data dictionary required
 
-###Extra Grad Assignment - Scraping Twitter. Due March 13.
-Students will use R Studio to extract a corpus of Twitter data, manage that data in R and produce a basic interactive visualization. 
+###Extra Grad Assignment - Essay on Data. Due March 13     
+A 1,000-word essay based on a Nick Diakopolous online class to explore some of the theoretical and conceptual issues raised about algorithmic journalism. You will be asked to write on four questions, one from each of the modules. 
 
-###3: Interactive Map. Due March 27
+###3: Interactive Map. Due March 27 
 Students will use R Studio to build interactive maps of data in Arkansas. Data dictionary required
 
 ###4. Final Project: Interactive Data Visualization. Due April 29.

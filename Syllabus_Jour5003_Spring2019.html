@@ -90,8 +90,14 @@ img {
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -100,14 +106,74 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -213,13 +279,13 @@ This course is co-taught with an undergraduate section, Jour 405v, Sec. 7. Gradu
 <h3>1: Static Graphic - Managing Data in R. Due Feb 6</h3>
 <p>Students will use R Studio to gather, analyze and visualize U.S. Census data for Arkansas. They will produce graphics on median household income; income by women-led households; income by latino-based households; income by black-led households. Compare to state and national averages. Data dictionary required</p>
 </div>
-<div id="visualization-of-twitter-data.-due-feb.-27." class="section level3">
-<h3>2. Visualization of Twitter data. Due Feb. 27.</h3>
+<div id="visualization-of-twitter-data.-due-feb.-27" class="section level3">
+<h3>2. Visualization of Twitter data. Due Feb. 27</h3>
 <p>Students will produce publication-ready graphics from Twitter data. Results will be posted on GitHub. Data dictionary required</p>
 </div>
-<div id="extra-grad-assignment---scraping-twitter.-due-march-13." class="section level3">
-<h3>Extra Grad Assignment - Scraping Twitter. Due March 13.</h3>
-<p>Students will use R Studio to extract a corpus of Twitter data, manage that data in R and produce a basic interactive visualization.</p>
+<div id="extra-grad-assignment---essay-on-data.-due-march-13" class="section level3">
+<h3>Extra Grad Assignment - Essay on Data. Due March 13</h3>
+<p>A 1,000-word essay based on a Nick Diakopolous online class to explore some of the theoretical and conceptual issues raised about algorithmic journalism. You will be asked to write on four questions, one from each of the modules.</p>
 </div>
 <div id="interactive-map.-due-march-27" class="section level3">
 <h3>3: Interactive Map. Due March 27</h3>
