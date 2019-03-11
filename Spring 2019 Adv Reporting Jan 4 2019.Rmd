@@ -871,9 +871,6 @@ Machlis Chs. 13 & 14.
 **Resources:**
 
 
-
-
-
 **--**  
 
 
@@ -941,136 +938,45 @@ Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and 
 
 --------------------------------------------------------------------
 
-#Week #9: March 11: GitHub, RMarkdown 
+#Week #9: Monday, March 11: Text Mining, cont. 
 
-**Agenda**
---3/11/2019 - Week 9  
+##Monday March 11
 
---**Extra Grad Assignment** - Due March 13.
+*Agenda*    
+
+    **Extra Grad Assignment** - Due March 13.   
+    **Report from NICAR Conference**: Katie Beth Nichols  
+    Resume AOC-Coulter Data Mining Exercise: 
+    Coulter Tweet Analysis #2 Exercise
+    https://bit.ly/2TdY9Mv
 
 
+##Wednesday, March 13: Mapping      
+
+![You will make this in the class](Images/AR_Counties_Map.html)    
+
+--Andrew Ba Tran - Week 4 Mapping    
+http://learn.r-journalism.com/en/mapping/    
+
+--Graphing GGplot 12-28.R    
+  Exercises from Machlis Ch. 9. Facets    
+
+Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
+
+
+**Exercises**   
+--Maps in R 12-28-18.R     
 
 
 **Reading** 
 Machlis Chs. 17 & 18
 
 
+
 **--**  
 
---Create a GitHub account.
-https://github.com/
-
---Follow this tutorial
-https://guides.github.com/activities/hello-world/
-
-
-This class is intended to teach you modern workflow techniques for coding. A centerpiece of that workflow is GitHub. This is a website with a system that allows you to collaborate with other programmers on coding projects. It manages versions of software code and is a very popular with the tech elite. 
-
-Your GitHub account, which is public, represents an important professional image. Prospective employers and collaborators will look at your GitHub account.
-
---Andrew Ba Tran Tutorials on GitHub
-  Git and Github Pages
-http://learn.r-journalism.com/en/git/
-
-  Installing Git
-https://journalismcourses.org/courses/RC0818/installing_git.pdf
-
-  GIT
-https://journalismcourses.org/courses/RC0818/git.pdf
-
-  Connecting to Github
-https://journalismcourses.org/courses/RC0818/github.pdf
-http://learn.r-journalism.com/en/git/github/github/
-
-  Best Practices for Github
-http://learn.r-journalism.com/en/git/github_pages/github-pages/
-
---Loading and basic file management 
-
-    Commit  
-    Branch  
-    Pull Request  
-    Fork  
-  
-
-**Exercises**
-Installing Git for a Mac - Andrew Ba Tran
-
-
-    Pair up.  
-    Team 1 takes this code. Make changes.    
-    Team 2 forks the code. Makes changes.  
-    Pull & Commit  
-
-
---Setting up an R Workflow
-http://learn.r-journalism.com/en/publishing/workflow/r-projects/
-
-
-**Resources on GitHub**  
-
---GitHub flow   
-https://guides.github.com/introduction/flow/
-
---GitHub Guides  
-https://guides.github.com/
-
---Another GitHub guide  
-https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
-
-
-
-R Markdown 
-
-**Agenda**
---Wednesday 3/13/2019: R Markdown 
-
---R Markdown, Desktop Publishing
-  --Andrew Ba Tran - Week 5 Publishing
-http://learn.r-journalism.com/en/publishing/
-  --R Markdown
-http://learn.r-journalism.com/en/publishing/rmarkdown/rmarkdown/
-  --More R Markdown
-http://learn.r-journalism.com/en/publishing/more_rmarkdown/more-rmarkdown/
-
---Rendering html as an output in GitHub  
-https://rmarkdown.rstudio.com/lesson-9.html
-https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
-
---R Markdown Formatting  
-Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
-  (Note: Remove the period before "img")
-https://rpubs.com/RatherBit/90926
-
---Terminology
-
-    Render  
-    Html  
-    Markdown  
-
-**Notes**
-R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
-Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored. 
 
 
 -------------------------------------------------------------------- 
@@ -1192,7 +1098,7 @@ https://trendct.org/2016/12/29/fetching-airport-delays-with-python-a-gentle-guid
 
 --------------------------------------------------------------------
 
-#Week #13:  Web Scraping in R
+#Week #13:  Web Scraping in R, GitHub, RMarkdown 
 
 **Agenda**
 --4/15/2019 - Week 13  
@@ -1214,6 +1120,127 @@ https://futuretodayinstitute.wetransfer.com/downloads/0e84e883e140bafe9a3436a646
 Continue with Week 12 materials
 
 **--**  
+
+*Agenda*
+
+
+
+
+
+--Create a GitHub account.
+https://github.com/
+
+--Follow this tutorial
+https://guides.github.com/activities/hello-world/
+
+
+This class is intended to teach you modern workflow techniques for coding. A centerpiece of that workflow is GitHub. This is a website with a system that allows you to collaborate with other programmers on coding projects. It manages versions of software code and is a very popular with the tech elite. 
+
+Your GitHub account, which is public, represents an important professional image. Prospective employers and collaborators will look at your GitHub account.
+
+--Andrew Ba Tran Tutorials on GitHub
+  Git and Github Pages
+http://learn.r-journalism.com/en/git/
+
+  Installing Git
+https://journalismcourses.org/courses/RC0818/installing_git.pdf
+
+  GIT
+https://journalismcourses.org/courses/RC0818/git.pdf
+
+  Connecting to Github
+https://journalismcourses.org/courses/RC0818/github.pdf
+http://learn.r-journalism.com/en/git/github/github/
+
+  Best Practices for Github
+http://learn.r-journalism.com/en/git/github_pages/github-pages/
+
+--Loading and basic file management 
+
+    Commit  
+    Branch  
+    Pull Request  
+    Fork  
+  
+
+**Exercises**
+Installing Git for a Mac - Andrew Ba Tran
+
+
+    Pair up.  
+    Team 1 takes this code. Make changes.    
+    Team 2 forks the code. Makes changes.  
+    Pull & Commit  
+
+
+--Setting up an R Workflow
+http://learn.r-journalism.com/en/publishing/workflow/r-projects/
+
+
+**Resources on GitHub**  
+
+--GitHub flow   
+https://guides.github.com/introduction/flow/
+
+--GitHub Guides  
+https://guides.github.com/
+
+--Another GitHub guide  
+https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
+
+
+
+R Markdown 
+
+**Agenda**
+--Wednesday 3/13/2019: R Markdown 
+
+--R Markdown, Desktop Publishing
+  --Andrew Ba Tran - Week 5 Publishing
+http://learn.r-journalism.com/en/publishing/
+  --R Markdown
+http://learn.r-journalism.com/en/publishing/rmarkdown/rmarkdown/
+  --More R Markdown
+http://learn.r-journalism.com/en/publishing/more_rmarkdown/more-rmarkdown/
+
+--Rendering html as an output in GitHub  
+https://rmarkdown.rstudio.com/lesson-9.html
+https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
+
+--R Markdown Formatting  
+Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
+  (Note: Remove the period before "img")
+https://rpubs.com/RatherBit/90926
+
+--Terminology
+
+    Render  
+    Html  
+    Markdown  
+
+**Notes**
+R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored. 
 
 
 
