@@ -953,10 +953,17 @@ Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and 
     https://bit.ly/2F3brlh   
 
 
-##Wednesday, March 13: Mapping      
+##Wednesday, March 13
 
-![You will make this in the class](Images/AR_Counties_Map.html)    
+*Agenda*
 
+    Mapping Exercise from Machlis book, Ch. 11      
+    https://bit.ly/2VXCSU2
+    
+
+
+**Exercises**   
+    
 --Andrew Ba Tran - Week 4 Mapping    
 http://learn.r-journalism.com/en/mapping/    
 
@@ -966,10 +973,6 @@ http://learn.r-journalism.com/en/mapping/
 Ch 3 Exercises:
     Stock chart exercise used quantmod is a library for financial analysis. 
     dygraphs creates *interactive Web graphics* of data over time.
-
-
-**Exercises**   
---Maps in R 12-28-18.R     
 
 
 **Reading** 
