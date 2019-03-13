@@ -962,22 +962,42 @@ Samantha Sunne, “The Challenges and Possible Pitfalls of Data Journalism, and 
     
 
 
-**Exercises**   
+*Bots*   
+
+    Bot or Not: Difficulty determining a bot on Twitter    
+  
+    --An app that uses machine learning to guess if a Twitter account is a bot   
+    https://www.r-bloggers.com/botrnot-an-r-app-to-detect-twitter-bots/    
+    https://mikewk.shinyapps.io/botornot/    
     
---Andrew Ba Tran - Week 4 Mapping    
-http://learn.r-journalism.com/en/mapping/    
+    --Article about Botometer   
+    https://www.vox.com/technology/2018/4/9/17214720/pew-study-bots-generate-two-thirds-of-twitter-links   
+    
+    --Stanford research paper on this topic    
+    https://pdfs.semanticscholar.org/e219/6b47133c2191d380098744c13ba77133e625.pdf   
+    
+    
+    
+*Resources*  
 
---Graphing GGplot 12-28.R    
-  Exercises from Machlis Ch. 9. Facets    
+      --Andrew Ba Tran - Week 4 Mapping    
+      http://learn.r-journalism.com/en/mapping/    
 
-Ch 3 Exercises:
-    Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
+      --Graphing GGplot 12-28.R    
+      Exercises from Machlis Ch. 9. Facets    
+
+      Ch 3 Exercises:
+      Stock chart exercise used quantmod is a library for financial analysis. 
+      dygraphs creates *interactive Web graphics* of data over time.
 
 
 **Reading** 
 Machlis Chs. 17 & 18
 
+
+*Homework Over Spring Break*
+
+    R_Homework <- GiveMeABreak(homework = 0), c("enjoy yourself", "make good life choices", "call your parents")
 
 
 **--**  
