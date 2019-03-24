@@ -1,11 +1,11 @@
-#Machlis - Maps in R Ch 10
-#Updated March 12, 2019
+#Machlis - Maps in R Ch 11
+#Updated March 24, 2019
 
 #-------------------------------------
 # Ch 11 Maps in R
 #-------------------------------------  
 
-#library(devtools)
+library(devtools)
 #Install mapping material
 #install devtools if you haven't already done so
 #install("devtools")
@@ -66,23 +66,70 @@ ca_schools <- school_districts("CA")
 
 plot(ca_schools)
 
+#plotting an simple features map
 ca_counties_sf <- counties("CA", class = "sf")
 plot(ca_counties_sf)
 
-#quick thematic mapping function qtm() 
+#Using "simple features" mapping standard 
+#Simple features are conventional data frames 
+#that have one special column of geography.
+dplyr::glimpse(ca_counties_sf) 
+#Easier to deal with than SpatialPolygonsDataFrame
+dplyr::glimpse(ca_counties) 
+
+#quick thematic mapping function qtm()
+#tmap function similar to ggplot2’s qplot()
 qtm(ca_counties_sf)
 
+#Importing Map Data
+#
 #Load two folders to your data directory: acs2017_5yr and acs2015_5yr
  
-ca_income <- read_shape("data/acs2017_5yr_B19013_05000US06063/acs2017_5yr_B19013_05000US06063.shp", as.sf = TRUE)
-
+ca_income <- read_shape(
+  "data/acs2017_5yr_B19013_05000US06063/acs2017_5yr_B19013_05000US06063.shp",
+  as.sf = TRUE)
+#
 str(ca_income)
-names(ca_income)[2:4] <- c("County", "Median.Income", "MoE")
+head(ca_income)
+#
+#deleting first row in df that has statewide data
+df = ca_income[-1,]
+ca_income <- df
 
+#Rename columns
+names(ca_income)[2:4] <- c("County", "Median.Income", "MoE")
+#
+#scipen eliminates scientific notation on x axis for this plot below
 options(scipen = 999)
 hist(ca_income$Median.Income)
-
+#
+#Interactive maps with tmap
+tmap_mode("view")
+#
+#Show median income by county
 qtm(ca_income, fill = "Median.Income")
+#
+#Shortcut between views
+ttm()
+#Redraw last map
+last_map()
+#
+#Interactive maps with tmap
+tmap_mode("view")
+#
+#Interactive with name popups
+tm_shape(ca_income) +
+  tm_polygons(col = "Median.Income", id = "County")
+
+#Interactive with rollovers and popups
+ca_income_map <- tm_shape(ca_income) +
+  tm_polygons(col = "Median.Income", id = "County")
+
+#save as html object
+tmap_save(ca_income_map, "CA_Counties_Map.html")
+#
+#Victory!
+#
 
 #-----------------------------------
 #YOUR TURN
@@ -90,3 +137,20 @@ qtm(ca_income, fill = "Median.Income")
 #-----------------------------------
 ar_counties <- counties("AR")
 
+#Get Median Income Shapefile from CensusReporter
+https://censusreporter.org/
+  
+  #1: Tell the thing what you want
+  #In the Explore box, type "Median income"
+  #Select: Table B19013: Median Household Income
+  #Type in "Arkansas" where it says “Start typing to pick a place”
+  #Select Arkansas - state
+  #Headline now says: Median Household Income in the Past 12 Months (In 2017 Inflation-adjusted Dollars)
+  #See menu on left “Divide Arkansas into …”. Choose counties
+  #See upper right, click to download data at the top right.
+  #One of the choices is a shapefile including both geography and data. 
+  #Download shapefile. Unzip it. 
+#Move file to your data folder. Import it with:
+
+ar_income <- read_shape("data/acs2017_5yr_B19013_05000US05055/acs2017_5yr_B19013_05000US05055.shp", 
+                        as.sf = TRUE)

@@ -1012,48 +1012,64 @@ Machlis Chs. 17 & 18
 
 --------------------------------------------------------------------
 
-#Week #10: Mapping in R
+#Week #10: March 25, Mapping in R
+
+##Monday March 25  
+
+**Agenda**
+
+      1) Due April 3: Assignment #3. Interactive Map
+      Produce a basic interactive map in R, post on WordPress
+      
+      2) Updated R software. Open and run scripts
+      
+      3) Sign up for a census key:
+      https://api.census.gov/data/key_signup.html
+
+      4) What is an API?
+      
+      5) Video of Machlis mapping  
+      https://www.youtube.com/watch?v=HFJOV5XaU_U
+      See R script:
+      Maps in R March 24 2019
+      
+**Exercises**
+
+    Adapt Machlis - Maps in R Ch 11 exercise for Median Income in Arkansas
+    
+*Resources*
+
+    What is an API?
+    Application Programming Interface - API  
+
 
 ![You will make this in the class](Images/AR_Counties_Map.html)
 
-**Agenda**
---3/25/2019 - Week 10  
 
---**Due April 3: Assignment #3. Interactive Map**
 
---Produce a basic interactive map in R, post on WordPress
-
---Andrew Ba Tran - Week 4 Mapping
-http://learn.r-journalism.com/en/mapping/
 
 **Reading** 
-“Connecting the Dots” by Jacob Harris (2015) and discuss how people should or should not be represented through news visualizations.
 
-What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+APIs - basics   
 
---Graphing GGplot 12-28.R
-  Exercises from Machlis Ch. 9. Facets
+    https://medium.com/@LewisMenelaws/a-beginners-guide-to-web-apis-and-how-they-will-help-you-23923a0da450
 
-Ch 3 Exercises:
-    Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
-
-
+    A gentle introduction to APIs for data journalists
+    https://trendct.org/2016/12/29/fetching-airport-delays-with-python-a-gentle-guide-to-apis-for-journalists/
+    
+    Twitter historical API
+    https://developer.twitter.com/en/docs/tutorials/choosing-historical-api
+    
+    “Connecting the Dots” by Jacob Harris (2015) and discuss how people should or should not be represented through news visualizations.
 
 **Resources:**
---Visual Narrative Tricks by Albert Cairo
-https://www.youtube.com/watch?v=TSGaueL4Ggk
 
-Spatial data
-  maptools - work with shapefiles
+##Wednesday March 27  
 
-
-**Exercises**
---Maps in R 12-28-18.R
+      In-Class Assignment: Andrew Ba Tran - Mapping    
+      http://learn.r-journalism.com/en/mapping/ 
 
 **--**  
-
-
 
 --------------------------------------------------------------------
 
@@ -1075,6 +1091,26 @@ The Journalist as Programmer: A Case Study of The New York Times Interactive New
 
 **Resources:**
 
+Repo for Andrew Ba Tran mapping exerices:
+      install.packages("usethis")
+      usethis::use_course("https://github.com/r-journalism/learn-chapter-5/archive/master.zip")
+
+
+--Visual Narrative Tricks by Albert Cairo
+https://www.youtube.com/watch?v=TSGaueL4Ggk
+
+Spatial data
+  maptools - work with shapefiles
+
+What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
+
+--Graphing GGplot 12-28.R
+  Exercises from Machlis Ch. 9. Facets
+
+Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
+    
 **Exercises**
 --Maps Spatial Analysis Tutorial.R
 **--**  
@@ -1090,9 +1126,6 @@ The Journalist as Programmer: A Case Study of The New York Times Interactive New
 
 
 --Web Scraping in R  
---Application Programming Interface - API  
-Twitter historical API
-https://developer.twitter.com/en/docs/tutorials/choosing-historical-api
 
 --See 4.8 in Machlis:
 ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
@@ -1104,14 +1137,8 @@ Julia Angwin, Terry Parris Jr., Surya Mattu. “Breaking the Black Box: What Fac
 
 Nicholas Diakopolous, “Algorithmic Accountability,” Digital Journalism, 2014.
 
-APIs - basics
-https://medium.com/@LewisMenelaws/a-beginners-guide-to-web-apis-and-how-they-will-help-you-23923a0da450
 
-A gentle introduction to APIs for data journalists
-https://trendct.org/2016/12/29/fetching-airport-delays-with-python-a-gentle-guide-to-apis-for-journalists/
 
-**MA Students**
---Sign up for a Census API key: https://api.census.gov/data/key_signup.html
 
 **Resources:**
 
