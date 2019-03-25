@@ -1019,33 +1019,28 @@ Machlis Chs. 17 & 18
 **Agenda**
 
       1) Due April 3: Assignment #3. Interactive Map
-      Produce a basic interactive map in R, post on WordPress
+      Produce a basic interactive map in R
       
-      2) Updated R software. Open and run scripts
+      2) Updated R software. Open and run script: https://bit.ly/2TdY9Mv
       
-      3) Sign up for a census key:
+      3) Washington Post White House reporter Josh Dawsey, visits with     students, 2 p.m. Wednesday April 3, Student Media conference room
+      
+      4) Sign up for a census key:
       https://api.census.gov/data/key_signup.html
 
-      4) What is an API?
+      5) What is an API?
       
-      5) Video of Machlis mapping  
+      6) Video of Machlis mapping  
       https://www.youtube.com/watch?v=HFJOV5XaU_U
       See R script:
       Maps in R March 24 2019
+      https://bit.ly/2FvZDrB
       
 **Exercises**
 
     Adapt Machlis - Maps in R Ch 11 exercise for Median Income in Arkansas
-    
-*Resources*
 
-    What is an API?
-    Application Programming Interface - API  
-
-
-![You will make this in the class](Images/AR_Counties_Map.html)
-
-
+![You will make this in the class](Images/ARmed_income3-22-19.png)
 
 
 **Reading** 
