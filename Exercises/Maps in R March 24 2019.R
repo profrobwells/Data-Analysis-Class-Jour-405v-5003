@@ -1,8 +1,9 @@
 #Machlis - Maps in R Ch 11
-#Updated March 24, 2019
+#Updated March 27, 2019
+#ADDED API SECTION AND CENSUS TRACT MAPS
 
 #-------------------------------------
-# Ch 11 Maps in R
+# Ch 11, MACHLIS, Maps in R
 #-------------------------------------  
 
 library(devtools)
@@ -18,6 +19,10 @@ devtools::install_github('bhaskarvk/leaflet.extras', force = TRUE)
 #install_github("walkerke/tigris")
 #install_github('bhaskarvk/leaflet.extras', force = TRUE)
 
+install.packages("tmap")
+install.packages("tidycensus")
+install.packages("ggmap")
+
 library(leaflet)
 library(glue)
 library(dplyr)
@@ -28,6 +33,9 @@ library(tidycensus)
 library(ggmap)
 library(htmltools)
 library(htmlwidgets)
+library(ggplot2)
+library(ggmap)
+library(tigris)
 
 #Alternate install proceedure using pacman
 #pacman::p_load(leaflet, glue, dplyr, sf, tmap, tmaptools, tidycensus, ggmap, htmltools, htmlwidgets) 
@@ -63,7 +71,6 @@ ca_counties <- counties("CA")
 plot(ca_counties)
 
 ca_schools <- school_districts("CA")
-
 plot(ca_schools)
 
 #plotting an simple features map
@@ -109,14 +116,6 @@ tmap_mode("view")
 #Show median income by county
 qtm(ca_income, fill = "Median.Income")
 #
-#Shortcut between views
-ttm()
-#Redraw last map
-last_map()
-#
-#Interactive maps with tmap
-tmap_mode("view")
-#
 #Interactive with name popups
 tm_shape(ca_income) +
   tm_polygons(col = "Median.Income", id = "County")
@@ -154,3 +153,160 @@ https://censusreporter.org/
 
 ar_income <- read_shape("data/acs2017_5yr_B19013_05000US05055/acs2017_5yr_B19013_05000US05055.shp", 
                         as.sf = TRUE)
+
+
+#-----------------------------------
+## Downloading Census data into R via API
+#-----------------------------------
+
+# First, sign up for a [census key](https://api.census.gov/data/key_signup.html).
+
+# Add key to .Renviron
+Sys.setenv(CENSUS_KEY="YOUR CENSUS KEY HERE")
+# Reload .Renviron
+readRenviron("~/.Renviron")
+# Check to see that the expected key is output in your R console
+Sys.getenv("CENSUS_KEY")
+
+
+# If you don't have censusapi installed yet, uncomment the line below and run
+install.packages("censusapi")
+
+library(censusapi)
+
+apis <- listCensusApis()
+View(apis)
+
+#This takes some time to load
+acs_vars <- listCensusMetadata(name="acs/acs5", type="variables", vintage=2017)
+#Be patient! It needs to load
+#
+View(acs_vars)
+#
+#To understand what is here, use the CensusReporter website as a guide
+#https://censusreporter.org/
+#See Topics section. See income
+#
+#Look up this table: B19013
+#
+#Another resource
+https://api.census.gov/data/2017/acs/acs5/variables.html
+#
+#Build an Arkansas unemployment income table
+#Find Arkansas state code
+https://www.census.gov/geo/reference/ansi_statetables.html
+#
+#Find unemployment table in https://censusreporter.org/
+#
+#Find the variables you want to map. Search by table name
+https://api.census.gov/data/2017/acs/acs5/variables.html
+#
+#Build your jobs table
+#
+ar_jobs <- getCensus(name = "acs/acs5", vintage = 2017, 
+                     vars = c("NAME", "B23025_001E", "B23025_005E"), 
+                     region = "county:*", regionin = "state:05")
+
+#Calculate unemployment rate: Divide unemployed into population
+ar_jobs$unem_rate <- (ar_jobs$B23025_005E/ar_jobs$B23025_001E)
+
+#Alex Nichol decimal rounding:
+ar_jobs$unem_rate<-round(ar_jobs$unem_rate, 2)
+
+head(ar_jobs)
+
+#Rename columns
+names(ar_jobs)[3:5] <- c("Co_Name", "Population", "Unemployed")
+
+#Load map data in Tigris - SF. set sf option
+options(tigris_class = "sf")
+#
+#Load the Arkansas counties sf files
+ar <- counties("AR", cb=T)
+#
+#Join on where there's already a consistent variable, even though the names don't line up
+#
+ar4ever <- left_join(ar, ar_jobs, by=c("COUNTYFP"="county"))
+#
+#Map it
+ggplot(ar4ever) + 
+  geom_sf(aes(fill=unem_rate), color="white") +
+  theme_void() +
+  theme(panel.grid.major = element_line(colour = 'transparent')) +
+  scale_fill_distiller(palette="Oranges", direction=1, name="Median income") +
+  labs(title="2017 Unemployment in Arkansas counties, age 16 and older", caption="Source: : U.S. Census Bureau (2017). Fantastic map by Rob Wells")
+
+#-------------------------------------------------------------#
+#             Census Tracts in Washington Co                  #
+#-------------------------------------------------------------#
+#
+#Now get granular data from the census by census tracts
+#region = tract:*
+#regionin = "state:05+county:143"
+#county number? Look at AR df, find Washington and the county number
+#Genius.
+#
+
+fy_income <- getCensus(name = "acs/acs5", vintage = 2017, 
+                       vars = c("NAME", "B19013_001E", "B19013_001M"), 
+                       region = "tract:*", regionin = "state:05+county:143")
+
+head(fy_income)
+
+
+#Load map data - SF
+# If you don't have tigris installed yet, uncomment the line below and run
+#install.packages("tigris")
+#library(tigris)
+# set sf option
+#options(tigris_class = "sf")
+#ar <- counties("AR", cb=T)
+tracts <- tracts(state = 'AR', county = 143, cb=TRUE)
+
+# We could gsub out the string but we'll join on where there's already a consistent variable, even though the names don't line up
+library(dplyr)
+fy4ever <- left_join(tracts, fy_income, by=c("COUNTYFP"="county"))
+
+library(ggplot2)
+
+ggplot(fy4ever) + 
+  geom_sf(aes(fill=B19013_001E), color="blue") +
+  theme_void() +
+  theme(panel.grid.major = element_line(colour = 'transparent')) +
+  scale_fill_distiller(palette="Oranges", direction=1, name="Median income") +
+  labs(title="2017 Median income in Washington County", caption="Source: US Census/ACS5 2017. Not so Fantastic map by Rob Wells")
+
+#What is wrong with this picture?
+#Look at what it is mapping
+View(fy_income)
+View(fy4ever)
+
+#Duplicate tracts.
+#Help ggplot do its job
+
+#Try with a different join
+#What kind of a join will give us just the 32 census tracts of Washington County?
+
+colnames(tracts)
+#[1] "STATEFP"  "COUNTYFP" "TRACTCE"  "AFFGEOID" "GEOID"    "NAME"     "LSAD"    
+#[8] "ALAND"    "AWATER"   "geometry"
+
+> colnames(fy_income)
+#[1] "state"       "county"      "tract"       "NAME"        "B19013_001E"
+#[6] "B19013_001M"
+
+
+#Try this
+fy4tract <- inner_join(tracts, fy_income, by=c("TRACTCE"="tract"))
+
+ggplot(fy4tract) + 
+  geom_sf(aes(fill=B19013_001E), color="blue") +
+  theme_void() +
+  theme(panel.grid.major = element_line(colour = 'transparent')) +
+  scale_fill_distiller(palette="Oranges", direction=1, name="Median Income") +
+  labs(title="YES!!! 2017 Median income in Washington County", 
+       caption="Source: US Census/ACS5 2017. Fantastic map by Rob Wells")
+
+#Victory!
+
+#Now do this with Benton County

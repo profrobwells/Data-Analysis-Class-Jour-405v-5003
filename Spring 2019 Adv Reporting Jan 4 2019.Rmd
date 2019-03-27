@@ -1057,60 +1057,73 @@ APIs - basics
     
     “Connecting the Dots” by Jacob Harris (2015) and discuss how people should or should not be represented through news visualizations.
 
-**Resources:**
+
 
 ##Wednesday March 27  
 
-      In-Class Assignment: Andrew Ba Tran - Mapping    
-      http://learn.r-journalism.com/en/mapping/ 
+**Agenda**   
+      
+      Adapt Machlis - Maps in R Ch 11 exercise for Median Income in Arkansas
+      
+      Maps in R March 24 2019 - Using the Census API
+      https://bit.ly/2FvZDrB
+
+      Building a Census tract map
+      
+**We will build this**   
+![](Images/Income by Census Tract Washington Co.png)    
+
+**Resources:** 
+
+    Census Reporter to look up tables
+    https://censusreporter.org/
 
 **--**  
 
 --------------------------------------------------------------------
 
-#Week #11: Mapping in R 
+#Week #11: April 1, Mapping in R  
 
-**Agenda**
---4/1/2019 - Week 11  
---Produce a basic interactive map in R, post on WordPress
+**Agenda**   
+      
+      Andrew Ba Tran mapping exercise: Ch. 5
+      Produce a basic interactive map in R, post on WordPress
+      Maps Spatial Analysis Tutorial.R
+      Spatial data - maptools - work with shapefiles
+      
+      
+**Due April 3: Assignment #3. Interactive Map**
 
---You will make this in the class  
-![](Images/AR_Employment_Map.html)  
 
---**Due April 3: Assignment #3. Interactive Map**
+**Exercises**
+
+    Repo for Andrew Ba Tran mapping exerices:
+      install.packages("usethis")
+      usethis::use_course("https://github.com/r-journalism/learn-chapter-5/archive/master.zip")
+
+    Graphing GGplot 12-28.R
+    Exercises from Machlis Ch. 9. Facets
+
+
+    Ch 3 Exercises:
+    Stock chart exercise used quantmod is a library for financial analysis. 
+    dygraphs creates *interactive Web graphics* of data over time.
+    
+
+**Resources:**
 
 **Reading** 
 Bad data visualizations. Data Translation. 
 
 The Journalist as Programmer: A Case Study of The New York Times Interactive News Technology Department http://isoj.org/wp-content/uploads/2016/10/ISOJ_Journal_V2_N1_2012_Spring.pdf
 
-**Resources:**
-
-Repo for Andrew Ba Tran mapping exerices:
-      install.packages("usethis")
-      usethis::use_course("https://github.com/r-journalism/learn-chapter-5/archive/master.zip")
-
-
 --Visual Narrative Tricks by Albert Cairo
 https://www.youtube.com/watch?v=TSGaueL4Ggk
 
-Spatial data
-  maptools - work with shapefiles
-
 What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
---Graphing GGplot 12-28.R
-  Exercises from Machlis Ch. 9. Facets
 
-Ch 3 Exercises:
-    Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
-    
-**Exercises**
---Maps Spatial Analysis Tutorial.R
 **--**  
-
-
 
 --------------------------------------------------------------------
 
