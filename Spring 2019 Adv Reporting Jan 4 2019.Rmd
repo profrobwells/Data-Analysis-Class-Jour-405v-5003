@@ -1082,34 +1082,56 @@ APIs - basics
 
 --------------------------------------------------------------------
 
-#Week #11: April 1, Mapping in R  
+#Week #11: April 1, Mapping in R, Sentiment Analusis  
+
+##Monday, April 1
 
 **Agenda**   
-      
-      Andrew Ba Tran mapping exercise: Ch. 5
-      Produce a basic interactive map in R, post on WordPress
-      Maps Spatial Analysis Tutorial.R
-      Spatial data - maptools - work with shapefiles
-      
-      
-**Due April 3: Assignment #3. Interactive Map**
+     
+     Due April 3: Assignment #3. Interactive Map
+     Questions on mapping exercises
+     Joins in R: https://bit.ly/2OFnGJ6
+     What is Sentiment Analysis
+     What is TidyText
+     
 
 
 **Exercises**
 
-    Repo for Andrew Ba Tran mapping exerices:
-      install.packages("usethis")
-      usethis::use_course("https://github.com/r-journalism/learn-chapter-5/archive/master.zip")
-
-    Graphing GGplot 12-28.R
-    Exercises from Machlis Ch. 9. Facets
-
-
-    Ch 3 Exercises:
-    Stock chart exercise used quantmod is a library for financial analysis. 
-    dygraphs creates *interactive Web graphics* of data over time.
+    Sentiment analysis tutorial 3-31-19.R
+    https://bit.ly/2V7bxPl
     
+    Joins in R: 
+    https://bit.ly/2OFnGJ6
+    
+    AOC sentiment analysis 3-31-19.R
+    https://bit.ly/2CKsWq4
 
+##Wednesday, April 3
+
+
+**Agenda**   
+     
+     Continue with Sentiment Analysis
+
+
+**Reading**
+
+    Foundational text on sentiment analysis!   
+    http://varianceexplained.org/r/trump-tweets/    
+
+    Tidy text mining
+    https://www.tidytextmining.com/tidytext.html#
+    
+    Joins in R
+    
+    
+    Sentiment analysis
+    http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm  
+  
+    Saif Mohammad research on sentiment analysis  
+    http://saifmohammad.com/index.html
+    
 **Resources:**
 
 **Reading** 
@@ -1129,48 +1151,53 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 #Week #12: Web Scraping in R
 
+##Monday, April 8
+
 **Agenda**
---4/8/2019 - Week 12  
 
+    How to scrape Twitter using an API key
+    Web Scraping in R: Simple Web Scraper 
+    
 
---Web Scraping in R  
+**Exercises**
 
---See 4.8 in Machlis:
-‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
-
-
+    Wells video TK of Twitter web scraping process.
 
 **Reading** 
-Julia Angwin, Terry Parris Jr., Surya Mattu. “Breaking the Black Box: What Facebook Knows About You,” ProPublica, 2016; 
 
-Nicholas Diakopolous, “Algorithmic Accountability,” Digital Journalism, 2014.
+    Julia Angwin, Terry Parris Jr., Surya Mattu. “Breaking the Black Box: What Facebook Knows About You,” ProPublica, 2016; 
+
+      Nicholas Diakopolous, “Algorithmic Accountability,” Digital Journalism, 2014.
 
 
+      https://blog.expertisefinder.com/top-6-google-search-tips-for-journalists/
+
+      https://aiethicsinitiative.org/news/2019/3/12/artificial-intelligence-and-the-news-seven-ideas-receive-funding-to-ensure-ai-is-used-in-the-public-interest
+
+      http://www.machlis.com/nicar19.html
 
 
 **Resources:**
 
-**Exercises**
---MA Students, Census API exercise
+
+      --See 4.8 in Machlis:
+      ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
+
+
+
 **--**  
 
 
 
 --------------------------------------------------------------------
 
-#Week #13:  Web Scraping in R, GitHub, RMarkdown 
+#Week #13:  GitHub 
 
 **Agenda**
 --4/15/2019 - Week 13  
 -- Web Scraping in R
 
 **Reading** 
---Twitter analysis of Trump Tweets
-http://varianceexplained.org/r/trump-tweets/
-
-Different types of Twitter APIs
-https://developer.twitter.com/en/products/products-overview
-
 
 Amy Webb future of journalism trends
 https://futuretodayinstitute.wetransfer.com/downloads/0e84e883e140bafe9a3436a6464032be20171003123607/ecda17
@@ -1252,79 +1279,19 @@ https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.htm
 
 R Markdown 
 
-**Agenda**
---Wednesday 3/13/2019: R Markdown 
-
---R Markdown, Desktop Publishing
-  --Andrew Ba Tran - Week 5 Publishing
-http://learn.r-journalism.com/en/publishing/
-  --R Markdown
-http://learn.r-journalism.com/en/publishing/rmarkdown/rmarkdown/
-  --More R Markdown
-http://learn.r-journalism.com/en/publishing/more_rmarkdown/more-rmarkdown/
-
---Rendering html as an output in GitHub  
-https://rmarkdown.rstudio.com/lesson-9.html
-https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf
-
---R Markdown Formatting  
-Sizing images:  <.img src="drawing.jpg" alt="drawing" width="200"/>  
-  (Note: Remove the period before "img")
-https://rpubs.com/RatherBit/90926
-
---Terminology
-
-    Render  
-    Html  
-    Markdown  
-
-**Notes**
-R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
-Line breaks: Use HTML tags. Adding <br> will give a single line break --     option for when two-space indentation is ignored. 
-
 
 
 --------------------------------------------------------------------
 
-#Week #14: Sentiment Analysis - Final Project
+#Week #14:  - Final Project
 
 **Agenda**
 --4/22/2019 - Week 14  
 
---Sentiment Analysis
-
-**Reading**
---Sentiment analysis
-http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm  
-
---Saif Mohammad research on sentiment analysis  
-http://saifmohammad.com/index.html
 
 **Resources:**
 
 **Exercises**
-
-Collins sentiment analysis 10-13-18.R
 
 **--**  
 
