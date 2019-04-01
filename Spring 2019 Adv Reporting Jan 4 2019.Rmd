@@ -1094,7 +1094,32 @@ APIs - basics
      What is Sentiment Analysis
      What is TidyText
      
+**Resources**
 
+    Sentiment analysis:
+    
+    Token - Tokenization
+    A token usually refers to a word (or could be any "meaningful unit of text") that is in a special table designed for analysis. 
+    Tokenization = the process of splitting text into tokens. 
+    One-token-per-row structure allows matching to sentiment dictionaries.
+    
+    Sentiment dictionaties
+    --AFINN from Finn Årup Nielsen,
+    --Bing from Bing Liu and collaborators, and
+    --NRD from Saif Mohammad and Peter Turney.
+    
+    NRC Word-Emotion Association Lexicon (aka EmoLex)
+    http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm
+
+    Issues: unigrams. Measure single words. Doesn't assess qualifiers before a word, such as in “no good” or “not true”
+    Can measure bigrams
+    
+
+    
+    
+**Putting it all together**   
+![](Images/sentiment_chart.png)      
+    
 
 **Exercises**
 
