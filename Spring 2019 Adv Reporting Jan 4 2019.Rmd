@@ -1082,7 +1082,7 @@ APIs - basics
 
 --------------------------------------------------------------------
 
-#Week #11: April 1, Mapping in R, Sentiment Analusis  
+#Week #11: April 1, Mapping in R, Sentiment Analysis  
 
 ##Monday, April 1
 
@@ -1138,6 +1138,16 @@ APIs - basics
 **Agenda**   
      
      Continue with Sentiment Analysis
+   
+     Quick hit: Analyze Dawsey tweets
+     https://bit.ly/2WKJcih
+
+     Sentiment analysis on Josh Dawsey tweets
+     Adapt this for the Dawsey exercise
+     https://bit.ly/2CKsWq4
+
+**Twitter activity of our guest speaker**   
+![](Images/Dawsey Tweets.png)
 
 
 **Reading**
