@@ -1184,20 +1184,22 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 --------------------------------------------------------------------
 
-#Week #12: Web Scraping in R
+#Week #12: Sentiment Analysis 
 
 ##Monday, April 8
 
 **Agenda**
 
-    How to scrape Twitter using an API key
-    Web Scraping in R: Simple Web Scraper 
-    
+     Continue with Sentiment Analysis
+   
+**Exercises**  
 
-**Exercises**
-
-    Wells video TK of Twitter web scraping process.
-
+     Sentiment analysis of Dawsey tweets
+     Adapt this for exercise: https://bit.ly/2CKsWq4
+     
+     AOC, Coulter sentiment analysis 
+     https://bit.ly/2CKsWq4
+ 
 **Reading** 
 
     Julia Angwin, Terry Parris Jr., Surya Mattu. “Breaking the Black Box: What Facebook Knows About You,” ProPublica, 2016; 
@@ -1205,18 +1207,20 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
       Nicholas Diakopolous, “Algorithmic Accountability,” Digital Journalism, 2014.
 
 
-      https://blog.expertisefinder.com/top-6-google-search-tips-for-journalists/
-
-      https://aiethicsinitiative.org/news/2019/3/12/artificial-intelligence-and-the-news-seven-ideas-receive-funding-to-ensure-ai-is-used-in-the-public-interest
-
-      http://www.machlis.com/nicar19.html
-
-
 **Resources:**
 
 
-      --See 4.8 in Machlis:
-      ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
+     
+
+##Wednesday, April 10
+
+**Agenda** 
+
+    Bigrams
+    Compare sentiment over time.
+  
+
+**Exercises**
 
 
 
@@ -1226,18 +1230,32 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 --------------------------------------------------------------------
 
-#Week #13:  GitHub 
+#Week #13:  Web Scraping Twitter
 
 **Agenda**
---4/15/2019 - Week 13  
--- Web Scraping in R
+
+    How to scrape Twitter using an API key
+    Web Scraping in R: Simple Web Scraper 
+
+**Exercies**
+
+    Wells video of Twitter web scraping process.
 
 **Reading** 
 
 Amy Webb future of journalism trends
 https://futuretodayinstitute.wetransfer.com/downloads/0e84e883e140bafe9a3436a6464032be20171003123607/ecda17
-**Resources:**
 
+https://blog.expertisefinder.com/top-6-google-search-tips-for-journalists/
+
+https://aiethicsinitiative.org/news/2019/3/12/artificial-intelligence-and-the-news-seven-ideas-receive-funding-to-ensure-ai-is-used-in-the-public-interest
+
+http://www.machlis.com/nicar19.html
+
+**Resources:**   
+  
+    --See 4.8 in Machlis:
+    ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
 **Exercises**
 Continue with Week 12 materials
 
