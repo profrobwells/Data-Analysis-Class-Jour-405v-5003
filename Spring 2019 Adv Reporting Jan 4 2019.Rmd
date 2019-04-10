@@ -1216,11 +1216,17 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 **Agenda** 
 
-    Bigrams
+    Julia Angwin article
     Compare sentiment over time.
+    Bigrams
   
+**Twitter sentiment over time**   
+![](Images/AOC sentiment over time.jpeg)    
 
-**Exercises**
+**Exercises**   
+      
+      Sentiment and Time Analysis 4-9-19.R
+      https://bit.ly/2UtNP3q
 
 
 
