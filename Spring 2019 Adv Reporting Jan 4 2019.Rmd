@@ -1184,7 +1184,7 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 --------------------------------------------------------------------
 
-#Week #12: Sentiment Analysis 
+#Week #12: April 8, Sentiment Analysis 
 
 ##Monday, April 8
 
@@ -1236,16 +1236,29 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 --------------------------------------------------------------------
 
-#Week #13:  Web Scraping Twitter
+#Week #13: April 15, Sentiment, Web Scraping Twitter
 
+##Monday, April 15   
 **Agenda**
+
+    Happy Tax Day
+    Happy Boston Marathon Day
+    Assignment #4 is posted
+    Online class Wednesday
+    Adapt April 10 in-class exercise to the Ann Coulter feed
+    Bigrams
+    
+**Coulter Bigrams - Relationship**   
+![](Images/Coulter Bigram Graphic.jpeg)  
+    
+    
+##Wednesday, April 17
+**Agenda** 
+
+    Online Class. See Blackboard
 
     How to scrape Twitter using an API key
     Web Scraping in R: Simple Web Scraper 
-
-**Exercies**
-
-    Wells video of Twitter web scraping process.
 
 **Reading** 
 
@@ -1258,12 +1271,15 @@ https://aiethicsinitiative.org/news/2019/3/12/artificial-intelligence-and-the-ne
 
 http://www.machlis.com/nicar19.html
 
-**Resources:**   
-  
-    --See 4.8 in Machlis:
-    ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
-**Exercises**
-Continue with Week 12 materials
+--------------------------------------------------------------------
+
+#Week #14, April 22:  - Sentiment, Charting, GitHub
+
+**Agenda**
+--4/22/2019 - Week 14  
+
+
+**Resources:**
 
 **--**  
 
@@ -1334,21 +1350,10 @@ https://guides.github.com/
 --Another GitHub guide  
 https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
 
-
-
-R Markdown 
-
-
-
---------------------------------------------------------------------
-
-#Week #14:  - Final Project
-
-**Agenda**
---4/22/2019 - Week 14  
-
-
-**Resources:**
+**Resources:**   
+  
+    --See 4.8 in Machlis:
+    ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
 
 **Exercises**
 
@@ -1359,13 +1364,13 @@ R Markdown
 --------------------------------------------------------------------
 
 
-#Week #15: Wrap Up
+#Week #15, April 29: Wrap Up
 
 
 **Agenda**
 --4/29/2019 - Week 15  
 
---**Assignment #4 Final Project: Interactive Data Visualization**
+--**Assignment #4: Politicians Twitter Feeds **
 
 
 **--**  

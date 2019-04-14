@@ -6,15 +6,15 @@
 
 
 #Set Working Directory#
-setwd("~/Dropbox/Current Projects Sept 2018/Collins Twitter")
+setwd("Your directory")
 #load packages needed for this; needs to be done every time
 #these are all part of tidyverse
 
 #Install packages if you haven't already
-install.packages("twitteR")
-install.packages("rtweet")
-install.packages("stringr")
-install.packages("tidytext") 
+#install.packages("twitteR")
+#install.packages("rtweet")
+#install.packages("stringr")
+#install.packages("tidytext") 
 ## install httpuv if not already
 if (!requireNamespace("httpuv", quietly = TRUE)) {
   install.packages("httpuv")
@@ -40,6 +40,25 @@ library(rio)
 ##Import AOC
 AOC <- ArkCensus <- rio::import("./data/AOC.csv")
 
+#Process date field
+library(lubridate)
+#Load dplyr
+library(dplyr)
+library(tidyr)
+AOC2 <- AOC %>% 
+  separate(created_at, c("date", "seconds"), " ")
+#
+some_date <- "2019-01-01"
+ymd(some_date)
+#
+#New separate date field
+AOC2$date2 <- ymd(AOC2$date)
+str(AOC2)
+
+AOC2$year <- year(AOC2$date2)
+AOC2$month <- month(AOC2$date2, label=TRUE)
+AOC2$day <- day(AOC2$date2)
+AOC2$weekday <- wday(AOC2$date2, label=TRUE, abbr=FALSE)
 
 #------------------------------------------------------------------------------#
 #                       ANALYZE WORDS                       #
@@ -51,19 +70,18 @@ AOC <- ArkCensus <- rio::import("./data/AOC.csv")
 reg <- "([^A-Za-z\\d#@']|'(?![A-Za-z\\d#@]))"
 #
 #
-tweet_words <- AOC %>%
+AOC2 <- AOC2 %>%
   filter(!str_detect(text, '^"')) %>%
   mutate(text = str_replace_all(text, "https://t.co/[A-Za-z\\d]+|&amp;", "")) %>%
   unnest_tokens(word, text, token = "regex", pattern = reg) %>%
   filter(!word %in% stop_words$word,
          str_detect(word, "[a-z]"))
 
-tweet_words
-
-AOCwords <- tweet_words %>%
-  count(word, source) %>%
+#By Month
+AOCmonth <- AOC2 %>%
+  count(word, month) %>%
   filter(sum(n) >= 5) %>%
-  spread(source, n, fill = 0) %>%
+  spread(month, n, fill = 0) %>%
   ungroup()
 
 #Don't count as separate devices#
@@ -107,6 +125,23 @@ sentiment_words <- tweet_words %>%
   select(word, sentiment, n) %>% 
   arrange(desc(n))
 #
+#By month
+sentiment_month <- AOC2 %>% 
+  count(word, month) %>%
+  inner_join(nrc, by = "word") %>% 
+  select(word, month, sentiment, n) %>% 
+  group_by(month) %>% 
+  arrange(desc(n))
+
+#Sentiment by month
+sentiment_month <- AOC2 %>% 
+  count(word, month) %>%
+  inner_join(nrc, by = "word") %>% 
+  select(month, sentiment, n) %>% 
+  arrange(desc(n))
+
+
+
 #Export output this file to a CSV or Excel  write.csv or write.excel
 write.csv(sentiment_words,"AOC_sentiment_words.csv")
 
