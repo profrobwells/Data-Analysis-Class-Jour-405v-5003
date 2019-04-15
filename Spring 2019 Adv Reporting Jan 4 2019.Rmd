@@ -1254,7 +1254,8 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 **Exercise**
 
     Compare AOC, Coulter Original Tweets in a Chart
-    Use Coulter-AOC Tweet analysis 3-11-19.R
+    Use "Coulter Tweet Analysis #2 March 4.R"
+    Solution: https://bit.ly/2ZcGiox
 
     Bigrams: http://bit.ly/bigramz
     
