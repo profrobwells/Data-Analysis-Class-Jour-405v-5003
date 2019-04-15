@@ -1251,111 +1251,112 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 **Coulter Bigrams - Relationship**   
 ![](Images/Coulter Bigram Graphic.jpeg)  
     
+**Exercise**
+
+    Compare AOC, Coulter Original Tweets in a Chart
+    Use Coulter-AOC Tweet analysis 3-11-19.R
+
+    Bigrams: http://bit.ly/bigramz
+    
+    
+    
     
 ##Wednesday, April 17
 **Agenda** 
 
     Online Class. See Blackboard
-
     How to scrape Twitter using an API key
-    Web Scraping in R: Simple Web Scraper 
 
-**Reading** 
+**Reading**   
 
-Amy Webb future of journalism trends
-https://futuretodayinstitute.wetransfer.com/downloads/0e84e883e140bafe9a3436a6464032be20171003123607/ecda17
+    Amy Webb future of journalism trends
+    https://futuretodayinstitute.wetransfer.com/downloads/0e84e883e140bafe9a3436a6464032be20171003123607/ecda17
 
-https://blog.expertisefinder.com/top-6-google-search-tips-for-journalists/
+    Google search tips  
+    https://blog.expertisefinder.com/top-6-google-search-tips-for-journalists/
 
-https://aiethicsinitiative.org/news/2019/3/12/artificial-intelligence-and-the-news-seven-ideas-receive-funding-to-ensure-ai-is-used-in-the-public-interest
-
-http://www.machlis.com/nicar19.html
+    Artificial intelligence in the news  
+    https://aiethicsinitiative.org/news/2019/3/12/artificial-intelligence-and-the-news-seven-ideas-receive-funding-to-ensure-ai-is-used-in-the-public-interest
+    
+    Sharon Machlins Nicar compilation site
+    http://www.machlis.com/nicar19.html
 
 --------------------------------------------------------------------
 
-#Week #14, April 22:  - Sentiment, Charting, GitHub
+#Week #14, April 22, Week 14:  - Web scraping, GitHub
+
+##Monday, April 22
 
 **Agenda**
---4/22/2019 - Week 14  
+
+    Simple Web Scraping
+    GitHub
+    
+**Resources:**   
+
+    Web Scraping in R: Simple Web Scraper 
+
+    From Ch. 4.8 in Machlis:
+    ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. 
+    SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. 
+    Instructions and a video: http://bit.ly/Rscraping. 
+    RStudio webinar: https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
+
+
+##Wednesday, April 24
+
+**Agenda**
+
+    Simple Web Scraping
+    GitHub
 
 
 **Resources:**
 
-**--**  
+    This class is intended to teach you modern workflow techniques for coding. A centerpiece of that workflow is GitHub. This is a website with a system that allows you to collaborate with other programmers on coding projects. It manages versions of software code and is a very popular with the tech elite. 
 
-*Agenda*
+    Your GitHub account, which is public, represents an important professional image. Prospective employers and collaborators will look at your GitHub account.
 
+    --Create a GitHub account.
+    https://github.com/
 
+    --Follow this tutorial
+    https://guides.github.com/activities/hello-world/
 
+    --Andrew Ba Tran Tutorials on GitHub
+    Git and Github Pages
+    http://learn.r-journalism.com/en/git/
 
+    Installing Git
+    https://journalismcourses.org/courses/RC0818/installing_git.pdf
 
---Create a GitHub account.
-https://github.com/
+    GIT
+    https://journalismcourses.org/courses/RC0818/git.pdf
 
---Follow this tutorial
-https://guides.github.com/activities/hello-world/
+    Connecting to Github
+    https://journalismcourses.org/courses/RC0818/github.pdf
+    http://learn.r-journalism.com/en/git/github/github/
 
+    Best Practices for Github
+    http://learn.r-journalism.com/en/git/github_pages/github-pages/
 
-This class is intended to teach you modern workflow techniques for coding. A centerpiece of that workflow is GitHub. This is a website with a system that allows you to collaborate with other programmers on coding projects. It manages versions of software code and is a very popular with the tech elite. 
-
-Your GitHub account, which is public, represents an important professional image. Prospective employers and collaborators will look at your GitHub account.
-
---Andrew Ba Tran Tutorials on GitHub
-  Git and Github Pages
-http://learn.r-journalism.com/en/git/
-
-  Installing Git
-https://journalismcourses.org/courses/RC0818/installing_git.pdf
-
-  GIT
-https://journalismcourses.org/courses/RC0818/git.pdf
-
-  Connecting to Github
-https://journalismcourses.org/courses/RC0818/github.pdf
-http://learn.r-journalism.com/en/git/github/github/
-
-  Best Practices for Github
-http://learn.r-journalism.com/en/git/github_pages/github-pages/
-
---Loading and basic file management 
+**Exercises**   
+    
+    --Loading and basic file management 
 
     Commit  
     Branch  
     Pull Request  
     Fork  
   
-
-**Exercises**
-Installing Git for a Mac - Andrew Ba Tran
-
-
     Pair up.  
-    Team 1 takes this code. Make changes.    
-    Team 2 forks the code. Makes changes.  
+    Team 1 takes XYZ code. Make changes.    
+    Team 2 forks XYZ code. Makes changes.  
     Pull & Commit  
 
+**Resources**
+Installing Git for a Mac - Andrew Ba Tran
 
---Setting up an R Workflow
-http://learn.r-journalism.com/en/publishing/workflow/r-projects/
-
-
-**Resources on GitHub**  
-
---GitHub flow   
-https://guides.github.com/introduction/flow/
-
---GitHub Guides  
-https://guides.github.com/
-
---Another GitHub guide  
-https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
-
-**Resources:**   
-  
-    --See 4.8 in Machlis:
-    ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. This is not a technique for raw beginners, but once you’ve got some R experience under your belt, you may want to come back and re-visit this. I have some instructions and a video on how to do this at http://bit.ly/Rscraping. RStudio has a webinar available on demand as well, at https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
-
-**Exercises**
 
 **--**  
 
@@ -1374,6 +1375,21 @@ https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.htm
 
 
 **--**  
+
+--Setting up an R Workflow
+http://learn.r-journalism.com/en/publishing/workflow/r-projects/
+
+
+**Resources on GitHub**  
+
+--GitHub flow   
+https://guides.github.com/introduction/flow/
+
+--GitHub Guides  
+https://guides.github.com/
+
+--Another GitHub guide  
+https://andrewbtran.github.io/NICAR/2018/workflow/docs/03-integrating_github.html  
 
 
 
