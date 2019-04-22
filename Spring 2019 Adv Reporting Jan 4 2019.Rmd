@@ -1290,8 +1290,18 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 **Agenda**
 
+    Review quiz
+    Bigrams
     Simple Web Scraping
     GitHub
+
+**Coulter Bigrams - Score**   
+![](Images/Coulter bigram score.jpeg)  
+
+    
+**Exercises**   
+
+    Bigrams: http://bit.ly/bigramz
     
 **Resources:**   
 

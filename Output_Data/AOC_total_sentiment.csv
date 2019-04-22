@@ -1,0 +1,11 @@
+"","screen_name","sentiment","total_words","words"
+"1","AOC","positive",39534,5399
+"2","AOC","trust",39534,3578
+"3","AOC","negative",39534,2474
+"4","AOC","anticipation",39534,2425
+"5","AOC","joy",39534,1927
+"6","AOC","anger",39534,1627
+"7","AOC","fear",39534,1502
+"8","AOC","sadness",39534,1196
+"9","AOC","surprise",39534,1039
+"10","AOC","disgust",39534,730
