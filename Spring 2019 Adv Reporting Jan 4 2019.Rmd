@@ -1301,18 +1301,12 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
     
 **Exercises**   
 
-    Bigrams: http://bit.ly/bigramz
+    Bigrams: 
+    http://bit.ly/bigramz
     
-**Resources:**   
-
     Web Scraping in R: Simple Web Scraper 
-
-    From Ch. 4.8 in Machlis:
-    ‘Scrape’ data from Web pages with the rvest package and SelectorGadget browser extension or JavaScript bookmarklet. 
-    SelectorGadget helps you discover the CSS elements of data you want to copy that are on an HTML page; then rvest uses R to find and save that data. 
-    Instructions and a video: http://bit.ly/Rscraping. 
-    RStudio webinar: https://www.rstudio.com/resources/webinars/extracting-data-from-the-web-part-2/ .
-
+    http://bit.ly/scrapeme
+    
 
 ##Wednesday, April 24
 
