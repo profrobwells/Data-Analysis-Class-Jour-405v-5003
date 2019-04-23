@@ -1328,36 +1328,16 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
     --Follow this tutorial
     https://guides.github.com/activities/hello-world/
 
-    --Andrew Ba Tran Tutorials on GitHub
-    Git and Github Pages
-    http://learn.r-journalism.com/en/git/
+    --Max Harlow Presentation on How to Use GitHub
+    https://docs.google.com/presentation/d/1MbltRcOerktc-E26HMDjYj0BO9CTubQWu1Z2bB9CpVY/edit#slide=id.g448ccc227721fe56_10
 
-    Installing Git
-    https://journalismcourses.org/courses/RC0818/installing_git.pdf
+    --Simplified GitHub- GitHub Desktop
+    https://help.github.com/en/desktop
 
-    GIT
-    https://journalismcourses.org/courses/RC0818/git.pdf
-
-    Connecting to Github
-    https://journalismcourses.org/courses/RC0818/github.pdf
-    http://learn.r-journalism.com/en/git/github/github/
-
-    Best Practices for Github
-    http://learn.r-journalism.com/en/git/github_pages/github-pages/
-
+   
 **Exercises**   
     
-    --Loading and basic file management 
-
-    Commit  
-    Branch  
-    Pull Request  
-    Fork  
-  
-    Pair up.  
-    Team 1 takes XYZ code. Make changes.    
-    Team 2 forks XYZ code. Makes changes.  
-    Pull & Commit  
+   See Basic GitHub 4-22-19.R
 
 **Resources**
 Installing Git for a Mac - Andrew Ba Tran
