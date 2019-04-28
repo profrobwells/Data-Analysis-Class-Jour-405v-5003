@@ -1354,14 +1354,16 @@ Installing Git for a Mac - Andrew Ba Tran
 
 #Week #15, April 29: Wrap Up
 
-
+##Monday, April 29
 **Agenda**
 
     Measuring Engagement: Do the Ugly Tweets Get the Most Likes?
     Twitter Engagement April 28.R
+    http://bit.ly/2GParD5
+    
     
 **AOC Engagement and Sentiment**   
-![](Images/Coulter bigram score.jpeg)  
+![](Images/AOC Favorites and Sentiment 4-28-19.jpeg)  
 
 
 
@@ -1379,11 +1381,13 @@ Installing Git for a Mac - Andrew Ba Tran
     https://courseval.uark.edu/
 
 
-    
-    
---4/29/2019 - Week 15  
+##Wednesday, May 1
 
---**Assignment #4: Politicians Twitter Feeds **
+**Last Class!**
+**Congratulations!**
+
+
+**Assignment #4: Politicians Twitter Feeds **
 
 
 **--**  
