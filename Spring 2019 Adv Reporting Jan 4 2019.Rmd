@@ -1338,6 +1338,8 @@ What is code? http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 **Exercises**   
     
    See Basic GitHub 4-22-19.R
+   https://bit.ly/2UAMGTd
+   
 
 **Resources**
 Installing Git for a Mac - Andrew Ba Tran
@@ -1354,6 +1356,31 @@ Installing Git for a Mac - Andrew Ba Tran
 
 
 **Agenda**
+
+    Measuring Engagement: Do the Ugly Tweets Get the Most Likes?
+    Twitter Engagement April 28.R
+    
+**AOC Engagement and Sentiment**   
+![](Images/Coulter bigram score.jpeg)  
+
+
+
+**Important!**
+
+    Course Evaluation
+    Please do me  a favor and evaluate this course. 
+    It's important to me and the department to get your thoughts
+    on what worked and what did not. 
+
+    I was very happy with how things turned out this semester and 
+    intend to offer this course again. If you think it is important, 
+    then please take five minutes to fill out the survey.
+
+    https://courseval.uark.edu/
+
+
+    
+    
 --4/29/2019 - Week 15  
 
 --**Assignment #4: Politicians Twitter Feeds **
