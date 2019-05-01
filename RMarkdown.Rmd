@@ -113,7 +113,7 @@ plot(pressure)
 
       Now go to https://YOURUSERNAME.github.io/YOUR-REPO-NAME/YOUR-FILE-NAME.html and you        should have your hosted file!
 
-      https://profrobwells.github.io/Testrepo/CheatSheet.html
+      https://profrobwells.github.io/Data-Analysis-Class-Jour-405v-5003/RMarkdown.html
 
 #REVEL IN YOUR NERD POWERS  
 #REVEL IN YOUR NERD POWERS  
