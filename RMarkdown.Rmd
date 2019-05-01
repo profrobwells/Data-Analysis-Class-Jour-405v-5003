@@ -1,0 +1,120 @@
+---
+title: "R Markdown Intro"
+author: "Rob Wells"
+date: "4/30/2019"
+output: html_document     
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+###Load software packages
+
+```{r load_software, echo=TRUE}
+library(tidyverse)
+library(rmarkdown)
+library(knitr)
+library(vembedr)
+pacman::p_load(rmarkdown, dplyr, fst, scales, purrr, rio)
+```
+
+#The Lowdown on Markdown:    
+
+  --Create web pages, PDFs, presentations, Word documents      
+  --Add formatting to plain text    
+  --knit the file - include charts, data in the text  
+  --Works with knitr package   
+  --Examples: Course syllabus, Sabew, IRE Presentations  
+  
+  *[2018 IRE Presentation](http://bit.do/biz-watchdogs)    
+  *[2018 Sabew Presentation](http://bit.do/sabewdata)
+
+###Tutorial    
+* [From rStudio](https://rmarkdown.rstudio.com/articles_intro.html)
+ 
+The file demonstrates how to use markdown to indicate:    
+
+    1. *headers* - Place one or more hashtags at the start of a line that will be a header (or sub-header). For example, # Say Hello to markdown. A single hashtag creates a first level header. Two hashtags, ##, creates a second level header, and so on.   
+    2. *italicized and bold text* - Surround italicized text with asterisks, like this *without realizing it*. Surround bold text with two asterisks, like this **easy to use**.      3. *lists* - Group lines into bullet points that begin with asterisks. Leave a blank line before the first bullet    
+    
+###Tutorial
+* [Andrew Ba Tran](http://learn.r-journalism.com/en/publishing/)   
+    
+
+###Play video from 9:00   
+* [Part1](https://www.youtube.com/watch?v=uOh9A1JW_wA)
+
+###Your Turn: Open a new .Rmd file: 
+
+File > New File > R Markdown.
+Every .Rmd file starts out the same at the top.
+
+YAML HEADER
+Optional section of render options written as key:value pairs.
+
+At start of file
+Between lines of — (3 dashes)
+This is how R knows how to render your files. 
+In the example above, the lineoutput: html_document means it will create an HTML file. If it was output: pdf then you’d get a PDF instead.
+
+You can output more than one type at a time, if you want.
+
+###CODE CHUNKS
+In the image above, the R code is in the gray area.
+These are chunks of embedded R code. Each chunk:
+begins with ```{r} (the back tick key is to the left of 1)
+ends with ```
+
+Here is a code chunk. To Run this code, click the green diamond on the below right
+
+```{r cars_chunk}
+summary(cars)
+```
+
+See how a plot is displayed. To Run this code, click the green diamond on the below right
+
+```{R plot_a_chart}
+plot(pressure)
+```
+
+
+##Render a PDF file in RMarkdown    
+
+      Create an R Markdown Document
+      Copy a few lines from your R cheat sheet into it
+
+      library(rmarkdown)
+      render("/Users/robwells/Dropbox/Classes/Data-Analysis-Class-Jour-405v-5003/CheatSheet2019.Rmd", output_format="pdf_document", output_file = "CheatSheet2019.pdf" )    
+
+##Now, render it as an html page    
+ 
+      render("/Users/robwells/Dropbox/Classes/Data-Analysis-Class-Jour-405v-5003/CheatSheet2019.Rmd", output_format="html_document", output_file = "CheatSheet.html")  
+      
+##Now host html on GitHub    
+
+     * *[](http://learn.r-journalism.com/en/git/github/github/)
+
+      Hosting with Github Pages  
+      Turn http://github.com/username/reponame/index.html ->
+      Into http://username.github.io/reponame/index.html
+
+      github.io is the address for hosted files
+
+      First: Set up Github to host the files.
+      Setting up GH Pages
+
+      1) After uploading your repo, click on Settings on the top right.
+
+      2) Scroll down to the GitHub Pages section of Settings.
+
+      3) Change the Source from None to master branch and click save.
+
+      For future projects, you can organize your files so that all output HTML are stored        in a docs folder. Then the option master branch\docs will host those files and ignore       everything in the root folder.
+
+      Now go to https://YOURUSERNAME.github.io/YOUR-REPO-NAME/YOUR-FILE-NAME.html and you        should have your hosted file!
+
+      https://profrobwells.github.io/Testrepo/CheatSheet.html
+
+#REVEL IN YOUR NERD POWERS  
+#REVEL IN YOUR NERD POWERS  
+#REVEL IN YOUR NERD POWERS
