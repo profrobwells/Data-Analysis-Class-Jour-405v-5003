@@ -1383,11 +1383,31 @@ Installing Git for a Mac - Andrew Ba Tran
 
 ##Wednesday, May 1
 
-**Last Class!**
+**Last Class!**    
+
+**Assignment #4: Politicians Twitter Feeds, Due Tonight **
+
+
+**Agenda**
+
+    Return to Twitter Engagement
+    http://bit.ly/2GParD5
+    
+    R Markdown
+    http://bit.ly/2DBLSaX
+    
+    Turn your R cheatsheet into a PDF
+    Turn your R cheatsheet into a web page on GitHub
+    
+
 **Congratulations!**
+    
+     We covered a lot this semester
+  
+![Code in Fun](Images/Cat coding.gif)  
 
 
-**Assignment #4: Politicians Twitter Feeds **
+
 
 
 **--**  
